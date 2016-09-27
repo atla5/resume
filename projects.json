@@ -1,0 +1,201 @@
+[
+  {
+    "name":"dublin-core-text-parser",
+    "url":"https://github.com/atla5/dublin-core-text-parser",
+    "languages": ["java"],
+    "tags":["LIS","cataloging","metadata","wallace","digitization"],
+    "description_short":
+      "Cataloguing tool for converting specially formatted text files containing
+       dublin core metadata into various formats",
+    "description_long":
+      "Assist in cataloguing batches of similar or series-based items from a
+       collection by:
+
+        - decreasing the complexity of logging each individual item/issue
+        - minimizing repetitive typing and template editing
+        - combining the information that is shared across items in a collection
+          in one place",
+    "importance":
+      "Assist with the automation, description, preservation, availability, and
+       extensibility of dublin-core related metadata records.",
+    "involvement":"creater, designer, lead developer, and maintainer."
+  },
+  {
+    "name":"ScanTailor",
+    "url":"https://github.com/scantailor/scantailor",
+    "photo":"http://scantailor.org/assets/logo_h300-fs8.png",
+    "languages": ["c++"],
+    "tags":["LIS","digitization","open source"],
+    "description_short":"Interactive post-processing tool for scanned pages.",
+    "description_long":
+      "The current methods of digitizing printed pages often introduce a lot of
+       imperfections into the output image (such as orientation, skewing,
+       warping, and speckling). ScanTailor provides an integrated and learnable
+       solution to resolving these issues and obtaining higher quality results
+       in less time with less training.",
+    "importance":
+      "Bookscanning is a very important and time-consuming activity at the heart
+       of the digitization process. The strides taken with this program to
+       automate, expedite, and enhance methods for improving the quality of
+       digital scans are critical.",
+    "involvement":"contributor, requirements management, customer support"
+  },
+  {
+    "name":"lib-name-parser",
+    "photo":"",
+    "url":"https://github.com/atla5/lib-name-parser",
+    "languages": ["tbd"],
+    "tags":["LIS","cataloguing","metadata","digitization","linked data"],
+    "description_short":
+      "Parse a list of names from raw text into a dictiory of unique authors.
+      [for use with LIS authority control]",
+    "description_long":
+      "External library meant to assist with the automation of the management of
+       authority control for authors ",
+    "importance":
+      "Though very much in its infancy, the project has the _capacity_ to
+       automate a critically important and time-consuming part of metadata
+       management. A huge potential wealth of information is unkowingly obscured
+       by latent links that have gone unnoticed.",
+    "involvement":"creator, designer, soon-to-be developer"
+  },
+  {
+    "name":"atla5.github.io",
+    "photo":"",
+    "url":"https://github.com/atla5/atla5.github.io",
+    "languages": ["html","css","js","json","ci"],
+    "tags":["web","personal"],
+    "description_short":"Single-page personal and professional site hosted by github.",
+    "description_long":
+      "My site is an exercise in web development and a place for me to
+       coordinate and explain my projects to fellow developers and current and
+       future employers.",
+    "importance":
+      "The site will increase the ease with which developers and employers can learn more
+      about me and my projects, facilitating communication and career advancement",
+    "involvement":"creator, designer, developer, maintainer"
+  },
+  {
+    "name":"JBioFramework (JBF)",
+    "photo":"http://www.rit.edu/cos/jbioframework/images/600x400xjbfMain.jpg.pagespeed.ic.m7rlASKPpp.webp",
+    "url":"https://github.com/RITJBF/JBioFramework",
+    "languages": ["java"],
+    "tags":["research","education","simulation","open source"],
+    "description_short":"Growing suite of proteomics simulations made for educational purposes.",
+    "description_long":
+      "A set of protein separations simulations and associated problem sets and
+       surveys meant to teach biochemical principles and methodologies to AP
+       high school and early Undergraduate students who may not have access to
+       the associated wet lab equipment.",
+    "importance":
+      "Working with JBF was one of my first experiences uniting my interests in
+       scientific research and software development. It gave me a great look
+       into how software is maintained and developed over time, how its design
+       can be effectively communicated to non-developers, and how to test and
+       improve user experience.",
+    "involvement":"former developer/maintainer, occasional contributor"
+  },
+  {
+    "name":"CommunityCareHub",
+    "photo":"",
+    "url":"https://github.com/amk5401/CommunityCareHub",
+    "languages": ["html","css","php","angular","js"],
+    "tags":["UI","web","design","bootstrap"],
+    "description_short":
+      "Web application made to assist caregivers, patients, and loved ones in an
+       assisted living community. (UI Prototype)",
+    "description_long":"CommunityCareHub is a responsive web application ",
+    "importance":
+      "Designing, developing, and testing this application was a great learning
+        experience in the complexity and was one of my favorite experiences with
+        working in a team.",
+    "involvement":"document, design, develop, manage requirements, test, report"
+  },
+  {
+    "name":"Blog",
+    "photo":"",
+    "url":"https://github.com/atla5/blog",
+    "languages": ["c","md"],
+    "tags":["blog","separation of concerns"],
+    "description_short":"Series of markdown entries regarding my work.",
+    "description_long":
+      "An updating list of blog-style entries regarding my ideas, thoughts, and
+       developments on relevant personal, academic, and work-related pursuits
+       and on important topics in the field/s I'm going into.",
+    "importance":
+      "This will allow me to track, monitor, archive, and share my relevant
+       thoughts and activities in a simple, quick, and familiar way with very
+       little overhead.",
+    "involvement":"creator, designer, writer"
+  },
+  {
+    "name":"FeedReader",
+    "photo":"",
+    "url":"https://github.com/atla5/FeedReader",
+    "languages": ["html","html5","json","rss","css","local storage","bootstrap"],
+    "tags":["personal-site","tags","local storage"],
+    "description_short":"Allows user to selectively determine RSS feeds displayed from category litsting",
+    "description_long":
+      "Utilize HTML5's functionality to provide a unified interface for me and
+       any others interested to browse through coordinated media I'm interested
+       in in one location within the browser. [Created as part of SWEN-344 Intro to Web]",
+    "importance":
+      "Demonstrates capacity to see the relevance of a tool/project to other
+       interests and a willingness and desire to continue using and improving
+       work past its due date.",
+    "involvement":"Designer, developer"
+  },
+  {
+    "name":"JColorChanger",
+    "photo":"",
+    "url":"https://github.com/atla5/JColorChanger",
+    "languages": ["java"],
+    "tags":["color"],
+    "description_short":"Select and manipulate RGB values w/ preview.",
+    "description_long":
+      "Simple tool for displaying and selecting colors based on their RGBA color
+       values. Great for gaining a better understanding of various color effects
+       and/or selecting RGBA values.
+
+       Made this to gain a better understanding of the Java programming language,
+       Swing UI library, and of RGB color values. Over 65 downloads!",
+    "importance":"Demonstrates my interest in project-based learning and ability to self-motivate.",
+    "involvement":"creator, designer, developer"
+  },
+  {
+    "name":"Resume",
+    "photo":"",
+    "url":"https://github.com/atla5/Resume",
+    "languages": ["json","md","separation of concerns"],
+    "tags":["resume","personal-site"],
+    "description_short":"holds information about my education, work experience, projects, and goals.",
+    "description_long":
+      "'Resume' is an assortment of json objects storing information that I've put
+       on my conventional resume, and am hosting on my site.
+
+       I created it mostly just to store the data that I'll be displaying in the
+       'About' section of my personal site (atla5.github.io), but when I really
+       thought about it, I figured it would be a good half-gag idea and went
+       with it.",
+    "importance":
+      "As tongue-in-cheek as it might be, I actually do do a lot of work on
+       github and this is a way to show that familiarity with the site in a
+       smart, convenient, and local way.",
+    "involvement":""
+  },
+  {
+    "name":"02-DesignPatterns",
+    "photo":"",
+    "url":"https://github.com/atla5/02-DesignPatterns",
+    "languages": ["html","js"],
+    "tags":["school","web"],
+    "description_short":"SWEN-344 assignment on common design patterns that are used on the web",
+    "description_long":
+      "This project provides a way to both describe and demonstrate my knowledge
+       of common design patterns used on the web and elsewhere. It was created
+       as part of my education at RIT in SWEN-344 'Intro to Web.'",
+    "importance":
+      "Demonstrates grasp of common design solutions to recurring problems",
+    "involvement":"developer, writer"
+  }
+]
