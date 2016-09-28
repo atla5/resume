@@ -131,16 +131,15 @@
     "time_end":"2011-09",
     "position":"Research Assistant/Lab Aid",
     "wage":"$8.60",
-    "tags": ["research"],
-    "languages":["Java"],
-    "technologies":["sourceforge","surveymonkey"],
+    "tags": ["research","science"],
+    "languages":[],
+    "technologies":["microsoft access","mendeley"],
     "responsibilities":[
-      "Development, maintenance, and refactor of a series of proteomics
-       simulations for the education of AP high school and beginning
-       undergraduate Biochemistry/Biotechnology students.",
-      "Assistance creating questionnaires, walkthroughs, and help information
-        to test user experience and comprehension of the software",
-      "Conducting those tests and interpreting their findings."
+      "Conduct a literature search and review to assist in the design and description of research methods and data analysis.",
+      "Assist with the organization and analysis of scientific data and their visualization using Microsoft Access and Excel"
+      "Coordinate the physical and digital storage of collected articles and their metadata."
+      "Perform various lab procedures to extract DNA and analyze hormone levels from samples of bird blood.",
+      "Collect blood samples from live birds in the field via lure, entrapment, and release"
     ],
     "summary_short":
       "My work with Dr. Johnston was my first experience with scientific
