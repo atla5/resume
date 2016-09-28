@@ -87,23 +87,63 @@
        LIS and LAM software."
   },
   {
-    "company_name":"",
-    "company_url":"",
+    "company_name":"Rochester Institute of Technology - Chemistry Department",
+    "company_url":"https://www.rit.edu/science/scms",
     "company_img":"",
-    "advisor_name":"",
-    "advisor_contact":"",
-    "advisor_position":"",
-    "location_city":"",
-    "location_state":"",
-    "time_start":"",
-    "time_end":"",
-    "position":"",
-    "wage":"",
-    "tags": ["",""],
-    "languages":["",""],
-    "technologies":["",""],
-    "responsibilities":["",""],
-    "summary_short":"",
+    "advisor_name":"Dr. Paul Craig",
+    "advisor_contact":"pac8612@rit.edu",
+    "advisor_position":"Chemistry Department Head",
+    "location_city":"Rochester",
+    "location_state":"NY",
+    "time_start":"2012-08",
+    "time_end":"2014-12",
+    "position":"Developer/Maintainer",
+    "wage":"2 Credits/Semester",
+    "tags": ["java","research","simulations"],
+    "languages":["Java"],
+    "technologies":["sourceforge","surveymonkey"],
+    "responsibilities":[
+      "Development, maintenance, and refactor of a series of proteomics
+       simulations for the education of AP high school and beginning
+       undergraduate Biochemistry/Biotechnology students.",
+      "Assistance creating questionnaires, walkthroughs, and help information
+        to test user experience and comprehension of the software",
+      "Conducting those tests and interpreting their findings."
+    ],
+    "summary_short":
+      "I learned a great deal about refactoring, documentation, communication,
+       legacy code maintenance, usability testing, and research software working
+       with JBioFramework. Having this experience right at the beginning of my
+       educational career gave me an important perspective on the discipline I
+       would not have got otherwise.",
+    "summary_long":""
+  },
+  {
+    "company_name":"University of Maine Presque Isle",
+    "company_url":"www.umpi.edu",
+    "company_img":"",
+    "advisor_name":"Dr. Jason Johnston",
+    "advisor_contact":"jason.johnston@maine.edu",
+    "advisor_position":"Professor",
+    "location_city":"Presque Isle",
+    "location_state":"ME",
+    "time_start":"2011-03",
+    "time_end":"2011-09",
+    "position":"Research Assistant/Lab Aid",
+    "wage":"$8.60",
+    "tags": ["research"],
+    "languages":["Java"],
+    "technologies":["sourceforge","surveymonkey"],
+    "responsibilities":[
+      "Development, maintenance, and refactor of a series of proteomics
+       simulations for the education of AP high school and beginning
+       undergraduate Biochemistry/Biotechnology students.",
+      "Assistance creating questionnaires, walkthroughs, and help information
+        to test user experience and comprehension of the software",
+      "Conducting those tests and interpreting their findings."
+    ],
+    "summary_short":
+      "",
     "summary_long":""
   }
 ]
