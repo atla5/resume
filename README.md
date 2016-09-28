@@ -20,7 +20,8 @@ As a "resume", the repository is meant to store information relevant to my work
 |file|description|
 |:--|:---------------|
 |ROADMAP.md|textual description of stated goals, plans, and objectives over time.|
-|education.json|JSON object storing information about my college and high school|
+|experience.json|JSON objects storing information about my work experience and what it's taught me|
+|education.json|JSON objects storing information about my college and high school|
 |projects.json|JSON objects storing information about my open-source involvement|
 |additional.json|JSON listing of languages, skills, interests, and links that didn't fit elsewhere|
 
