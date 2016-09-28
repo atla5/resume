@@ -1,0 +1,21 @@
+{
+  "languages":["java", "python", "c#", "c", "html", "js", "ruby", "sql", "aws"],
+  "skills":[
+    "object-oriented design",
+    "documentation",
+    "refactoring",
+    "requirements management",
+    "systems thinking",
+    "communicating complex systems of information",
+    "standardization"
+  ],
+  "interests":[
+    "library and information science",
+    "open source software",
+    "philosophy",
+    "open data/science",
+    "space exploration",
+    "craft beer",
+    "reading"
+  ]
+}
