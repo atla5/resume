@@ -27,4 +27,4 @@ As a "resume", the repository is meant to store information relevant to my work
 ### Interface ###
 
 A much more pleasant way of viewing this information will 'soon' be available on 
-  my github page at [atla5.github.io/](atla5.github.io/)
+  my github page at [atla5.github.io/](https://github.com/atla5/atla5.github.io)
