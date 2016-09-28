@@ -1,0 +1,158 @@
+[
+  {
+    "school_name":"Rochester Institute of Technology",
+    "school_city":"Rochester",
+    "school_state":"NY",
+    "school_level":"Bachelors of Science",
+    "major":"Software Engineering",
+    "minor":"Philosophy",
+    "activities":[
+      "Rochester Objectivist Society",
+      "RIT Philosophy Club"
+    ],
+    "awards":["Presidential Scholarship"],
+    "notes":"Application Domain in 'Library and Information Science'",
+    "courses": [
+      {
+        "code":"COMM-253",
+        "name":"Professional Communications",
+        "description":""
+      },
+      {
+        "code":"CSCI-142",
+        "name":"Intro to Computer Science I+II",
+        "description":""
+      },
+      {
+        "code":"CSCI-242",
+        "name":"Intro to Computer Science Theory",
+        "description":""
+      },
+      {
+        "code":"CSCI-440",
+        "name":"Introduction to Data Mining",
+        "description":""
+      },
+      {
+        "code":"MUSE-340",
+        "name":"Introduction to Archives",
+        "description":""
+      },
+      {
+        "code":"MUSE-359",
+        "name":"Cultural Informatics",
+        "description":""
+      },
+      {
+        "code":"PHIL-201",
+        "name":"Ancient Philosophy",
+        "description":""
+      },
+      {
+        "code":"PHIL-203",
+        "name":"Modern Philosophy",
+        "description":""
+      },
+      {
+        "code":"PHIL-301",
+        "name":"Theories of Knowledge",
+        "description":""
+      },
+      {
+        "code":"PHIL-415",
+        "name":"Ethical Theory",
+        "description":""
+      },
+      {
+        "code":"SWEN-220",
+        "name":"Mathematical Models of Software Engineering",
+        "description":""
+      },
+      {
+        "code":"SWEN-250",
+        "name":"Personal Software Engineering",
+        "description":""
+      },
+      {
+        "code":"SWEN-256",
+        "name":"Software Process and Project Management",
+        "description":""
+      },
+      {
+        "code":"SWEN-261",
+        "name":"Intro to Software Engineering",
+        "description":""
+      },
+      {
+        "code":"SWEN-262",
+        "name":"Engineering Software Subsystems",
+        "description":""
+      },
+      {
+        "code":"SWEN-344",
+        "name":"Intro to Web Engineering",
+        "description":""
+      },
+      {
+        "code":"SWEN-352",
+        "name":"Software Testing",
+        "description":""
+      },
+      {
+        "code":"SWEN-444",
+        "name":"Human Centered Requirements and Design",
+        "description":""
+      },
+      {
+        "code":"SWEN-331",
+        "name":"Engineering Secure Software",
+        "description":""
+      },
+      {
+        "code":"SWEN-440",
+        "name":"Software Requirements and Architecture",
+        "description":""
+      },
+
+    ]
+  },
+
+  {
+    "school_name":"Presque Isle High School",
+    "school_city":"Presque Isle",
+    "school_state":"ME",
+    "school_level":"High School",
+    "activities":[
+      "Class Vice President [4 years]"
+      "Debate Team [4 years]",
+      "Critical Issues Forum (Nuclear Non-Proliferation)",
+      "National Honors Society",
+      "Game Band"
+    ],
+    "awards":["Honors 17"],
+    "notes":"Completed ever Honors/Advanced/AP Course Offered at PIHS",
+    "courses": [
+      {
+        "code":"AP-BIO",
+        "name":"AP Biology",
+        "description":""
+      },
+      {
+        "code":"AP-USH",
+        "name":"AP US History",
+        "description":""
+      },
+      {
+        "code":"AP-COMP",
+        "name":"Intro to Computer Science Theory",
+        "description":""
+      },
+      {
+        "code":"AP-CALC",
+        "name":"AP Calculus AB",
+        "description":""
+      }
+    ]
+  }
+
+]
