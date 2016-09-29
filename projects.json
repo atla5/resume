@@ -1,7 +1,7 @@
 [
   {
     "name":"dublin-core-text-parser",
-    "url":"https://github.com/atla5/dublin-core-text-parser",
+    "url_src":"https://github.com/atla5/dublin-core-text-parser",
     "languages": ["java"],
     "tags":["LIS","cataloging","metadata","wallace","digitization"],
     "description_short":
@@ -22,7 +22,8 @@
   },
   {
     "name":"ScanTailor",
-    "url":"https://github.com/scantailor/scantailor",
+    "url_web":"http://scantailor.org/",
+    "url_src":"https://github.com/scantailor/scantailor",
     "photo":"http://scantailor.org/assets/logo_h300-fs8.png",
     "languages": ["c++"],
     "tags":["LIS","digitization","open source"],
@@ -43,7 +44,7 @@
   {
     "name":"lib-name-parser",
     "photo":"",
-    "url":"https://github.com/atla5/lib-name-parser",
+    "url_src":"https://github.com/atla5/lib-name-parser",
     "languages": ["tbd"],
     "tags":["LIS","cataloguing","metadata","digitization","linked data"],
     "description_short":
@@ -62,7 +63,8 @@
   {
     "name":"atla5.github.io",
     "photo":"",
-    "url":"https://github.com/atla5/atla5.github.io",
+    "url_web":"http://atla5.github.io",
+    "url_src":"https://github.com/atla5/atla5.github.io",
     "languages": ["html","css","js","json","ci"],
     "tags":["web","personal"],
     "description_short":"Single-page personal and professional site hosted by github.",
@@ -78,7 +80,8 @@
   {
     "name":"JBioFramework (JBF)",
     "photo":"http://www.rit.edu/cos/jbioframework/images/600x400xjbfMain.jpg.pagespeed.ic.m7rlASKPpp.webp",
-    "url":"https://github.com/RITJBF/JBioFramework",
+    "url_web":"http://www.rit.edu/cos/jbioframework/",
+    "url_src":"https://github.com/RITJBF/JBioFramework",
     "languages": ["java"],
     "tags":["research","education","simulation","open source"],
     "description_short":"Growing suite of proteomics simulations made for educational purposes.",
@@ -98,7 +101,8 @@
   {
     "name":"CommunityCareHub",
     "photo":"",
-    "url":"https://github.com/amk5401/CommunityCareHub",
+    "url_web":"https://community-care-hub.herokuapp.com/caregiverHome.php",
+    "url_src":"https://github.com/amk5401/CommunityCareHub",
     "languages": ["html","css","php","angular","js"],
     "tags":["UI","web","design","bootstrap"],
     "description_short":
@@ -114,7 +118,8 @@
   {
     "name":"Blog",
     "photo":"",
-    "url":"https://github.com/atla5/blog",
+    "url_web":"http://atla5.github.io/?page=blog",
+    "url_src":"https://github.com/atla5/blog",
     "languages": ["c","md"],
     "tags":["blog","separation of concerns"],
     "description_short":"Series of markdown entries regarding my work.",
@@ -131,7 +136,8 @@
   {
     "name":"FeedReader",
     "photo":"",
-    "url":"https://github.com/atla5/FeedReader",
+    "url_web":"http://atla5.github.io/?page=feeds",
+    "url_src":"https://github.com/atla5/FeedReader",
     "languages": ["html","html5","json","rss","css","local storage","bootstrap"],
     "tags":["personal-site","tags","local storage"],
     "description_short":"Allows user to selectively determine RSS feeds displayed from category litsting",
@@ -148,7 +154,8 @@
   {
     "name":"JColorChanger",
     "photo":"",
-    "url":"https://github.com/atla5/JColorChanger",
+    "url_web":"https://sourceforge.net/projects/jcolorchanger/"
+    "url_src":"https://github.com/atla5/JColorChanger",
     "languages": ["java"],
     "tags":["color"],
     "description_short":"Select and manipulate RGB values w/ preview.",
@@ -165,7 +172,8 @@
   {
     "name":"Resume",
     "photo":"",
-    "url":"https://github.com/atla5/Resume",
+    "url_web":"http://atla5.github.io/?page=about",
+    "url_src":"https://github.com/atla5/Resume",
     "languages": ["json","md","separation of concerns"],
     "tags":["resume","personal-site"],
     "description_short":"holds information about my education, work experience, projects, and goals.",
@@ -186,7 +194,7 @@
   {
     "name":"02-DesignPatterns",
     "photo":"",
-    "url":"https://github.com/atla5/02-DesignPatterns",
+    "url_src":"https://github.com/atla5/02-DesignPatterns",
     "languages": ["html","js"],
     "tags":["school","web"],
     "description_short":"SWEN-344 assignment on common design patterns that are used on the web",
