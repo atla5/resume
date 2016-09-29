@@ -154,7 +154,7 @@
   {
     "name":"JColorChanger",
     "photo":"",
-    "url_web":"https://sourceforge.net/projects/jcolorchanger/"
+    "url_web":"https://sourceforge.net/projects/jcolorchanger/",
     "url_src":"https://github.com/atla5/JColorChanger",
     "languages": ["java"],
     "tags":["color"],
