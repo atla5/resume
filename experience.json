@@ -14,8 +14,8 @@
     "wage_start":"$22",
     "wage_end":"$27",
     "tags": ["internship","publishing","library-portal","django"],
-    "languages":["python","html","scss","java"],
-    "technologies":["django","github","AWS","jira","jenkins"],
+    "languages": ["python","html","scss","java"],
+    "technologies": ["django","github","AWS","jira","jenkins"],
     "responsibilities": [
       "",
       "",
@@ -39,33 +39,16 @@
     "wage_start":"$9",
     "wage_end":"$9",
     "tags": ["wallace","digitization","cataloguing","metadata","dc-text-parser"],
-    "languages":["java","json"],
-    "technologies":["photoshop","acrobat","github","dspace","SAFBuilder","ScanTailor"],
+    "languages": ["java","json"],
+    "technologies": ["photoshop","acrobat","github","dspace","SAFBuilder","ScanTailor"],
     "responsibilities": [
-      "Render, enhance, describe, and manage volumes from a physical archive and
-       resulting digitized items and records to the DSpace digital media library",
-      "Develop, document, and maintain automated solutions for various projects
-        where appropriate",
-      "Assist with the creation of a protocol for open-sourcing software
-        projects created within the library",
-      "I the creation of an Open Source Initiative based
-       around my work with the dublin-core-text-parser."
+      "Render, enhance, describe, and manage volumes from a physical archive and resulting digitized items and records to the DSpace digital media library",
+      "Develop, document, and maintain automated solutions for various projects where appropriate",
+      "Assist with the creation of a protocol for open-sourcing software projects created within the library",
+      "I the creation of an Open Source Initiative based around my work with the dublin-core-text-parser."
     ],
-    "summary_short":
-      "My time working at the Wallace Center has afforded me firsthand
-      experience of the operative practices, needs, strengths, and weaknesses of
-      libraries, as well as where their critical imprtance to the process of
-      knowledge creation and management.",
-    "summary_long":
-      "My experience in the Digital Initiatives department underscored the
-       importance of my field and the tremendous impact it could have on library
-       science and knowledge management.
-
-       The opportunity for progress in the specific areas of standardization,
-       deduplication, automation, tooling, APIs, and data mining is really inspiring,
-       and the capacity to make a difference both in the immediate short-term
-       and in the distant long term has solidly reinforced my trajectory into
-       LIS and LAM software."
+    "summary_short":"My time working at the Wallace Center has afforded me firsthand experience of the operative practices, needs, strengths, and weaknesses of libraries, as well as where their critical imprtance to the process of knowledge creation and management.",
+    "summary_long":"My experience in the Digital Initiatives department underscored the importance of my field and the tremendous impact it could have on library science and knowledge management.</br></br>The opportunity for progress in the specific areas of standardization, deduplication, automation, tooling, APIs, and data mining is really inspiring, and the capacity to make a difference both in the immediate short-term and in the distant long term has solidly reinforced my trajectory into LIS and LAM software."
   },
   {
     "company_name":"EagleDream Technologies",
@@ -82,36 +65,15 @@
     "wage_start":"$20",
     "wage_end":"$25",
     "tags": ["scrum","internship","java","edt"],
-    "languages":["java","C#","aws"],
-    "technologies":["hibernate","spring","AD","VoIP","jira","git"],
+    "languages": ["java","C#","aws"],
+    "technologies": ["hibernate","spring","AD","VoIP","jira","git"],
     "responsibilities": [
-      "Design and development of a C#/.Net application meant to integrate/sync
-       VoIP users with Microsoft’s Active Directory via web clients and native
-       libraries. Particularly responsible for the design and implementation of
-       the  Filter, Search, and Match subsystems.",
-      "Development and maintenance on a legacy application for managing,
-       storing, and displaying EMR data. Responsible for designing and
-       developing the systems used for constructing CCDA, QRDA, and CQM reports
-       using Java and iReport.",
-      "Web Services Transition: responsible for planning, documenting, and
-       beginning a migration from local hosting over a dozen wordpress sites
-       onto the cloud."
+      "Design and development of a C#/.Net application meant to integrate/sync VoIP users with Microsoft’s Active Directory via web clients and native libraries. Particularly responsible for the design and implementation of the  Filter, Search, and Match subsystems.",
+      "Development and maintenance on a legacy application for managing, storing, and displaying EMR data. Responsible for designing and developing the systems used for constructing CCDA, QRDA, and CQM reports using Java and iReport.",
+      "Web Services Transition: responsible for planning, documenting, and beginning a migration from local hosting over a dozen wordpress sites onto the cloud."
     ],
-    "summary_short":
-      "Worked as a Software Development Intern at a nearby IT Consulting firm
-       developing information management software (health, AD, VoIP)",
-    "summary_long":
-      "EDT was my first internship experience in the Software Engineering field.
-       I was afforded the opportunity to work on multiple projects using the
-       SCRUM methodology and the informal code reviews, and to learn AWS and
-       C#/Visual Studio on the job. It also provided me with additional
-       firsthand experience of the importance of high code quality and of
-       documentation.
-
-       I'm particularly proud of and thankful for the work I did on the C#
-       project I worked on. The user 'join' and 'filter' systems I designed and
-       developed were well-designed and extensible, and the final product my
-       teammate and I developed was very polished."
+    "summary_short":"Worked as a Software Development Intern at a nearby IT Consulting firm developing information management software (health, AD, VoIP)",
+    "summary_long":"EDT was my first internship experience in the Software Engineering field. I was afforded the opportunity to work on multiple projects using the SCRUM methodology and the informal code reviews, and to learn AWS and C#/Visual Studio on the job. It also provided me with additional firsthand experience of the importance of high code quality and of documentation.<br/><br/>I'm particularly proud of and thankful for the work I did on the C# project I worked on. The user 'join' and 'filter' systems I designed and developed were well-designed and extensible, and the final product my teammate and I developed was very polished."
   },
   {
     "company_name":"Rochester Institute of Technology - Chemistry Department",
@@ -128,22 +90,14 @@
     "wage_start":"2 Credits/Semester",
     "wage_end":"",
     "tags": ["java","research","simulations"],
-    "languages":["Java"],
-    "technologies":["sourceforge","surveymonkey"],
-    "responsibilities":[
-      "Development, maintenance, and refactor of a series of proteomics
-       simulations for the education of AP high school and beginning
-       undergraduate Biochemistry/Biotechnology students.",
-      "Assistance creating questionnaires, walkthroughs, and help information
-        to test user experience and comprehension of the software",
+    "languages": ["Java"],
+    "technologies": ["sourceforge","surveymonkey"],
+    "responsibilities": [
+      "Development, maintenance, and refactor of a series of proteomics simulations for the education of AP high school and beginning undergraduate Biochemistry/Biotechnology students.",
+      "Assistance creating questionnaires, walkthroughs, and help information to test user experience and comprehension of the software",
       "Conducting those tests and interpreting their findings."
     ],
-    "summary_short":
-      "I learned a great deal about refactoring, documentation, communication,
-       legacy code maintenance, usability testing, and research software working
-       with JBioFramework. Having this experience right at the beginning of my
-       educational career gave me an important perspective on the discipline I
-       would not have got otherwise.",
+    "summary_short":"I learned a great deal about refactoring, documentation, communication, legacy code maintenance, usability testing, and research software working with JBioFramework. Having this experience right at the beginning of my educational career gave me an important perspective on the discipline I would not have got otherwise.",
     "summary_long":""
   },
   {
@@ -161,19 +115,16 @@
     "wage_start":"$8.60",
     "wage_end":"$8.60",
     "tags": ["research","science"],
-    "languages":[],
-    "technologies":["microsoft access","mendeley"],
-    "responsibilities":[
+    "languages": [],
+    "technologies": ["microsoft access","mendeley"],
+    "responsibilities": [
       "Conduct a literature search and review to assist in the design and description of research methods and data analysis.",
-      "Assist with the organization and analysis of scientific data and their visualization using Microsoft Access and Excel"
-      "Coordinate the physical and digital storage of collected articles and their metadata."
+      "Assist with the organization and analysis of scientific data and their visualization using Microsoft Access and Excel",
+      "Coordinate the physical and digital storage of collected articles and their metadata.",
       "Perform various lab procedures to extract DNA and analyze hormone levels from samples of bird blood.",
       "Collect blood samples from live birds in the field via lure, entrapment, and release"
     ],
-    "summary_short":
-      "My work with Dr. Johnston was my first experience with scientific
-       research, and one of the things that first got me interested in a career
-       devoted to accelerating the knowledge industries.",
+    "summary_short":"My work with Dr. Johnston was my first experience with scientific research, and one of the things that first got me interested in a career devoted to accelerating the knowledge industries.",
     "summary_long":""
   }
 ]
