@@ -1,5 +1,30 @@
 [
   {
+    "company_name":"ITHAKA - JSTOR",
+    "company_url":"ithaka.org",
+    "company_img":"",
+    "advisor_name":"Peter Vlahakis",
+    "advisor_contact":"peter.vlahakis@ithaka.org",
+    "advisor_position":"Product Owner",
+    "location_city":"Ann Arbor",
+    "location_state":"MI",
+    "time_start":"2017-01",
+    "time_end":"",
+    "position":"Software Development Intern",
+    "wage_start":"$22",
+    "wage_end":"$27",
+    "tags": ["internship","publishing","library-portal","django"],
+    "languages":["python","html","scss","java"],
+    "technologies":["django","github","AWS","jira","jenkins"],
+    "responsibilities": [
+      "",
+      "",
+      ""
+    ],
+    "summary_short":"",
+    "summary_long":""
+  },
+  {
     "company_name":"Wallace Library",
     "company_url":"library.rit.edu",
     "company_img":"",
@@ -9,7 +34,7 @@
     "location_city":"Rochester",
     "location_state":"NY",
     "time_start":"2016-02",
-    "time_end":"",
+    "time_end":"2017-12",
     "position":"Digital Initiatives and Metadata Services Student Worker",
     "wage_start":"$9",
     "wage_end":"$9",
