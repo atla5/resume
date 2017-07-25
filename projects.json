@@ -99,6 +99,26 @@
     "involvement":"former developer/maintainer, occasional contributor"
   },
   {
+    "name":"organon",
+    "url_web":"https://github.com/lib-re/organon/wiki",
+    "url_src":"https://github.com/lib-re/organon/",
+    "photo":"",
+    "languages": [],
+    "tags":["LIS","digitization","open source","lib-re","guide","roadmap"],
+    "description_short":"Roadmap, guide, and general resource hub for use in the digitization and description of printed materials.",
+    "description_long":
+      "This repository seeks to provide a guiding philosphy of use for and between lib-re and other LIS/LAM
+      programs and tools while establishing and managing expectations for lib-re development and support. Its
+      purposes lie primarily in the coordination of activity and the establishment of a contiguous digitization workflow
+      connecting the core steps of the digitization process with the tools best suited for their optimal completion.",
+    "importance":
+      "The creation of dispirate tools without coordinating effort and automation between them
+       hampers their aggregate usefulness. This project exists to coordinate and inform the interfaces
+       between tools and steps, in order minimize this confusion and provide an end-to-end description and guide
+       to the digitization process.",
+    "involvement":"creator, contributor, project manager, requirements management"
+  },
+  {
     "name":"CommunityCareHub",
     "photo":"",
     "url_web":"https://community-care-hub.herokuapp.com/caregiverHome.php",
