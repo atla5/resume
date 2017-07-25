@@ -3,7 +3,7 @@
     "name":"dublin-core-text-parser",
     "url_src":"https://github.com/atla5/dublin-core-text-parser",
     "languages": ["java"],
-    "tags":["LIS","cataloging","metadata","wallace","digitization"],
+    "tags":["LIS","cataloging","metadata","wallace","digitization","lib-re"],
     "description_short":
       "Cataloguing tool for converting specially formatted text files containing
        dublin core metadata into various formats",
@@ -46,7 +46,7 @@
     "photo":"",
     "url_src":"https://github.com/atla5/lib-name-parser",
     "languages": ["tbd"],
-    "tags":["LIS","cataloguing","metadata","digitization","linked data"],
+    "tags":["LIS","cataloguing","metadata","digitization","linked data","lib-re"],
     "description_short":
       "Parse a list of names from raw text into a dictiory of unique authors.
       [for use with LIS authority control]",
