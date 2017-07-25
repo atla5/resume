@@ -21,27 +21,6 @@
     "involvement":"creater, designer, lead developer, and maintainer."
   },
   {
-    "name":"ScanTailor",
-    "url_web":"http://scantailor.org/",
-    "url_src":"https://github.com/scantailor/scantailor",
-    "photo":"http://scantailor.org/assets/logo_h300-fs8.png",
-    "languages": ["c++"],
-    "tags":["LIS","digitization","open source"],
-    "description_short":"Interactive post-processing tool for scanned pages.",
-    "description_long":
-      "The current methods of digitizing printed pages often introduce a lot of
-       imperfections into the output image (such as orientation, skewing,
-       warping, and speckling). ScanTailor provides an integrated and learnable
-       solution to resolving these issues and obtaining higher quality results
-       in less time with less training.",
-    "importance":
-      "Bookscanning is a very important and time-consuming activity at the heart
-       of the digitization process. The strides taken with this program to
-       automate, expedite, and enhance methods for improving the quality of
-       digital scans are critical.",
-    "involvement":"contributor, requirements management, customer support"
-  },
-  {
     "name":"lib-name-parser",
     "photo":"",
     "url_src":"https://github.com/atla5/lib-name-parser",
@@ -76,6 +55,27 @@
       "The site will increase the ease with which developers and employers can learn more
       about me and my projects, facilitating communication and career advancement",
     "involvement":"creator, designer, developer, maintainer"
+  },
+  {
+    "name":"ScanTailor",
+    "url_web":"http://scantailor.org/",
+    "url_src":"https://github.com/scantailor/scantailor",
+    "photo":"http://scantailor.org/assets/logo_h300-fs8.png",
+    "languages": ["c++"],
+    "tags":["LIS","digitization","open source"],
+    "description_short":"Interactive post-processing tool for scanned pages.",
+    "description_long":
+      "The current methods of digitizing printed pages often introduce a lot of
+       imperfections into the output image (such as orientation, skewing,
+       warping, and speckling). ScanTailor provides an integrated and learnable
+       solution to resolving these issues and obtaining higher quality results
+       in less time with less training.",
+    "importance":
+      "Bookscanning is a very important and time-consuming activity at the heart
+       of the digitization process. The strides taken with this program to
+       automate, expedite, and enhance methods for improving the quality of
+       digital scans are critical.",
+    "involvement":"contributor, requirements management, customer support"
   },
   {
     "name":"JBioFramework (JBF)",
