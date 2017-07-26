@@ -1,48 +1,28 @@
 [
   {
-    "company_name":"EagleDream Technologies",
-    "company_url":"eagledream.com",
-    "company_img":"http://eagledream.com/wp-content/uploads/2015/02/edt_logo_sticky_color_2.png?868103",
-    "advisor_name":"Scott Telle",
-    "advisor_contact":"Scott.Telle@EagleDream.com",
-    "advisor_position":"Senior Software Developer",
-    "location_city":"Rochester",
-    "location_state":"NY",
-    "time_start":"2015-06",
-    "time_end":"2015-12",
+    "company_name":"ITHAKA - JSTOR",
+    "company_url":"ithaka.org",
+    "company_img":"",
+    "advisor_name":"Peter Vlahakis",
+    "advisor_contact":"peter.vlahakis@ithaka.org",
+    "advisor_position":"Product Owner",
+    "location_city":"Ann Arbor",
+    "location_state":"MI",
+    "time_start":"2017-01",
+    "time_end":"",
     "position":"Software Development Intern",
-    "wage":"$20",
-    "tags": ["scrum","internship","java","edt"],
-    "languages":["java","C#","aws"],
-    "technologies":["hibernate","spring","AD","VoIP","jira","git"],
+    "wage_start":"$22",
+    "wage_end":"$27",
+    "tags": ["internship","publishing","library-portal","django"],
+    "languages": ["python","html","scss","java"],
+    "technologies": ["django","github","AWS","jira","jenkins"],
     "responsibilities": [
-      "Design and development of a C#/.Net application meant to integrate/sync
-       VoIP users with Microsoft’s Active Directory via web clients and native
-       libraries. Particularly responsible for the design and implementation of
-       the  Filter, Search, and Match subsystems.",
-      "Development and maintenance on a legacy application for managing,
-       storing, and displaying EMR data. Responsible for designing and
-       developing the systems used for constructing CCDA, QRDA, and CQM reports
-       using Java and iReport.",
-      "Web Services Transition: responsible for planning, documenting, and
-       beginning a migration from local hosting over a dozen wordpress sites
-       onto the cloud."
+      "Build, maintain, monitor, and improve a series of django applications constituting the new JSTOR For Librarians portal within an agile, distributed AWS environment of continuous deployment.",
+      "Take part in a distributed effort among front-end teams toward a site-wide visual redesign.",
+      "Support, redesign, and rebuild a tool for acquiring data for use in text and data mining practices."
     ],
-    "summary_short":
-      "Worked as a Software Development Intern at a nearby IT Consulting firm
-       developing information management software (health, AD, VoIP)",
-    "summary_long":
-      "EDT was my first internship experience in the Software Engineering field.
-       I was afforded the opportunity to work on multiple projects using the
-       SCRUM methodology and the informal code reviews, and to learn AWS and
-       C#/Visual Studio on the job. It also provided me with additional
-       firsthand experience of the importance of high code quality and of
-       documentation.
-
-       I'm particularly proud of and thankful for the work I did on the C#
-       project I worked on. The user 'join' and 'filter' systems I designed and
-       developed were well-designed and extensible, and the final product my
-       teammate and I developed was very polished."
+    "summary_short":"Serve as one of three developers responsible for the creation, maintenance, and iteration of the JSTOR For Librarians portal",
+    "summary_long":"I was an integral member of a six person team creating a new web portal in the main repository of the company's site. I worked mostly within the django web framework to create multiple applications librarians will now use to investigate the products JSTOR has for sale, keep them in the loop for new updates and changes to the portal and to the main site, and multiple tools to view their holdings and create and schedule reports detailing how they've been used. I was present from the initial steps of planning and iterative development through to the traffic-segmented release and the ideation of future modules. The work took place in a microservices environment leveraging the traditional github workflow, boasting over 300 microservices and over 200 deployments a week. I routinely submitted and reviewed multiple pull requests per day, and monitored the progression of my work independently through each stage of the pipeline. In addition to my main work creating the portal, I was additionally responsible with leading the recovery effort and maintenance, and for designing the microservices integration of a legacy, standalone application into the greater microservices ecosystem. This involved me not only interpreting and documenting the existing code base, as well as collocating data on usage to estimate impacts of outages, but interacting directly with user services and designing against an existing, distributed architecture."
   },
   {
     "company_name":"Wallace Library",
@@ -54,37 +34,46 @@
     "location_city":"Rochester",
     "location_state":"NY",
     "time_start":"2016-02",
-    "time_end":"",
+    "time_end":"2017-12",
     "position":"Digital Initiatives and Metadata Services Student Worker",
-    "wage":"$9",
+    "wage_start":"$9",
+    "wage_end":"$9",
     "tags": ["wallace","digitization","cataloguing","metadata","dc-text-parser"],
-    "languages":["java","json"],
-    "technologies":["photoshop","acrobat","github","dspace","SAFBuilder","ScanTailor"],
+    "languages": ["java","json"],
+    "technologies": ["photoshop","acrobat","github","dspace","SAFBuilder","ScanTailor"],
     "responsibilities": [
-      "Render, enhance, describe, and manage volumes from a physical archive and
-       resulting digitized items and records to the DSpace digital media library",
-      "Develop, document, and maintain automated solutions for various projects
-        where appropriate",
-      "Assist with the creation of a protocol for open-sourcing software
-        projects created within the library",
-      "I the creation of an Open Source Initiative based
-       around my work with the dublin-core-text-parser."
+      "Render, enhance, describe, and manage volumes from a physical archive and resulting digitized items and records to the DSpace digital media library",
+      "Develop, document, and maintain automated solutions for various projects where appropriate",
+      "Assist with the creation of a protocol for open-sourcing software projects created within the library",
+      "I the creation of an Open Source Initiative based around my work with the dublin-core-text-parser."
     ],
-    "summary_short":
-      "My time working at the Wallace Center has afforded me firsthand
-      experience of the operative practices, needs, strengths, and weaknesses of
-      libraries, as well as where their critical imprtance to the process of
-      knowledge creation and management.",
-    "summary_long":
-      "My experience in the Digital Initiatives department underscored the
-       importance of my field and the tremendous impact it could have on library
-       science and knowledge management.
-
-       The opportunity for progress in the specific areas of standardization,
-       deduplication, automation, tooling, APIs, and data mining is really inspiring,
-       and the capacity to make a difference both in the immediate short-term
-       and in the distant long term has solidly reinforced my trajectory into
-       LIS and LAM software."
+    "summary_short":"My time working at the Wallace Center has afforded me firsthand experience of the operative practices, needs, strengths, and weaknesses of libraries, as well as where their critical imprtance to the process of knowledge creation and management.",
+    "summary_long":"My experience in the Digital Initiatives department underscored the importance of my field and the tremendous impact it could have on library science and knowledge management.</br></br>The opportunity for progress in the specific areas of standardization, deduplication, automation, tooling, APIs, and data mining is really inspiring, and the capacity to make a difference both in the immediate short-term and in the distant long term has solidly reinforced my trajectory into LIS and LAM software."
+  },
+  {
+    "company_name":"EagleDream Technologies",
+    "company_url":"eagledream.com",
+    "company_img":"http://eagledream.com/wp-content/uploads/2015/02/edt_logo_sticky_color_2.png?868103",
+    "advisor_name":"Scott Telle",
+    "advisor_contact":"Scott.Telle@EagleDream.com",
+    "advisor_position":"Senior Software Developer",
+    "location_city":"Rochester",
+    "location_state":"NY",
+    "time_start":"2015-06",
+    "time_end":"2015-12",
+    "position":"Software Development Intern",
+    "wage_start":"$20",
+    "wage_end":"$25",
+    "tags": ["scrum","internship","java","edt"],
+    "languages": ["java","C#","aws"],
+    "technologies": ["hibernate","spring","AD","VoIP","jira","git"],
+    "responsibilities": [
+      "Design and development of a C#/.Net application meant to integrate/sync VoIP users with Microsoft’s Active Directory via web clients and native libraries. Particularly responsible for the design and implementation of the  Filter, Search, and Match subsystems.",
+      "Development and maintenance on a legacy application for managing, storing, and displaying EMR data. Responsible for designing and developing the systems used for constructing CCDA, QRDA, and CQM reports using Java and iReport.",
+      "Web Services Transition: responsible for planning, documenting, and beginning a migration from local hosting over a dozen wordpress sites onto the cloud."
+    ],
+    "summary_short":"Worked as a Software Development Intern at a nearby IT Consulting firm developing information management software (health, AD, VoIP)",
+    "summary_long":"EDT was my first internship experience in the Software Engineering field. I was afforded the opportunity to work on multiple projects using the SCRUM methodology and the informal code reviews, and to learn AWS and C#/Visual Studio on the job. It also provided me with additional firsthand experience of the importance of high code quality and of documentation.<br/><br/>I'm particularly proud of and thankful for the work I did on the C# project I worked on. The user 'join' and 'filter' systems I designed and developed were well-designed and extensible, and the final product my teammate and I developed was very polished."
   },
   {
     "company_name":"Rochester Institute of Technology - Chemistry Department",
@@ -98,24 +87,17 @@
     "time_start":"2012-08",
     "time_end":"2014-12",
     "position":"Developer/Maintainer",
-    "wage":"2 Credits/Semester",
+    "wage_start":"2 Credits/Semester",
+    "wage_end":"",
     "tags": ["java","research","simulations"],
-    "languages":["Java"],
-    "technologies":["sourceforge","surveymonkey"],
-    "responsibilities":[
-      "Development, maintenance, and refactor of a series of proteomics
-       simulations for the education of AP high school and beginning
-       undergraduate Biochemistry/Biotechnology students.",
-      "Assistance creating questionnaires, walkthroughs, and help information
-        to test user experience and comprehension of the software",
+    "languages": ["Java"],
+    "technologies": ["sourceforge","surveymonkey"],
+    "responsibilities": [
+      "Development, maintenance, and refactor of a series of proteomics simulations for the education of AP high school and beginning undergraduate Biochemistry/Biotechnology students.",
+      "Assistance creating questionnaires, walkthroughs, and help information to test user experience and comprehension of the software",
       "Conducting those tests and interpreting their findings."
     ],
-    "summary_short":
-      "I learned a great deal about refactoring, documentation, communication,
-       legacy code maintenance, usability testing, and research software working
-       with JBioFramework. Having this experience right at the beginning of my
-       educational career gave me an important perspective on the discipline I
-       would not have got otherwise.",
+    "summary_short":"I learned a great deal about refactoring, documentation, communication, legacy code maintenance, usability testing, and research software working with JBioFramework. Having this experience right at the beginning of my educational career gave me an important perspective on the discipline I would not have got otherwise.",
     "summary_long":""
   },
   {
@@ -130,21 +112,19 @@
     "time_start":"2011-03",
     "time_end":"2011-09",
     "position":"Research Assistant/Lab Aid",
-    "wage":"$8.60",
+    "wage_start":"$8.60",
+    "wage_end":"$8.60",
     "tags": ["research","science"],
-    "languages":[],
-    "technologies":["microsoft access","mendeley"],
-    "responsibilities":[
+    "languages": [],
+    "technologies": ["microsoft access","mendeley"],
+    "responsibilities": [
       "Conduct a literature search and review to assist in the design and description of research methods and data analysis.",
-      "Assist with the organization and analysis of scientific data and their visualization using Microsoft Access and Excel"
-      "Coordinate the physical and digital storage of collected articles and their metadata."
+      "Assist with the organization and analysis of scientific data and their visualization using Microsoft Access and Excel",
+      "Coordinate the physical and digital storage of collected articles and their metadata.",
       "Perform various lab procedures to extract DNA and analyze hormone levels from samples of bird blood.",
       "Collect blood samples from live birds in the field via lure, entrapment, and release"
     ],
-    "summary_short":
-      "My work with Dr. Johnston was my first experience with scientific
-       research, and one of the things that first got me interested in a career
-       devoted to accelerating the knowledge industries.",
+    "summary_short":"My work with Dr. Johnston was my first experience with scientific research, and one of the things that first got me interested in a career devoted to accelerating the knowledge industries.",
     "summary_long":""
   }
 ]
