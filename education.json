@@ -4,6 +4,8 @@
     "school_city":"Rochester",
     "school_state":"NY",
     "school_level":"Bachelors of Science",
+    "time_start": "2012-08",
+    "time_end": "2018-08",
     "major":"Software Engineering",
     "minor":"Philosophy",
     "activities":[
@@ -122,6 +124,8 @@
     "school_city":"Presque Isle",
     "school_state":"ME",
     "school_level":"High School",
+    "time_start": "2008-08",
+    "time_end": "2018-06",
     "activities":[
       "Class Vice President [4 years]"
       "Debate Team [4 years]",
