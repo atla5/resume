@@ -1,5 +1,41 @@
 {
-  "languages":["java", "python", "c#", "c", "html", "js", "aws"],
+  "languages":[
+    {
+      "name":"java",
+      "uses":"personal and lib-re projects, backend services, MR software with EDT, coursework, proteomics research",
+      "proficiency":"Intermediate"
+    },
+    {
+      "name":"python",
+      "uses":"django development, scripts, coursework",
+      "proficiency":"Intermediate"
+    },
+    {
+      "name":"html",
+      "uses":"JSTOR front-end, personal site, coursework",
+      "proficiency":"Intermediate"
+    },
+    {
+      "name":"C#",
+      "uses":"EDT forms application",
+      "proficiency":"Functional"
+    },
+    {
+      "name":"C",
+      "uses":"coursework (SWEN-220, CMPE-240)",
+      "proficiency":"Functional"
+    },
+    {
+      "name":"js",
+      "uses":"JSTOR front-end, coursework",
+      "proficiency":"Limited"
+    },
+    {
+      "name":"AWS",
+      "uses":"JSTOR deployments, EDT research",
+      "proficiency":"Limited"
+    }
+  ],
   "skills":[
     "object-oriented design",
     "standardization",
