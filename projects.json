@@ -10,17 +10,6 @@
     "involvement":"creater, designer, lead developer, and maintainer."
   },
   {
-    "name":"lib-name-parser",
-    "photo":"",
-    "url_src":"https://github.com/atla5/lib-name-parser",
-    "languages":["tbd"],
-    "tags":["LIS","cataloguing","metadata","digitization","linked data","lib-re"],
-    "description_short":"Parse a list of names from raw text into a dictiory of unique authors. [for use with LIS authority control]",
-    "description_long":"External library meant to assist with the automation of the management of authority control for authors ",
-    "importance":"Though very much in its infancy, the project has the _capacity_ to automate a critically important and time-consuming part of metadata management. A huge potential wealth of information is unkowingly obscured by latent links that have gone unnoticed.",
-    "involvement":"creator, designer, soon-to-be developer"
-  },
-  {
     "name":"atla5.github.io",
     "photo":"",
     "url_web":"http://atla5.github.io",
@@ -31,6 +20,17 @@
     "description_long":"My site is an exercise in web development and a place for me to coordinate and explain my projects to fellow developers and current and future employers.",
     "importance":"The site will increase the ease with which developers and employers can learn more about me and my projects, facilitating communication and career advancement",
     "involvement":"creator, designer, developer, maintainer"
+  },
+  {
+    "name":"lib-name-parser",
+    "photo":"",
+    "url_src":"https://github.com/atla5/lib-name-parser",
+    "languages":["tbd"],
+    "tags":["LIS","cataloguing","metadata","digitization","linked data","lib-re"],
+    "description_short":"Parse a list of names from raw text into a dictiory of unique authors. [for use with LIS authority control]",
+    "description_long":"External library meant to assist with the automation of the management of authority control for authors ",
+    "importance":"Though very much in its infancy, the project has the _capacity_ to automate a critically important and time-consuming part of metadata management. A huge potential wealth of information is unkowingly obscured by latent links that have gone unnoticed.",
+    "involvement":"creator, designer, soon-to-be developer"
   },
   {
     "name":"ScanTailor",
