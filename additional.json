@@ -2,29 +2,30 @@
   "languages":["java", "python", "c#", "c", "html", "js", "aws"],
   "skills":[
     "object-oriented design",
+    "standardization",
     "documentation",
     "refactoring",
-    "requirements management",
     "systems thinking",
-    "communicating complex systems of information",
-    "standardization",
+    "requirements management",
+    "communicating systems of information",
     "separation of concerns"
   ],
   "interests":[
     "library and information science",
-    "open source software",
     "philosophy",
+    "open source software",
     "open data/science",
-    "space exploration",
+    "reading",
     "craft beer",
-    "reading"
+    "space exploration"
   ],
   "links":[
-    { "title":"LinkedIn",     "url":"https://www.linkedin.com/in/aidan-sawyer-8253a5a0"},
-    { "title":"twitter",      "url":"https://twitter.com/Aidan_KS"},
-    { "title":"librarything", "url":"https://www.librarything.com/catalog/aidan.keefe.s/yourlibrary"},
-    { "title":"mendeley",     "url":"https://www.mendeley.com/profiles/aidan-sawyer/"},
-    { "title":"academia.edu", "url":"https://rit.academia.edu/AidanSawyer"},
-    { "title":"untappd",      "url":"https://untappd.com/user/neweden" }
+    { "title":"GitHub (atla5)",   "url":"https://github.com/atla5"},
+    { "title":"GitHub (lib-re)",  "url":"https://github.com/lib-re" },
+    { "title":"LinkedIn",         "url":"https://www.linkedin.com/in/aidan-sawyer-8253a5a0"},
+    { "title":"twitter",          "url":"https://twitter.com/Aidan_KS"},
+    { "title":"librarything",     "url":"https://www.librarything.com/catalog/aidan.keefe.s/yourlibrary"},
+    { "title":"mendeley",         "url":"https://www.mendeley.com/profiles/aidan-sawyer/"},
+    { "title":"academia.edu",     "url":"https://rit.academia.edu/AidanSawyer"}
   ]
 }
