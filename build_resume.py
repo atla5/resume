@@ -4,14 +4,13 @@
 # purpose: build custom resume from LaTeX template and json
 
 import json
-from build import update_values
+from build.update_values_helpers import *
 from pprint import pprint
 
-if __name__ == "__main__":
-    dict_values = {}
 
+def update_values(dict_values):
     # add header
-    update_values.generate_header_info(dict_values)
+    generate_header_info(dict_values)
 
     # add objective
     dict_values.update({
@@ -20,22 +19,30 @@ if __name__ == "__main__":
 
     # add education
     educations = json.load(open('education.json'))
-    update_values.generate_school_info(dict_values, educations[0])
+    generate_school_info(dict_values, educations[0])
 
     # add work experience
     experiences = json.load(open('experience.json'))
     for i, work_experience in enumerate(experiences[:3], start=1):
-        update_values.generate_work_experience(dict_values, work_experience, i)
+        generate_work_experience(dict_values, work_experience, i)
 
     # add projects
     projects = json.load(open('projects.json'))
     for i, project in enumerate(projects[:3], start=1):
-        update_values.generate_project(dict_values, project, i)
+        generate_project(dict_values, project, i)
 
     # add languages
     additional = json.load(open('additional.json'))
     languages = additional['languages']
-    update_values.generate_languages(dict_values, languages)
+    generate_languages(dict_values, languages)
+
+
+if __name__ == "__main__":
+
+    # create and update value dictionary from json files
+    dict_values = {}
+    update_values(dict_values)
+
 
     # export
     pprint(dict_values)
