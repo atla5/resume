@@ -49,8 +49,8 @@ def generate_work_experience(dict_values, work, id=1):
 def generate_project(dict_values, project, id=1):
     prefix = "P{}~".format(id)
     dict_values.update({
-        "NAME": project['name'],
-        "DESCRIPTION": project['description_short']
+        prefix+"NAME": project['name'],
+        prefix+"DESCRIPTION": project['description_short']
     })
 
 
