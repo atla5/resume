@@ -40,7 +40,7 @@ def generate_work_experience(dict_values, work, id=1):
         prefix + "TIME~END": work['time_end'] if work['time_end'] else "Present",
         prefix + "ADVISOR~NAME": work['advisor_name'],
         prefix + "ADVISOR~POSITION": work['advisor_position'],
-        prefix + "ADMISOR~CONTACT": work['advisor_contact'],
+        prefix + "ADVISOR~CONTACT": work['advisor_contact'],
         prefix + "RESPONSIBILITY~1": responsibilities[0] if num_responsibilities >= 1 else work['summary_short'],
         prefix + "RESPONSIBILITY~2": responsibilities[1] if num_responsibilities >= 2 else "",
         prefix + "RESPONSIBILITY~3": responsibilities[2] if num_responsibilities >= 3 else "",
