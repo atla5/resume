@@ -16,6 +16,11 @@
       "proficiency":"Intermediate"
     },
     {
+      "name":"scss",
+      "uses":"JSTOR front-end",
+      "proficiency":"Functional"
+    },
+    {
       "name":"C#",
       "uses":"EDT user data integration application",
       "proficiency":"Functional"
@@ -28,12 +33,12 @@
     {
       "name":"js",
       "uses":"JSTOR front-end, coursework",
-      "proficiency":"Limited"
+      "proficiency":"Novice"
     },
     {
       "name":"AWS",
       "uses":"JSTOR deployments, EDT research",
-      "proficiency":"Limited"
+      "proficiency":"Novice"
     }
   ],
   "skills":[

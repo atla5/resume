@@ -34,7 +34,7 @@
     "location_city":"Rochester",
     "location_state":"NY",
     "time_start":"2016-02",
-    "time_end":"2017-12",
+    "time_end":"2016-12",
     "position":"Digital Initiatives/Metadata Services Worker",
     "wage_start":"$9",
     "wage_end":"$9",
@@ -66,8 +66,8 @@
     "languages": ["java","C#","aws"],
     "technologies": ["hibernate","spring","AD","VoIP","jira","git"],
     "responsibilities": [
-      "Designed and developed a C#/.Net application meant to integrate/sync VoIP users with Microsoft’s Active Directory via web clients and native libraries. Particularly responsible for the design and implementation of the Filter, Search, and Match subsystems.",
-      "Performed development and maintenance on a java application for managing, storing, and displaying electronic medical records. Responsible for designing and developing the systems with intense fidelity to external governmental standards.",
+      "Designed and developed a C#/.Net application integrating batch user data from a VoIP provider with Microsoft’s AD via web clients and native libraries. Particularly responsible for the design and implementation of the Filter, Search, and Match subsystems.",
+      "Improved and maintained a java application for managing, storing, and displaying electronic medical records. Responsible for designing and developing the systems with intense fidelity to external governmental standards.",
       "Web Services Transition: responsible for planning, documenting, and beginning a migration from local hosting over a dozen wordpress sites onto the cloud."
     ],
     "summary_short":"Worked as a Software Development Intern at a nearby IT Consulting firm developing information management software (health, AD, VoIP)",
