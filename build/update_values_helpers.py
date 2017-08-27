@@ -3,15 +3,29 @@
 # license: MIT
 # purpose: customize dict_values according to passed values
 
+months = ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"]
+
 
 def generate_header_info(dict_values):
     dict_values.update({
         "FULL~NAME": "Aidan Sawyer",
         "EMAIL": "aks5238@rit.edu",
         "PHONE": "(207)-200-6026",
-        "GITHUB": "atla5 | lib-re",
+        "GITHUB": "atla5 - lib-re",
         "WEBSITE": "atla5.github.io"
     })
+
+
+def humanize_date(yyyy_mm):
+    tokens = yyyy_mm.split('-')
+    year = tokens[0]
+    month = int(tokens[1])
+
+    return "{} {}".format(months[month-1], year)
+
+
+def humanize_list(ls):
+    return ", ".join(s for s in ls).rstrip(", ")
 
 
 def generate_school_info(dict_values, school, id=None):
@@ -20,11 +34,11 @@ def generate_school_info(dict_values, school, id=None):
     dict_values.update({
         prefix + "NAME": school['school_name'],
         prefix + "DEGREE": "{} in {}".format(school['degree'], school['major']),
-        prefix + "TIME~START": school['time_start'],
-        prefix + "TIME~END": school['time_end'],
-        prefix + "NOTE~1": "Commendations: {}".format(' '.join(str(award) for award in school['awards'])),
-        prefix + "NOTE~2": school['notes'],
-        prefix + "NOTE~3": "Minor in {}".format(school['minor']) if school['minor'] else ""
+        prefix + "TIME~START": humanize_date(school['time_start']),
+        prefix + "TIME~END": humanize_date(school['time_end']),
+        prefix + "NOTE~1": school['notes'],
+        prefix + "NOTE~2": "Minor in {}".format(school['minor']) if school['minor'] else "",
+        prefix + "NOTE~3": "Commendations: {}".format(humanize_list(str(award) for award in school['awards']))
     })
 
 
@@ -36,8 +50,8 @@ def generate_work_experience(dict_values, work, id=1):
     dict_values.update({
         prefix + "NAME": work['company_name'],
         prefix + "POSITION": work['position'],
-        prefix + "TIME~START": work['time_start'],
-        prefix + "TIME~END": work['time_end'] if work['time_end'] else "Present",
+        prefix + "TIME~START": humanize_date(work['time_start']),
+        prefix + "TIME~END": humanize_date(work['time_end']) if work['time_end'] else "Present",
         prefix + "ADVISOR~NAME": work['advisor_name'],
         prefix + "ADVISOR~POSITION": work['advisor_position'],
         prefix + "ADVISOR~CONTACT": work['advisor_contact'],
@@ -58,29 +72,29 @@ def generate_language_entry(dict_values, level, languages, id=1):
     suffix = "~{}".format(id)
     dict_values.update({
         "LEVEL" + suffix: level if languages else "",
-        "LANGUAGES" + suffix: str([lang['name'] for lang in languages]).strip('[]') if languages else "",
+        "LANGUAGES" + suffix: humanize_list([lang['name'] for lang in languages] if languages else "")
     })
 
 
 def generate_languages(dict_values, languages):
     # establish name for proficiencies
-    LVL_1 = "Intermediate"
-    LVL_2 = "Functional"
-    LVL_3 = "Limited"
+    lvl_1 = "Intermediate"
+    lvl_2 = "Functional"
+    lvl_3 = "Novice"
 
     # sort languages into lists based on proficiency
     ls_intermediate = []
     ls_functional = []
     ls_limited = []
     for language in languages:
-        if language['proficiency'] == LVL_1:
+        if language['proficiency'] == lvl_1:
             ls_intermediate.append(language)
-        elif language['proficiency'] == LVL_2:
+        elif language['proficiency'] == lvl_2:
             ls_functional.append(language)
         else:
             ls_limited.append(language)
 
     # update dict_values with each grouping of languages
-    generate_language_entry(dict_values, LVL_1, ls_intermediate, 1)
-    generate_language_entry(dict_values, LVL_2, ls_functional, 2)
-    generate_language_entry(dict_values, LVL_3, ls_limited, 3)
+    generate_language_entry(dict_values, lvl_1, ls_intermediate, 1)
+    generate_language_entry(dict_values, lvl_2, ls_functional, 2)
+    generate_language_entry(dict_values, lvl_3, ls_limited, 3)
