@@ -3,7 +3,7 @@
 # license: MIT
 # purpose: build custom resume from LaTeX template and json
 
-import json, time
+import json, time, os
 from shutil import copyfile
 from build.update_values_helpers import *
 
@@ -18,7 +18,7 @@ def generate_filename(last_name=""):
 
 
 def sanitize_latex_syntax(line):
-    return line.replace("#","\#")
+    return line.replace("#", "\#")
 
 
 def update_values(dict_values):
@@ -57,9 +57,11 @@ if __name__ == "__main__":
     update_values(dict_values)
 
     # manage/generate filenames and paths
+    build_dir = os.path.join(os.getcwd(), "build")
+    tex_template_filepath = os.path.join(build_dir, "resume.tex")
+
     filename = generate_filename(dict_values['FULL~NAME'].split()[-1])
-    tex_template_filepath = "./build/resume.tex"
-    tex_new_filepath = "./build/"+filename+".tex"
+    tex_new_filepath = os.path.join(build_dir, filename+".tex")
 
     # copy .tex template into a new (temporary) file 'filename.tex'
     copyfile(tex_template_filepath, tex_new_filepath)
@@ -74,7 +76,10 @@ if __name__ == "__main__":
             print(sanitize_latex_syntax(line), file=output_resume)
 
     # export filename.tex into a pdf
-    # TODO
+    # os.chdir(build_dir)
+    # os.system("pdflatex -interaction=nonstopmode {}".format(tex_new_filepath))
 
     # delete temporary filename.tex file
-    # TODO
+    # os.remove(tex_new_filepath)
+    # os.system("rm *.log")
+    # os.system("rm *.aux")
