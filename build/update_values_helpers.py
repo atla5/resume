@@ -16,12 +16,13 @@ def generate_header_info(dict_values):
 
 def generate_school_info(dict_values, school, id=None):
     prefix = "SCHOOL~" + (str(id) if id else "")
+
     dict_values.update({
         prefix + "NAME": school['school_name'],
         prefix + "DEGREE": "{} in {}".format(school['degree'], school['major']),
         prefix + "TIME~START": school['time_start'],
         prefix + "TIME~END": school['time_end'],
-        prefix + "NOTE~1": "Commendations: {}".format(award + " " for award in school['awards']),
+        prefix + "NOTE~1": "Commendations: {}".format(' '.join(str(award) for award in school['awards'])),
         prefix + "NOTE~2": school['notes'],
         prefix + "NOTE~3": "Minor in {}".format(school['minor']) if school['minor'] else ""
     })
