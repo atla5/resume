@@ -70,7 +70,8 @@ if __name__ == "__main__":
     for line in resume_template:
         for key in dict_values:
             line = line.replace(key, dict_values[key])
-        print(sanitize_latex_syntax(line), file=output_resume)
+        if not line.isspace():
+            print(sanitize_latex_syntax(line), file=output_resume)
 
     # export filename.tex into a pdf
     # TODO
