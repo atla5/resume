@@ -3,9 +3,22 @@
 # license: MIT
 # purpose: build custom resume from LaTeX template and json
 
-import json
+import json, time
+from shutil import copyfile
 from build.update_values_helpers import *
-from pprint import pprint
+
+
+def generate_filename(last_name=""):
+    date = time.strftime("%Y-%m-%d")
+    filename = "Resume_{name}{date}".format(
+        name=last_name+"_" if last_name else "",
+        date=str(date)
+    )
+    return filename
+
+
+def sanitize_latex_syntax(line):
+    return line.replace("#","\#")
 
 
 def update_values(dict_values):
@@ -43,6 +56,24 @@ if __name__ == "__main__":
     dict_values = {}
     update_values(dict_values)
 
+    # manage/generate filenames and paths
+    filename = generate_filename(dict_values['FULL~NAME'].split()[-1])
+    tex_template_filepath = "./build/resume.tex"
+    tex_new_filepath = "./build/"+filename+".tex"
 
-    # export
-    pprint(dict_values)
+    # copy .tex template into a new (temporary) file 'filename.tex'
+    copyfile(tex_template_filepath, tex_new_filepath)
+
+    # use `dict_values` to replace placeholders with real values in filename.tex
+    resume_template = open(tex_template_filepath, 'r')
+    output_resume = open(tex_new_filepath, 'w')
+    for line in resume_template:
+        for key in dict_values:
+            line = line.replace(key, dict_values[key])
+        print(sanitize_latex_syntax(line), file=output_resume)
+
+    # export filename.tex into a pdf
+    # TODO
+
+    # delete temporary filename.tex file
+    # TODO
