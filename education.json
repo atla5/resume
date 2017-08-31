@@ -3,7 +3,9 @@
     "school_name":"Rochester Institute of Technology",
     "school_city":"Rochester",
     "school_state":"NY",
-    "school_level":"Bachelors of Science",
+    "degree":"BS",
+    "time_start": "2012-08",
+    "time_end": "2018-08",
     "major":"Software Engineering",
     "minor":"Philosophy",
     "activities":[
@@ -112,18 +114,18 @@
         "code":"SWEN-440",
         "name":"Software Requirements and Architecture",
         "description":""
-      },
-
+      }
     ]
   },
-
   {
     "school_name":"Presque Isle High School",
     "school_city":"Presque Isle",
     "school_state":"ME",
-    "school_level":"High School",
+    "degree":"High School",
+    "time_start": "2008-08",
+    "time_end": "2018-06",
     "activities":[
-      "Class Vice President [4 years]"
+      "Class Vice President [4 years]",
       "Debate Team [4 years]",
       "Critical Issues Forum (Nuclear Non-Proliferation)",
       "National Honors Society",

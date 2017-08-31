@@ -1,0 +1,74 @@
+% author: Aidan Sawyer (atla5)
+% date_created: 2017-08-12
+% license: MIT
+% note:
+%  - styling/formatting done by Trey Hunner and www.LaTeXTemplates.com
+%  - original 'resume.tex' upon which this was based was also written by Trey Hunner -[@treyhunner/resume](https://github.com/treyhunner/resume)
+
+% -- configuration -- %
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+% -- header -- %
+\name{ FULL~NAME }
+\address{phone: PHONE \\ email: EMAIL } % Your phone number and email
+\address{github: GITHUB \\ website: WEBSITE }
+
+% -- main body -- %
+\begin{document}
+
+  % -- Objective -- %
+  \begin{rSection}{Objective}
+    OBJECTIVE
+  \end{rSection}
+
+  % -- Education -- %
+  \begin{rSection}{Education}
+
+    \begin{rSubsection}{\underline{SCHOOL~NAME }: SCHOOL~DEGREE }{ SCHOOL~TIME~START - SCHOOL~TIME~END }{}
+      \item SCHOOL~NOTE~1
+      \item SCHOOL~NOTE~2
+      \item SCHOOL~NOTE~3
+    \end{rSubsection}
+
+  \end{rSection}
+
+  % -- Experience -- %
+  \begin{rSection}{Experience}
+
+    \begin{rSubsection}{\underline{W1~NAME }: W1~POSITION }{ W1~TIME~START - W1~TIME~END }{ W1~ADVISOR~NAME - W1~ADVISOR~POSITION - W1~ADVISOR~CONTACT }
+      \item W1~RESPONSIBILITY~1
+      \item W1~RESPONSIBILITY~2
+    \end{rSubsection}
+
+    \begin{rSubsection}{\underline{W2~NAME }: W2~POSITION }{ W2~TIME~START - W2~TIME~END }{ W2~ADVISOR~NAME - W2~ADVISOR~POSITION - W2~ADVISOR~CONTACT }
+      \item W2~RESPONSIBILITY~1
+      \item W2~RESPONSIBILITY~2
+    \end{rSubsection}
+
+    \begin{rSubsection}{\underline{W3~NAME }: W3~POSITION }{ W3~TIME~START - W3~TIME~END }{ W3~ADVISOR~NAME - W3~ADVISOR~POSITION - W3~ADVISOR~CONTACT }
+      \item W3~RESPONSIBILITY~1
+      \item W3~RESPONSIBILITY~2
+    \end{rSubsection}
+
+  \end{rSection}
+
+  % -- Projects -- %
+  \begin{rSection}{Personal Projects}
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+      P1~NAME & P1~DESCRIPTION \\
+      P2~NAME & P2~DESCRIPTION \\
+      P3~NAME & P3~DESCRIPTION
+    \end{tabular}
+  \end{rSection}
+
+  % -- Skills and Technologies --%
+  \begin{rSection}{Languages and Technologies}
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+      LEVEL~1 & LANGUAGES~1 \\
+      LEVEL~2 & LANGUAGES~2 \\
+      LEVEL~3 & LANGUAGES~3
+    \end{tabular}
+  \end{rSection}
+
+\end{document}
