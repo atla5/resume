@@ -13,7 +13,10 @@
       "RIT Philosophy Club"
     ],
     "awards":["Presidential Scholarship"],
-    "notes":"Application Domain in 'Library and Information Science'",
+    "notes":[
+      "Minor in Philosophy, Application Domain in 'Library and Information Science'",
+      "Worked on over a dozen 2-6 person teams in as many languages/technologies in the completion of project-heavy coursework, punctuated by meaningful work experience."
+    ],
     "courses": [
       {
         "code":"COMM-253",
@@ -132,7 +135,10 @@
       "Game Band"
     ],
     "awards":["Honors 17"],
-    "notes":"Completed ever Honors/Advanced/AP Course Offered at PIHS",
+    "notes":[
+      "Completed every Honors/Advanced/AP Course Offered at PIHS (17).",
+      "Was actively involved as class Vice President, and in NHS, Debate, and band, etc."
+    ],
     "courses": [
       {
         "code":"AP-BIO",
