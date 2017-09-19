@@ -21,102 +21,108 @@
       {
         "code":"COMM-253",
         "name":"Professional Communications",
-        "description":""
+        "description":"Learned the pyramid method of effective and succinct communication."
       },
       {
         "code":"CSCI-142",
         "name":"Intro to Computer Science I+II",
-        "description":""
+        "description":"Covered programming fundamentals and data structures.",
+        "languages":["java","python"]
       },
       {
         "code":"CSCI-242",
         "name":"Intro to Computer Science Theory",
-        "description":""
+        "description":"Theoretical foundations of automata, NP completeness, and complexity."
       },
       {
         "code":"CSCI-440",
         "name":"Introduction to Data Mining",
-        "description":""
+        "description":"Learned, implemented, and applied data mining algorithms, techniques, and theory.",
+        "languages":["R","weka","python"]
       },
       {
         "code":"MUSE-340",
         "name":"Introduction to Archives",
-        "description":""
+        "description":"Read, discussed, and wrote about mission, practice, and problems of maintaining digital and analog archive collections."
       },
       {
         "code":"MUSE-359",
         "name":"Cultural Informatics",
-        "description":""
+        "description":"Explored the roles, relationships, and potential of technology, metadata, collection management, and digital humanities."
       },
       {
         "code":"PHIL-201",
         "name":"Ancient Philosophy",
-        "description":""
+        "description":"Studies in early Greek philosophy, covering Plato, Aristotle, and various pre-platonists and Hellenists."
       },
       {
         "code":"PHIL-203",
         "name":"Modern Philosophy",
-        "description":""
+        "description":"Readings and discussions on Descartes, Spinoza, Berkeley, Hume, and Kant."
       },
       {
         "code":"PHIL-301",
         "name":"Theories of Knowledge",
-        "description":""
+        "description":"Readings and discussions on the nature and acquisition of knowledge and truth in the context of epistemological skepticism."
       },
       {
         "code":"PHIL-415",
         "name":"Ethical Theory",
-        "description":""
+        "description":"Exploration into the source, reach, and requirements of ethics with particular attention to Singer and Mill."
       },
       {
         "code":"SWEN-220",
         "name":"Mathematical Models of Software Engineering",
-        "description":""
+        "description":"Using modeling software to effectively predict, analyze, and manage software state, and to solve logical puzzles from lists of truths."
       },
       {
         "code":"SWEN-250",
         "name":"Personal Software Engineering",
-        "description":""
+        "description":"A primer on the pure construction of systems of software in a variety of languages by a single developer.",
+        "languages":["C","python","ruby","rails","bash","sql"]
       },
       {
         "code":"SWEN-256",
         "name":"Software Process and Project Management",
-        "description":""
+        "description":"A deep dive into the history, practice, trends, and methodologies of organizing and executing software projects (focusing on SCRUM/Agile)."
       },
       {
         "code":"SWEN-261",
         "name":"Intro to Software Engineering",
-        "description":""
+        "description":"A vital course offering a holistic picture of the joint construction of quality software, including all its phases and non-code deliverabluse."
       },
       {
         "code":"SWEN-262",
         "name":"Engineering Software Subsystems",
-        "description":""
+        "description":"An invaluable course delving deep into the theroy, practice, and vital importance of software architecture and design, heavy on patterns and philosophies.",
+        "languages":["java"]
       },
       {
         "code":"SWEN-344",
         "name":"Intro to Web Engineering",
-        "description":""
+        "description":"A project and workshop-based course explaining and demonstrating the various technologies at the core of modern web development (REST microservices, javascript frameworks, HTML5).",
+        "languages":["html5","css","js","java","HTTP protocol"]
       },
       {
         "code":"SWEN-352",
         "name":"Software Testing",
-        "description":""
+        "description":"Training using a variety of testing strategies, modes, methods, and tools."
       },
       {
         "code":"SWEN-444",
         "name":"Human Centered Requirements and Design",
-        "description":""
+        "description":"Project-based class on eliciting, negotiating, managing, translating, and fulfilling requirements."
       },
       {
         "code":"SWEN-331",
         "name":"Engineering Secure Software",
-        "description":""
+        "description":"A primer on identifying valuable assets, understanding and investing in security as quality to protect against common vulnerabilities, and learning from famous exploits."
       },
       {
         "code":"SWEN-440",
         "name":"Software Requirements and Architecture",
-        "description":""
+        "description":"",
+        "languages":["javascript","html","css"]
       }
     ]
   },
