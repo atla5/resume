@@ -157,13 +157,28 @@
         "description":""
       },
       {
-        "code":"AP-COMP",
-        "name":"Intro to Computer Science Theory",
+        "code":"AP-LANG",
+        "name":"AP English Language and Composition",
+        "description":""
+      },
+      {
+        "code":"AP-LIT",
+        "name":"AP English Literature and Composition",
         "description":""
       },
       {
         "code":"AP-CALC",
         "name":"AP Calculus AB",
+        "description":""
+      },
+      {
+        "code":"AP-PHYS",
+        "name":"AP Physics",
+        "description":""
+      },
+      {
+        "code":"AP-PSYCH",
+        "name":"AP Psychology",
         "description":""
       }
     ]
