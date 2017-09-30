@@ -49,7 +49,9 @@ def update_values(dict_values):
 if __name__ == "__main__":
 
     # create and update value dictionary from json files
-    dict_values = {}
+    dict_values = {
+        "DATE~CREATED": time.strftime("%Y-%m-%d"),
+    }
     update_values(dict_values)
 
     # manage/generate filenames and paths

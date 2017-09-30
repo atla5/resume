@@ -5,6 +5,7 @@
 
 months = ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"]
 
+
 def generate_about(dict_values, about):
     contact = about['contact']
     accounts = about['accounts']
