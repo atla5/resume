@@ -1,0 +1,116 @@
+% author: Aidan Sawyer (atla5)
+
+% date_created: 2017-09-30 % original .tex template created: 2017-08-12
+
+% license: MIT
+
+% note:
+
+%  - styling/formatting done by Trey Hunner and www.LaTeXTemplates.com
+
+%  - original 'resume.tex' upon which this was based was also written by Trey Hunner -[@treyhunner/resume](https://github.com/treyhunner/resume)
+
+% -- configuration -- %
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+% -- header -- %
+
+\name{ Aidan Sawyer }
+
+\address{phone: 207.200.6026 \\ email: aks5238@rit.edu } % Your phone number and email
+
+\address{github: atla5 - lib-re \\ website: https://atla5.github.io }
+
+% -- main body -- %
+
+\begin{document}
+
+  % -- Objective -- %
+
+  \begin{rSection}{Objective}
+
+    I'm looking for meaningful work involved with the organization, preservation, and expansion of knowledge, with particular regard to library resources and scientific research. By improving the engines which power human understanding, I seek to expedite human progress long-term.
+
+  \end{rSection}
+
+  % -- Education -- %
+
+  \begin{rSection}{Education}
+
+    \begin{rSubsection}{\underline{Rochester Institute of Technology }: BS in Software Engineering }{ Aug 2012 - Aug 2018 }{}
+
+      \item Minor in Philosophy, Application Domain in 'Library and Information Science'
+
+      \item Worked on over a dozen 2-6 person teams in as many languages/technologies in the completion of project-heavy coursework, punctuated by meaningful work experience.
+
+    \end{rSubsection}
+
+  \end{rSection}
+
+  % -- Experience -- %
+
+  \begin{rSection}{Experience}
+
+    \begin{rSubsection}{\underline{ITHAKA - JSTOR }: Software Development Intern }{ Jan 2017 - Dec 2017 }{ Peter Vlahakis - Product Owner - peter.vlahakis@ithaka.org }
+
+      \item Built, maintained, monitored, and improved upon a series of django applications constituting the new JSTOR 'For Librarians' portal within an agile, distributed, continuous deployment AWS environment.
+
+      \item Took part in a distributed effort among front-end teams toward a site-wide visual redesign.
+
+    \end{rSubsection}
+
+    \begin{rSubsection}{\underline{Wallace Library }: Digital Initiatives/Metadata Services Worker }{ Feb 2016 - Dec 2016 }{ Teresa Kellett - Library Systems Support Analyst - tmkwml@rit.edu }
+
+      \item Rendered, enhanced, described, and managed volumes from a physical archive and batch imported the resulting digitized items to the DSpace digital media library.
+
+      \item Assisted with the creation of an updated protocol for the digitization process incorporating my work with dublin-core-text-parser.
+
+    \end{rSubsection}
+
+    \begin{rSubsection}{\underline{EagleDream Technologies }: Software Development Intern }{ June 2015 - Dec 2015 }{ Scott Telle - Senior Software Developer - Scott.Telle@EagleDream.com }
+
+      \item Designed and developed a C\#/.Net application integrating batch user data from a VoIP provider with Microsoft’s AD via web clients and native libraries. Particularly responsible for the design and implementation of the Filter, Search, and Match subsystems.
+
+      \item Improved and maintained a java application for managing, storing, and displaying electronic medical records. Responsible for designing and developing the systems with intense fidelity to external governmental standards.
+
+    \end{rSubsection}
+
+  \end{rSection}
+
+  % -- Projects -- %
+
+  \begin{rSection}{Personal Projects}
+
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+
+      dublin-core-text-parser & Easily encode dublin core metadata and convert into various formats. \\
+
+      atla5.github.io & Single-page personal and professional site hosted by github. \\
+
+      lib-name-parser & Parse a list of names from raw text into a dictionary of unique authors.
+
+    \end{tabular}
+
+  \end{rSection}
+
+  % -- Skills and Technologies --%
+
+  \begin{rSection}{Languages and Technologies}
+
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+
+      Intermediate & java, python, html \\
+
+      Functional & scss, C\#, C \\
+
+      Novice & js, AWS
+
+    \end{tabular}
+
+  \end{rSection}
+
+\end{document}
+

@@ -6,13 +6,16 @@
 months = ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"]
 
 
-def generate_header_info(dict_values):
+def generate_about(dict_values, about):
+    contact = about['contact']
+    accounts = about['accounts']
     dict_values.update({
-        "FULL~NAME": "Aidan Sawyer",
-        "EMAIL": "aks5238@rit.edu",
-        "PHONE": "(207)-200-6026",
-        "GITHUB": "atla5 - lib-re",
-        "WEBSITE": "atla5.github.io"
+        "FULL~NAME": about['name'],
+        "OBJECTIVE": about['objective'],
+        "EMAIL": contact['email'] if contact['email'] else "",
+        "PHONE": contact['phone'] if contact['phone'] else "",
+        "GITHUB": "{} - {}".format(accounts['github'], accounts['github-org']),
+        "WEBSITE": about['url']
     })
 
 
@@ -30,15 +33,15 @@ def humanize_list(ls):
 
 def generate_school_info(dict_values, school, id=None):
     prefix = "SCHOOL~" + (str(id) if id else "")
+    school_notes = school['notes']
 
     dict_values.update({
         prefix + "NAME": school['school_name'],
         prefix + "DEGREE": "{} in {}".format(school['degree'], school['major']),
         prefix + "TIME~START": humanize_date(school['time_start']),
         prefix + "TIME~END": humanize_date(school['time_end']),
-        prefix + "NOTE~1": school['notes'],
-        prefix + "NOTE~2": "Minor in {}".format(school['minor']) if school['minor'] else "",
-        prefix + "NOTE~3": "Commendations: {}".format(humanize_list(str(award) for award in school['awards']))
+        prefix + "NOTE~1": school_notes[0] if school_notes else "Minor in {}".format(school['minor']),
+        prefix + "NOTE~2": school_notes[1] if len(school_notes) >= 2 else ""
     })
 
 

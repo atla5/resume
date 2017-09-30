@@ -59,14 +59,5 @@
     "reading",
     "craft beer",
     "space exploration"
-  ],
-  "links":[
-    { "title":"GitHub (atla5)",   "url":"https://github.com/atla5"},
-    { "title":"GitHub (lib-re)",  "url":"https://github.com/lib-re" },
-    { "title":"LinkedIn",         "url":"https://www.linkedin.com/in/aidan-sawyer-8253a5a0"},
-    { "title":"twitter",          "url":"https://twitter.com/Aidan_KS"},
-    { "title":"librarything",     "url":"https://www.librarything.com/catalog/aidan.keefe.s/yourlibrary"},
-    { "title":"mendeley",         "url":"https://www.mendeley.com/profiles/aidan-sawyer/"},
-    { "title":"academia.edu",     "url":"https://rit.academia.edu/AidanSawyer"}
   ]
 }
