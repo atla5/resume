@@ -30,15 +30,15 @@ def humanize_list(ls):
 
 def generate_school_info(dict_values, school, id=None):
     prefix = "SCHOOL~" + (str(id) if id else "")
+    school_notes = school['notes']
 
     dict_values.update({
         prefix + "NAME": school['school_name'],
         prefix + "DEGREE": "{} in {}".format(school['degree'], school['major']),
         prefix + "TIME~START": humanize_date(school['time_start']),
         prefix + "TIME~END": humanize_date(school['time_end']),
-        prefix + "NOTE~1": school['notes'],
-        prefix + "NOTE~2": "Minor in {}".format(school['minor']) if school['minor'] else "",
-        prefix + "NOTE~3": "Commendations: {}".format(humanize_list(str(award) for award in school['awards']))
+        prefix + "NOTE~1": school_notes[0] if school_notes else "Minor in {}".format(school['minor']),
+        prefix + "NOTE~2": school_notes[1] if len(school_notes)>= 2 else ""
     })
 
 
