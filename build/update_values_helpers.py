@@ -5,14 +5,16 @@
 
 months = ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"]
 
-
-def generate_header_info(dict_values):
+def generate_about(dict_values, about):
+    contact = about['contact']
+    accounts = about['accounts']
     dict_values.update({
-        "FULL~NAME": "Aidan Sawyer",
-        "EMAIL": "aks5238@rit.edu",
-        "PHONE": "(207)-200-6026",
-        "GITHUB": "atla5 - lib-re",
-        "WEBSITE": "atla5.github.io"
+        "FULL~NAME": about['name'],
+        "OBJECTIVE": about['objective'],
+        "EMAIL": contact['email'] if contact['email'] else "",
+        "PHONE": contact['phone'] if contact['phone'] else "",
+        "GITHUB": "{} - {}".format(accounts['github'], accounts['github-org']),
+        "WEBSITE": about['url']
     })
 
 

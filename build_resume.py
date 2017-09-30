@@ -23,10 +23,8 @@ def sanitize_latex_syntax(line):
 def update_values(dict_values):
 
     # header and objective
-    generate_header_info(dict_values)
-    dict_values.update({
-        "OBJECTIVE":"I'm looking for meaningful work involved with the organization, preservation, and expansion of knowledge, with particular regard to library resources and scientific research. By improving the engines which power human understanding, I seek to expedite human progress long-term."
-    })
+    about = json.load(open('about.json'))
+    generate_about(dict_values, about)
 
     # education
     educations = json.load(open('education.json'))
