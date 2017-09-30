@@ -40,7 +40,7 @@ def generate_school_info(dict_values, school, id=None):
         prefix + "TIME~START": humanize_date(school['time_start']),
         prefix + "TIME~END": humanize_date(school['time_end']),
         prefix + "NOTE~1": school_notes[0] if school_notes else "Minor in {}".format(school['minor']),
-        prefix + "NOTE~2": school_notes[1] if len(school_notes)>= 2 else ""
+        prefix + "NOTE~2": school_notes[1] if len(school_notes) >= 2 else ""
     })
 
 
