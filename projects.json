@@ -22,13 +22,13 @@
     "involvement":"creator, designer, developer, maintainer"
   },
   {
-    "name":"Resume",
+    "name":"resume",
     "photo":"",
     "url_web":"http://atla5.github.io/?page=about",
     "url_src":"https://github.com/atla5/Resume",
-    "languages":["json","md","separation of concerns"],
-    "tags":["resume","personal-site"],
-    "description_short":"holds information about my education, work experience, projects, and goals.",
+    "languages":["json","LaTeX","python"],
+    "tags":["resume","personal-site","separation of concerns"],
+    "description_short":"Store and export information about my education, experience, and projects.",
     "description_long":"'Resume' is an assortment of json objects storing information that I've put on my conventional resume, and am hosting on my site. I created it mostly just to store the data that I'll be displaying in the 'About' section of my personal site (atla5.github.io), but when I really thought about it, I figured it would be a good half-gag idea and went with it.",
     "importance":"As tongue-in-cheek as it might be, I actually do do a lot of work on github and this is a way to show that familiarity with the site in a smart, convenient, and local way.",
     "involvement":""
