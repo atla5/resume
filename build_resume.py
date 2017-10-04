@@ -8,10 +8,6 @@ from shutil import copyfile
 from build.update_values_helpers import *
 
 
-def generate_filename(last_name=""):
-    return "Resume{name}".format(name="_"+last_name if last_name else "")
-
-
 def sanitize_latex_syntax(line):
     return line.replace("#", "\#")
 
@@ -54,7 +50,8 @@ if __name__ == "__main__":
     build_dir = os.path.join(os.getcwd(), "build")
     tex_template_filepath = os.path.join(build_dir, "resume.tex")
 
-    filename = generate_filename(dict_values['FULL~NAME'].split()[-1])
+    last_name = dict_values['FULL~NAME'].split()[-1]
+    filename = "Resume{}".format("_"+last_name if last_name else "")
     tex_new_filepath = os.path.join(build_dir, filename+".tex")
 
     # copy .tex template into a new (temporary) file 'filename.tex'
