@@ -22,6 +22,18 @@
     "involvement":"creator, designer, developer, maintainer"
   },
   {
+    "name":"resume",
+    "photo":"",
+    "url_web":"http://atla5.github.io/?page=about",
+    "url_src":"https://github.com/atla5/Resume",
+    "languages":["json","LaTeX","python"],
+    "tags":["resume","personal-site","separation of concerns"],
+    "description_short":"Store and export information about my education, experience, and projects.",
+    "description_long":"'Resume' is an assortment of json objects storing information that I've put on my conventional resume, and am hosting on my site. I created it mostly just to store the data that I'll be displaying in the 'About' section of my personal site (atla5.github.io), but when I really thought about it, I figured it would be a good half-gag idea and went with it.",
+    "importance":"As tongue-in-cheek as it might be, I actually do do a lot of work on github and this is a way to show that familiarity with the site in a smart, convenient, and local way.",
+    "involvement":""
+  },
+  {
     "name":"lib-name-parser",
     "photo":"",
     "url_src":"https://github.com/atla5/lib-name-parser",
@@ -115,18 +127,6 @@
     "description_long":"Simple tool for displaying and selecting colors based on their RGBA color values. Great for gaining a better understanding of various color effects and/or selecting RGBA values, it was made in order to gain a better understanding of the Java programming language, Swing UI library, and of RGB color values.",
     "importance":"Demonstrates my interest in project-based learning and ability to self-motivate.",
     "involvement":"creator, designer, developer"
-  },
-  {
-    "name":"Resume",
-    "photo":"",
-    "url_web":"http://atla5.github.io/?page=about",
-    "url_src":"https://github.com/atla5/Resume",
-    "languages":["json","md","separation of concerns"],
-    "tags":["resume","personal-site"],
-    "description_short":"holds information about my education, work experience, projects, and goals.",
-    "description_long":"'Resume' is an assortment of json objects storing information that I've put on my conventional resume, and am hosting on my site. I created it mostly just to store the data that I'll be displaying in the 'About' section of my personal site (atla5.github.io), but when I really thought about it, I figured it would be a good half-gag idea and went with it.",
-    "importance":"As tongue-in-cheek as it might be, I actually do do a lot of work on github and this is a way to show that familiarity with the site in a smart, convenient, and local way.",
-    "involvement":""
   },
   {
     "name":"02-DesignPatterns",
