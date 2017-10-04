@@ -9,11 +9,7 @@ from build.update_values_helpers import *
 
 
 def generate_filename(last_name=""):
-    date = time.strftime("%Y-%m-%d")
-    return "Resume_{name}{date}".format(
-        name=last_name+"_" if last_name else "",
-        date=date
-    )
+    return "Resume{name}".format(name="_"+last_name if last_name else "")
 
 
 def sanitize_latex_syntax(line):
