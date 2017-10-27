@@ -34,6 +34,18 @@
     "involvement":""
   },
   {
+    "name":"JBioFramework (JBF)",
+    "photo":"http://www.rit.edu/cos/jbioframework/images/600x400xjbfMain.jpg.pagespeed.ic.m7rlASKPpp.webp",
+    "url_web":"http://www.rit.edu/cos/jbioframework/",
+    "url_src":"https://github.com/RITJBF/JBioFramework",
+    "languages":["java"],
+    "tags":["research","education","simulation","open source"],
+    "description_short":"Growing suite of proteomics simulations made for educational purposes.",
+    "description_long":"A set of protein separations simulations and associated problem sets and surveys meant to teach biochemical principles and methodologies to AP high school and early Undergraduate students who may not have access to the associated wet lab equipment.",
+    "importance":"Working with JBF was one of my first experiences uniting my interests in scientific research and software development. It gave me a great look into how software is maintained and developed over time, how its design can be effectively communicated to non-developers, and how to test and improve user experience.",
+    "involvement":"former developer/maintainer, occasional contributor"
+  },
+  {
     "name":"lib-name-parser",
     "photo":"",
     "url_src":"https://github.com/atla5/lib-name-parser",
@@ -55,18 +67,6 @@
     "description_long":"The current methods of digitizing printed pages often introduce a lot of imperfections into the output image (such as orientation, skewing, warping, and speckling). ScanTailor provides an integrated and learnable solution to resolving these issues and obtaining higher quality result in less time with less training.",
     "importance":"Bookscanning is a very important and time-consuming activity at the heart of the digitization process. The strides taken with this program to automate, expedite, and enhance methods for improving the quality of digital scans are critical.",
     "involvement":"contributor, requirements management, customer support"
-  },
-  {
-    "name":"JBioFramework (JBF)",
-    "photo":"http://www.rit.edu/cos/jbioframework/images/600x400xjbfMain.jpg.pagespeed.ic.m7rlASKPpp.webp",
-    "url_web":"http://www.rit.edu/cos/jbioframework/",
-    "url_src":"https://github.com/RITJBF/JBioFramework",
-    "languages":["java"],
-    "tags":["research","education","simulation","open source"],
-    "description_short":"Growing suite of proteomics simulations made for educational purposes.",
-    "description_long":"A set of protein separations simulations and associated problem sets and surveys meant to teach biochemical principles and methodologies to AP high school and early Undergraduate students who may not have access to the associated wet lab equipment.",
-    "importance":"Working with JBF was one of my first experiences uniting my interests in scientific research and software development. It gave me a great look into how software is maintained and developed over time, how its design can be effectively communicated to non-developers, and how to test and improve user experience.",
-    "involvement":"former developer/maintainer, occasional contributor"
   },
   {
     "name":"organon",
