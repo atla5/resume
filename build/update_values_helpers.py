@@ -3,6 +3,8 @@
 # license: MIT
 # purpose: customize dict_values according to passed values
 
+import sys
+
 months = ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"]
 
 
@@ -20,11 +22,23 @@ def generate_about(dict_values, about):
 
 
 def humanize_date(yyyy_mm):
-    tokens = yyyy_mm.split('-')
-    year = tokens[0]
-    month = int(tokens[1])
+    output = yyyy_mm
 
-    return "{} {}".format(months[month-1], year)
+    try:
+        tokens = yyyy_mm.split('-')
+        year = tokens[0]
+        month = int(tokens[1])
+
+        if 0 < month <= 12:
+            output = "{} {}".format(months[month-1], year)
+        else:
+            sys.stdout.write("Invalid month: {}\n".format(yyyy_mm))
+
+    except IndexError:
+        sys.stdout.write("Improperly formatted date: {}\n".format(yyyy_mm))
+
+    finally:
+        return output
 
 
 def humanize_list(ls):
