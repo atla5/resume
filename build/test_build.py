@@ -1,4 +1,5 @@
 import unittest
+import os, json
 from update_values_helpers import *
 
 
@@ -21,6 +22,7 @@ SAMPLE_SCHOOL = {
     "summary_short": "A short description",
     "summary_long": "A not so short description of what i did when i worked here."
   }
+data_dir = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
 
 
 class TestBuild(unittest.TestCase):
@@ -36,3 +38,13 @@ class TestBuild(unittest.TestCase):
         self.assertEqual("one fish", humanize_list(["one fish"]))
         self.assertEqual("", humanize_list([""]))
         self.assertEqual("1, 2, 3, 4", humanize_list([1, 2, 3, "4"]))
+
+    def test_valid_json_data(self):
+        for filename in os.listdir(data_dir):
+            if filename.endswith('.json'):
+                try:
+                    with open(os.path.join(data_dir,filename), 'r') as file:
+                        json.loads(file.read())
+                except ValueError:
+                    self.fail("linting error found in {}".format(filename))
+
