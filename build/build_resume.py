@@ -5,7 +5,7 @@
 
 import json, time, os
 from shutil import copyfile
-from build.update_values_helpers import *
+from update_values_helpers import *
 
 
 def sanitize_latex_syntax(line):
@@ -15,25 +15,25 @@ def sanitize_latex_syntax(line):
 def update_values(dict_values):
 
     # header and objective
-    about = json.load(open('about.json'))
+    about = json.load(open('../about.json'))
     generate_about(dict_values, about)
 
     # education
-    educations = json.load(open('education.json'))
+    educations = json.load(open('../education.json'))
     generate_school_info(dict_values, educations[0])
 
     # work experience
-    experiences = json.load(open('experience.json'))
+    experiences = json.load(open('../experience.json'))
     for i, work_experience in enumerate(experiences[:3], start=1):
         generate_work_experience(dict_values, work_experience, i)
 
     # projects
-    projects = json.load(open('projects.json'))
+    projects = json.load(open('../projects.json'))
     for i, project in enumerate(projects[:3], start=1):
         generate_project(dict_values, project, i)
 
     # languages
-    additional = json.load(open('additional.json'))
+    additional = json.load(open('../additional.json'))
     languages = additional['languages']
     generate_languages(dict_values, languages)
 
@@ -47,7 +47,7 @@ if __name__ == "__main__":
     update_values(dict_values)
 
     # manage/generate filenames and paths
-    build_dir = os.path.join(os.getcwd(), "build")
+    build_dir = os.getcwd()
     tex_template_filepath = os.path.join(build_dir, "resume.tex")
 
     last_name = dict_values['FULL~NAME'].split()[-1]
