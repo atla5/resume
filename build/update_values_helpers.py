@@ -42,7 +42,7 @@ def humanize_date(yyyy_mm):
 
 
 def humanize_list(ls):
-    return ", ".join(s for s in ls).rstrip(", ")
+    return ", ".join(str(s) for s in ls).rstrip(", ")
 
 
 def generate_school_info(dict_values, school, id=None):
@@ -115,3 +115,14 @@ def generate_languages(dict_values, languages):
     generate_language_entry(dict_values, lvl_1, ls_intermediate, 1)
     generate_language_entry(dict_values, lvl_2, ls_functional, 2)
     generate_language_entry(dict_values, lvl_3, ls_limited, 3)
+
+
+import unittest
+
+
+class TestBuild(unittest.TestCase):
+
+    def test_humanize_date(self):
+        self.assertEqual("Jan 2017", humanize_date("2017-01"))
+        self.assertEqual("2017-13", humanize_date("2017-13"))
+        self.assertEqual("2017-00", humanize_date("2017-00"))
