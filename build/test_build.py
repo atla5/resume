@@ -2,26 +2,6 @@ import unittest
 import os, json, csv
 from update_values_helpers import *
 
-
-SAMPLE_SCHOOL = {
-    "company_name": "COMPANY_NAME",
-    "company_url": "https://www.company-url.com",
-    "advisor_name": "FNAME LNAME",
-    "advisor_contact": "fname.lname@company.org",
-    "advisor_position": "position",
-    "location_city": "CITY",
-    "location_state": "MA",
-    "time_start": "2017-01",
-    "time_end": "2017-12",
-    "position": "POSITION AT COMPANY",
-    "responsibilities": [
-      "RESPONSIBILITY ONE...",
-      "RESPONSIBILITY TWO...",
-      "RESPONSIBILITY THREE..."
-    ],
-    "summary_short": "A short description",
-    "summary_long": "A not so short description of what i did when i worked here."
-  }
 data_dir = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
 
 
