@@ -66,11 +66,14 @@ if __name__ == "__main__":
         if not line.isspace():
             print(sanitize_latex_syntax(line), file=output_resume)
 
+    # close files
+    resume_template.close()
+    output_resume.close()
+
     # export filename.tex into a pdf
-    # os.chdir(build_dir)
-    # os.system("pdflatex -interaction=nonstopmode {}".format(tex_new_filepath))
+    os.system("pdflatex -interaction=nonstopmode {}".format(tex_new_filepath))
 
     # delete temporary filename.tex file
-    # os.remove(tex_new_filepath)
-    # os.system("rm *.log")
-    # os.system("rm *.aux")
+    os.system("rm *.log")
+    os.system("rm *.aux")
+    os.system("rm -rf __pycache__")
