@@ -4,7 +4,7 @@
       "name":"java",
       "uses":"personal and lib-re projects, backend services, MR software with EDT, coursework, proteomics research",
       "proficiency":"Intermediate"
-    },
+    }
     {
       "name":"python",
       "uses":"django development, scripts, coursework",
