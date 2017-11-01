@@ -34,7 +34,7 @@ If you're just here to view the information stored in these `.json` files, a  mu
 
 #### Dependencies
 
-- python (`~3.2`)
+- python (tested on `2.6` through `3.5`)
 - pdflatex (?)
 
 #### Cloning the Repository 
