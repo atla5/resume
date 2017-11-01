@@ -38,7 +38,7 @@ def update_values(dict_values):
     generate_languages(dict_values, languages)
 
 
-if __name__ == "__main__":
+def build_resume():
 
     # create and update value dictionary from json files
     dict_values = {
@@ -77,3 +77,6 @@ if __name__ == "__main__":
     os.system("rm *.log")
     os.system("rm *.aux")
     os.system("rm -rf __pycache__")
+
+if __name__ == "__main__":
+    build_resume()
