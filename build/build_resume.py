@@ -3,10 +3,13 @@
 # license: MIT
 # purpose: build custom resume from LaTeX template and json
 
-import json, time, os
+import json, time
+from os import path, getcwd, system
 from shutil import copyfile
 from update_values_helpers import *
 
+build_dir = path.abspath(getcwd())
+data_dir = path.abspath(path.join(getcwd(), "../data"))
 
 def sanitize_latex_syntax(line):
     return line.replace("#", "\#")
@@ -15,25 +18,30 @@ def sanitize_latex_syntax(line):
 def update_values(dict_values):
 
     # header and objective
-    about = json.load(open('../about.json'))
+    about_file = path.join(data_dir, 'about.json')
+    about = json.load(open(about_file))
     generate_about(dict_values, about)
 
     # education
-    educations = json.load(open('../education.json'))
+    education_file = path.join(data_dir, 'education.json')
+    educations = json.load(open(education_file))
     generate_school_info(dict_values, educations[0])
 
     # work experience
-    experiences = json.load(open('../experience.json'))
+    experiences_file = path.join(data_dir, 'experience.json')
+    experiences = json.load(open(experiences_file))
     for i, work_experience in enumerate(experiences[:3], start=1):
         generate_work_experience(dict_values, work_experience, i)
 
     # projects
-    projects = json.load(open('../projects.json'))
+    projects_file = path.join(data_dir, 'projects.json')
+    projects = json.load(open(projects_file))
     for i, project in enumerate(projects[:3], start=1):
         generate_project(dict_values, project, i)
 
     # languages
-    additional = json.load(open('../additional.json'))
+    additional_file = path.join(data_dir, 'additional.json')
+    additional = json.load(open(additional_file))
     languages = additional['languages']
     generate_languages(dict_values, languages)
 
@@ -47,12 +55,11 @@ def build_resume():
     update_values(dict_values)
 
     # manage/generate filenames and paths
-    build_dir = os.getcwd()
-    tex_template_filepath = os.path.join(build_dir, "resume.tex")
+    tex_template_filepath = path.join(build_dir, "resume.tex")
 
     last_name = dict_values['FULL~NAME'].split()[-1]
     filename = "Resume{}".format("_"+last_name if last_name else "")
-    tex_new_filepath = os.path.join(build_dir, filename+".tex")
+    tex_new_filepath = path.join(build_dir, filename + ".tex")
 
     # copy .tex template into a new (temporary) file 'filename.tex'
     copyfile(tex_template_filepath, tex_new_filepath)
@@ -71,12 +78,12 @@ def build_resume():
     output_resume.close()
 
     # export filename.tex into a pdf
-    os.system("pdflatex -interaction=nonstopmode {}".format(tex_new_filepath))
+    system("pdflatex -interaction=nonstopmode {}".format(tex_new_filepath))
 
     # delete temporary filename.tex file
-    os.system("rm *.log")
-    os.system("rm *.aux")
-    os.system("rm -rf __pycache__")
+    system("rm *.log")
+    system("rm *.aux")
+    system("rm -rf __pycache__")
 
 if __name__ == "__main__":
     build_resume()

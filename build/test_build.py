@@ -2,10 +2,7 @@ import unittest
 import os, json, csv
 
 from update_values_helpers import humanize_date, humanize_list
-from build_resume import build_resume
-
-build_dir = os.path.abspath(os.getcwd())
-data_dir = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
+from build_resume import build_resume, build_dir, data_dir
 
 
 def get_time_created_or_zero(filename):
