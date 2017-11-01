@@ -7,15 +7,15 @@
     "description_short":"Easily encode dublin core metadata and convert into various formats.",
     "description_long":"Assist in cataloguing batches of similar or series-based items from a collection by: decreasing the complexity of logging each individual item/issue, minimizing repetitive typing and template editing, and combining the information that is shared across items in a collection in one place",
     "importance":"Assist with the automation, description, preservation, availability, and extensibility of dublin-core related metadata records.",
-    "involvement":"creator, designer, lead developer, and maintainer."
+    "involvement":"creator, designer, developer, and maintainer."
   },
   {
-    "name":"atla5.github.io",
+    "name":"personal-site",
     "photo":"",
-    "url_web":"http://atla5.github.io",
-    "url_src":"https://github.com/atla5/atla5.github.io",
-    "languages":["html","css","js","json","ci"],
-    "tags":["web","personal"],
+    "url_web":"http://aidan-sawyer.com",
+    "url_src":"https://github.com/atla5/personal-site",
+    "languages":["html","css","js","json","travis-ci"],
+    "tags":["web","personal","personal-site"],
     "description_short":"Single-page personal and professional site hosted by github.",
     "description_long":"My site is an exercise in web development and a place for me to coordinate and explain my projects to fellow developers and current and future employers.",
     "importance":"The site will increase the ease with which developers and employers can learn more about me and my projects, facilitating communication and career advancement",
@@ -24,14 +24,14 @@
   {
     "name":"resume",
     "photo":"",
-    "url_web":"http://atla5.github.io/?page=about",
+    "url_web":"http://aidan-sawyer.com/about",
     "url_src":"https://github.com/atla5/Resume",
-    "languages":["json","LaTeX","python"],
-    "tags":["resume","personal-site","separation of concerns"],
+    "languages":["json","LaTeX","python","travis-ci"],
+    "tags":["resume","personal-site","separation of concerns","coding style","design philosophy"],
     "description_short":"Store and export information about my education, experience, and projects.",
-    "description_long":"'Resume' is an assortment of json objects storing information that I've put on my conventional resume, and am hosting on my site. I created it mostly just to store the data that I'll be displaying in the 'About' section of my personal site (atla5.github.io), but when I really thought about it, I figured it would be a good half-gag idea and went with it.",
-    "importance":"As tongue-in-cheek as it might be, I actually do do a lot of work on github and this is a way to show that familiarity with the site in a smart, convenient, and local way.",
-    "involvement":""
+    "description_long":"'Resume' provides a single location for storing, managing, and exporting the information most critical to my personal and professional interests in the most optimally consumable fashion, in one place. The integrations and build functionality I've added to it ensure its freshness and quality, and provides reliable and up-to-date links for download/consumption.",
+    "importance":"This repository saves me time managing my personal/professional information, ensures consistency, and provides a valuable example of my coding style, design philosophy, and commitment to my work/craft.",
+    "involvement":"creator, designer, developer, maintainer"
   },
   {
     "name":"JBioFramework (JBF)",
@@ -57,18 +57,6 @@
     "involvement":"creator, designer, soon-to-be developer"
   },
   {
-    "name":"ScanTailor",
-    "url_web":"http://scantailor.org/",
-    "url_src":"https://github.com/scantailor/scantailor",
-    "photo":"http://scantailor.org/assets/logo_h300-fs8.png",
-    "languages":["c++"],
-    "tags":["LIS","digitization","open source"],
-    "description_short":"Interactive post-processing tool for scanned pages.",
-    "description_long":"The current methods of digitizing printed pages often introduce a lot of imperfections into the output image (such as orientation, skewing, warping, and speckling). ScanTailor provides an integrated and learnable solution to resolving these issues and obtaining higher quality result in less time with less training.",
-    "importance":"Bookscanning is a very important and time-consuming activity at the heart of the digitization process. The strides taken with this program to automate, expedite, and enhance methods for improving the quality of digital scans are critical.",
-    "involvement":"contributor, requirements management, customer support"
-  },
-  {
     "name":"organon",
     "url_web":"https://github.com/lib-re/organon/wiki",
     "url_src":"https://github.com/lib-re/organon/",
@@ -77,8 +65,44 @@
     "tags":["LIS","digitization","open source","lib-re","guide","roadmap"],
     "description_short":"Roadmap, guide, and general resource hub for use in the digitization and description of printed materials.",
     "description_long":"This repository seeks to provide a guiding philosphy of use for and between lib-re and other LIS/LAM programs and tools while establishing and managing expectations for lib-re development and support. Its purposes lie primarily in the coordination of activity and the establishment of a contiguous digitization workflow connecting the core steps of the digitization process with the tools best suited for their optimal completion.",
-    "importance":"The creation of dispirate tools without coordinating effort and automation between them hampers their aggregate usefulness. This project exists to coordinate and inform the interfaces between tools and steps, in order minimize this confusion and provide an end-to-end description and guide to the digitization process.",
+    "importance":"The creation of disparate tools without coordinating effort and automation between them hampers their aggregate usefulness. This project exists to coordinate and inform the interfaces between these tools and steps, in order minimize confusion and provide an end-to-end pipeline for the digitization process.",
     "involvement":"creator, contributor, project manager, requirements management"
+  },
+  {
+    "name":"crosswalk",
+    "url_web":"https://github.com/lib-re/crosswalk/wiki",
+    "url_src":"https://github.com/lib-re/crosswalk/",
+    "photo":"",
+    "languages":[],
+    "tags":["LIS","cataloguing","open source","lib-re","metadata","MUSE-359","school"],
+    "description_short":"Experimental foray into metadata interoperability across Libraries, Archives, and Museums.",
+    "description_long":"Initially imagined and initially designed as a custom project for MUSE-359, this project endeavors to systematize the storage and transference of disparate forms of descriptive metadata between different standards and institutions within the LAM ecosystem.",
+    "importance":"One of the most systematic and foundational challenges of the Library and Information Sciences is the communication between the legion of standards and formats used to describe bibliographic artifacts. This project is a meaningful attempt at a very core aspect of my intended field.",
+    "involvement":"creator, contributor, project manager, requirements management"
+  },
+  {
+    "name":"Blog",
+    "photo":"",
+    "url_web":"http://aidan-sawyer.com/blog",
+    "url_src":"https://github.com/atla5/blog",
+    "languages":["python","md"],
+    "tags":["blog","separation of concerns"],
+    "description_short":"Series of markdown entries regarding my work.",
+    "description_long":"An updating list of blog-style entries regarding my ideas, thoughts, and developments on relevant personal, academic, and work-related pursuits and on important topics in the field/s I'm going into.",
+    "importance":"This will allow me to track, monitor, archive, and share my relevant thoughts and activities in a simple, quick, and familiar way with very little overhead.",
+    "involvement":"creator, designer, writer"
+  },
+  {
+    "name":"ScanTailor",
+    "url_web":"http://scantailor.org/",
+    "url_src":"https://github.com/scantailor/scantailor",
+    "photo":"http://scantailor.org/assets/logo_h300-fs8.png",
+    "languages":["c++"],
+    "tags":["LIS","digitization","open source"],
+    "description_short":"Interactive post-processing tool for scanned pages.",
+    "description_long":"The current methods of digitizing printed pages often introduce a lot of imperfections into the output image (such as orientation, skewing, warping, and speckling). ScanTailor provides an integrated and learnable solution to resolving these issues and obtaining higher quality result in less time with less training.",
+    "importance":"Scanning physical documents is a critically important, yet incredibly time-consuming activity at the heart of the digitization process. This program makes meaningful strides to expedite and automate the creation of digital scans while enhancing their quality, utility, and discoverability.",
+    "involvement":"contributor, requirements management, customer support"
   },
   {
     "name":"CommunityCareHub",
@@ -93,26 +117,14 @@
     "involvement":"document, design, develop, manage requirements, test, report"
   },
   {
-    "name":"Blog",
-    "photo":"",
-    "url_web":"http://atla5.github.io/?page=blog",
-    "url_src":"https://github.com/atla5/blog",
-    "languages":["c","md"],
-    "tags":["blog","separation of concerns"],
-    "description_short":"Series of markdown entries regarding my work.",
-    "description_long":"An updating list of blog-style entries regarding my ideas, thoughts, and developments on relevant personal, academic, and work-related pursuits and on important topics in the field/s I'm going into.",
-    "importance":"This will allow me to track, monitor, archive, and share my relevant thoughts and activities in a simple, quick, and familiar way with very little overhead.",
-    "involvement":"creator, designer, writer"
-  },
-  {
     "name":"FeedReader",
     "photo":"",
     "url_web":"http://atla5.github.io/?page=feeds",
     "url_src":"https://github.com/atla5/FeedReader",
     "languages":["html","html5","json","rss","css","local storage","bootstrap"],
-    "tags":["personal-site","tags","local storage"],
-    "description_short":"Allows user to selectively determine RSS feeds displayed from category litsting",
-    "description_long":"Utilize HTML5's functionality to provide a unified interface for me and any others interested to browse through coordinated media I'm interested in in one location within the browser. [Created as part of SWEN-344 Intro to Web]",
+    "tags":["personal-site","tags","local storage","SWEN-344","school"],
+    "description_short":"Allows user to selectively determine RSS feeds displayed from category listing",
+    "description_long":"Utilize HTML5's functionality to provide a unified interface for me (and any others interested) to browse through coordinated media I'm interested in, in one location within the browser. [Created as part of SWEN-344 Intro to Web]",
     "importance":"Demonstrates capacity to see the relevance of a tool/project to other interests and a willingness and desire to continue using and improving work past its due date.",
     "involvement":"Designer, developer"
   },
@@ -125,7 +137,7 @@
     "tags":["color"],
     "description_short":"Select and manipulate RGB values w/ preview.",
     "description_long":"Simple tool for displaying and selecting colors based on their RGBA color values. Great for gaining a better understanding of various color effects and/or selecting RGBA values, it was made in order to gain a better understanding of the Java programming language, Swing UI library, and of RGB color values.",
-    "importance":"Demonstrates my interest in project-based learning and ability to self-motivate.",
+    "importance":"Demonstrates my interest in project-based learning and ability to self-motivate, even very early on in my software development career.",
     "involvement":"creator, designer, developer"
   },
   {
@@ -133,7 +145,7 @@
     "photo":"",
     "url_src":"https://github.com/atla5/02-DesignPatterns",
     "languages":["html","js"],
-    "tags":["school","web"],
+    "tags":["school","web","SWEN-344"],
     "description_short":"SWEN-344 assignment on common design patterns that are used on the web",
     "description_long":"This project provides a way to both describe and demonstrate my knowledge of common design patterns used on the web and elsewhere. It was created as part of my education at RIT in SWEN-344 'Intro to Web.'",
     "importance":"Demonstrates grasp of common design solutions to recurring problems",

@@ -36,6 +36,11 @@
       "proficiency":"Novice"
     },
     {
+      "name":"travis-ci",
+      "uses":"Automated testing and continuous integration",
+      "proficiency":"Novice"
+    },
+    {
       "name":"AWS",
       "uses":"JSTOR deployments, EDT research",
       "proficiency":"Novice"

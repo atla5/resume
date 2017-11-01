@@ -1,0 +1,12 @@
+language: python
+python:
+  - "3.5"
+  - "3.4"
+  - "3.3"
+  - "3.2"
+  - "2.7"
+  - "2.6"
+before_install:
+  - "sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended dvipng"
+script:
+  - cd build/ && python -m unittest
