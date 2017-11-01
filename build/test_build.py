@@ -49,7 +49,7 @@ class TestBuild(unittest.TestCase):
 
     def test_build_resume(self):
 
-        output_filename_prefix = "Resume_Sawyer"
+        output_filename_prefix = "Resume_Sawyer"  # todo: make this filename prefix generic
 
         # get the 'created' timestamp any existing output files were created, defaulting to zero
         output_tex_timestamp_before = get_time_created_or_zero("{}.tex".format(output_filename_prefix))
