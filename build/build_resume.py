@@ -8,8 +8,10 @@ from os import path, getcwd, system
 from shutil import copyfile
 from update_values_helpers import *
 
+# set absolute paths for 'build/' and 'data/' directories
 build_dir = path.abspath(getcwd())
 data_dir = path.abspath(path.join(getcwd(), "../data"))
+
 
 def sanitize_latex_syntax(line):
     return line.replace("#", "\#")
@@ -70,8 +72,7 @@ def build_resume():
     for line in resume_template:
         for key in dict_values:
             line = line.replace(key, dict_values[key])
-        if not line.isspace():
-            print(sanitize_latex_syntax(line), file=output_resume)
+        output_resume.write(sanitize_latex_syntax(line))
 
     # close files
     resume_template.close()
