@@ -1,8 +1,15 @@
 import unittest
 import os, json, csv
-from update_values_helpers import *
 
+from update_values_helpers import humanize_date, humanize_list
+from build_resume import build_resume
+
+build_dir = os.path.abspath(os.getcwd())
 data_dir = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
+
+
+def get_time_created_or_zero(filename):
+    return os.path.getctime(filename) if os.path.exists(filename) else 0
 
 
 class TestBuild(unittest.TestCase):
@@ -39,3 +46,24 @@ class TestBuild(unittest.TestCase):
 
                 except Exception:
                     self.fail("error reading csv file: {}".format(filename))
+
+    def test_build_resume(self):
+
+        output_filename_prefix = "Resume_Sawyer"
+
+        # get the 'created' timestamp any existing output files were created, defaulting to zero
+        output_tex_timestamp_before = get_time_created_or_zero("{}.tex".format(output_filename_prefix))
+        output_pdf_timestamp_before = get_time_created_or_zero("{}.pdf".format(output_filename_prefix))
+
+        try:
+            build_resume()
+        except Exception:
+            self.fail("Exception occurred while attempting to build output")
+
+        # get the 'created' timestamp of our fresh output files
+        output_tex_timestamp_after = get_time_created_or_zero("{}.tex".format(output_filename_prefix))
+        output_pdf_timestamp_after = get_time_created_or_zero("{}.pdf".format(output_filename_prefix))
+
+        # ensure that build_resume() effectively created both files (_note: if both default to zero, it still fails_)
+        self.assertGreater(output_tex_timestamp_after, output_tex_timestamp_before)
+        self.assertGreater(output_pdf_timestamp_after, output_pdf_timestamp_before)
