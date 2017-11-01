@@ -17,7 +17,7 @@ def generate_about(dict_values, about):
         "EMAIL": contact['email'] if contact['email'] else "",
         "PHONE": contact['phone'] if contact['phone'] else "",
         "GITHUB": "{} - {}".format(accounts['github'], accounts['github-org']),
-        "WEBSITE": about['url']
+        "WEBSITE": about['url'].replace('http://', '')
     })
 
 
