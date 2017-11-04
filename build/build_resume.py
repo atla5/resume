@@ -6,6 +6,7 @@
 import json, time
 from os import path, getcwd, system
 from shutil import copyfile
+from sys import stderr
 from update_values_helpers import *
 
 # set absolute paths for 'build/' and 'data/' directories
@@ -13,43 +14,51 @@ build_dir = path.abspath(getcwd())
 data_dir = path.abspath(path.join(getcwd(), "../data"))
 
 
+def get_json_from_data_file(filename):
+    json_to_return = {}
+    try:
+        data_file = path.join(data_dir, filename)
+        json_to_return = json.load(open(data_file))
+    except FileNotFoundError:
+        stderr.write("Error loading file: {}".format(filename), exc_info=True)
+    finally:
+        return json_to_return
+
+
 def sanitize_latex_syntax(line):
     return line.replace("#", "\#")
 
 
-def update_values(dict_values):
-
-    # header and objective
-    about_file = path.join(data_dir, 'about.json')
-    about = json.load(open(about_file))
+def update_shared_values(dict_values):
+    about = get_json_from_data_file('about.json')
     generate_about(dict_values, about)
 
+
+def update_resume_values(dict_values):
     # education
-    education_file = path.join(data_dir, 'education.json')
-    educations = json.load(open(education_file))
+    educations = get_json_from_data_file('education.json')
     generate_school_info(dict_values, educations[0])
 
     # work experience
-    experiences_file = path.join(data_dir, 'experience.json')
-    experiences = json.load(open(experiences_file))
+    experiences = get_json_from_data_file('experience.json')
     for i, work_experience in enumerate(experiences[:3], start=1):
         generate_work_experience(dict_values, work_experience, i)
 
     # projects
-    projects_file = path.join(data_dir, 'projects.json')
-    projects = json.load(open(projects_file))
+    projects = get_json_from_data_file('projects.json')
     for i, project in enumerate(projects[:3], start=1):
         generate_project(dict_values, project, i)
 
     # languages
-    additional_file = path.join(data_dir, 'additional.json')
-    additional = json.load(open(additional_file))
+    additional = get_json_from_data_file('additional.json')
     languages = additional['languages']
     generate_languages(dict_values, languages)
 
+
+def update_references_values(dict_values):
+
     # references
-    references_file = path.join(data_dir, 'references.json')
-    references = json.load(open(references_file))
+    references = get_json_from_data_file('references.json')
     for i, project in enumerate(references[:3], start=1):
         generate_reference(dict_values, project, i)
 
@@ -60,7 +69,8 @@ def build_resume():
     dict_values = {
         "DATE~CREATED": time.strftime("%Y-%m-%d"),
     }
-    update_values(dict_values)
+    update_shared_values(dict_values)
+    update_resume_values(dict_values)
 
     # manage/generate filenames and paths
     tex_template_filepath = path.join(build_dir, "resume.tex")
@@ -99,7 +109,8 @@ def build_references():
     dict_values = {
         "DATE~CREATED": time.strftime("%Y-%m-%d"),
     }
-    update_values(dict_values)
+    update_shared_values(dict_values)
+    update_references_values(dict_values)
 
     # manage/generate filenames and paths
     tex_template_filepath = path.join(build_dir, "references.tex")
