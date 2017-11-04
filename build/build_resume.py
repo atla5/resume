@@ -3,13 +3,15 @@
 # license: MIT
 # purpose: build custom resume from LaTeX template and json
 
-import json, time
+import json, time, logging
 from os import path, getcwd, system
+from sys import stdout
 from shutil import copyfile
-import logging
+from subprocess import check_call, STDOUT, DEVNULL
 from update_values_helpers import *
 
-logger = logging.getLogger(__name__)
+logging.basicConfig(stream=stdout, level=logging.INFO)
+logger = logging.getLogger("build_resume")
 
 # set absolute paths for 'build/' and 'data/' directories
 build_dir = path.abspath(getcwd())
@@ -97,16 +99,16 @@ def generate_pdf_from_tex_template(output_tex_filename):
     logger.debug("generating pdf from tex file '{}'".format(output_tex_filename))
 
     # export filename.tex into a pdf
-    system("pdflatex -interaction=nonstopmode {}".format(output_tex_filename))
+    check_call(['pdflatex', '-interaction=nonstopmode', output_tex_filename], stdout=DEVNULL, stderr=STDOUT)
+    logger.info("pdf created at {}".format(output_tex_filename.replace('.tex','.pdf')))
 
     # delete temporary filename.tex file
     system("rm *.log")
     system("rm *.aux")
-    system("rm -rf __pycache__")
 
 
 def build_resume():
-    logger.debug("building resume...")
+    logger.info("building resume...")
 
     # create and update value dictionary from json files
     dict_values = {}
@@ -125,7 +127,7 @@ def build_resume():
 
 
 def build_references():
-    logger.debug("building references...")
+    logger.info("building references...")
 
     # create and update value dictionary from json files
     dict_values = {}
