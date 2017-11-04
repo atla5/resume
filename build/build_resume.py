@@ -30,9 +30,14 @@ def sanitize_latex_syntax(line):
 
 
 def update_shared_values(dict_values):
+    # about me
     about = get_json_from_data_file('about.json')
     generate_about(dict_values, about)
 
+    # date created
+    dict_values.update({
+        "DATE~CREATED": time.strftime("%Y-%m-%d")
+    })
 
 def update_resume_values(dict_values):
     # education
@@ -56,91 +61,73 @@ def update_resume_values(dict_values):
 
 
 def update_references_values(dict_values):
-
-    # references
     references = get_json_from_data_file('references.json')
     for i, project in enumerate(references[:3], start=1):
         generate_reference(dict_values, project, i)
 
 
+def generate_new_tex_file_with_values(values, input_template, output_filename):
+    # copy .tex template into a new 'output_filename.tex'
+    copyfile(input_template, output_filename)
+
+    # use `dict_values` to replace placeholders in template with real values in the new one
+    resume_template = open(input_template, 'r')
+    output_tex = open(output_filename, 'w')
+    for line in resume_template:
+        for key in values:
+            line = line.replace(key, values[key])
+        output_tex.write(sanitize_latex_syntax(line))
+
+    # close files
+    resume_template.close()
+    output_tex.close()
+
+
+def generate_pdf_from_tex_template(output_tex_filename):
+    # export filename.tex into a pdf
+    system("pdflatex -interaction=nonstopmode {}".format(output_tex_filename))
+
+    # delete temporary filename.tex file
+    system("rm *.log")
+    system("rm *.aux")
+    system("rm -rf __pycache__")
+
+
 def build_resume():
 
     # create and update value dictionary from json files
-    dict_values = {
-        "DATE~CREATED": time.strftime("%Y-%m-%d"),
-    }
+    dict_values = {}
     update_shared_values(dict_values)
     update_resume_values(dict_values)
 
     # manage/generate filenames and paths
     tex_template_filepath = path.join(build_dir, "resume.tex")
-
     last_name = dict_values['FULL~NAME'].split()[-1]
     filename = "Resume{}".format("_"+last_name if last_name else "")
     tex_new_filepath = path.join(build_dir, filename + ".tex")
 
-    # copy .tex template into a new (temporary) file 'filename.tex'
-    copyfile(tex_template_filepath, tex_new_filepath)
-
-    # use `dict_values` to replace placeholders in template with real values in the new one
-    resume_template = open(tex_template_filepath, 'r')
-    output_resume = open(tex_new_filepath, 'w')
-    for line in resume_template:
-        for key in dict_values:
-            line = line.replace(key, dict_values[key])
-        output_resume.write(sanitize_latex_syntax(line))
-
-    # close files
-    resume_template.close()
-    output_resume.close()
-
-    # export filename.tex into a pdf
-    system("pdflatex -interaction=nonstopmode {}".format(tex_new_filepath))
-
-    # delete temporary filename.tex file
-    system("rm *.log")
-    system("rm *.aux")
-    system("rm -rf __pycache__")
+    # use values to generate a pdf
+    generate_new_tex_file_with_values(dict_values, tex_template_filepath, tex_new_filepath)
+    generate_pdf_from_tex_template(tex_new_filepath)
 
 
 def build_references():
 
     # create and update value dictionary from json files
-    dict_values = {
-        "DATE~CREATED": time.strftime("%Y-%m-%d"),
-    }
+    dict_values = {}
     update_shared_values(dict_values)
     update_references_values(dict_values)
 
     # manage/generate filenames and paths
     tex_template_filepath = path.join(build_dir, "references.tex")
-
     last_name = dict_values['FULL~NAME'].split()[-1]
     filename = "References{}".format("_" + last_name if last_name else "")
     tex_new_filepath = path.join(build_dir, filename + ".tex")
 
-    # copy .tex template into a new (temporary) file 'filename.tex'
-    copyfile(tex_template_filepath, tex_new_filepath)
-
-    # use `dict_values` to replace placeholders in template with real values in the new one
-    resume_template = open(tex_template_filepath, 'r')
-    output_resume = open(tex_new_filepath, 'w')
-    for line in resume_template:
-        for key in dict_values:
-            line = line.replace(key, dict_values[key])
-        output_resume.write(sanitize_latex_syntax(line))
-
-    # close files
-    resume_template.close()
-    output_resume.close()
-
-    # export filename.tex into a pdf
-    system("pdflatex -interaction=nonstopmode {}".format(tex_new_filepath))
-
-    # delete temporary filename.tex file
-    system("rm *.log")
-    system("rm *.aux")
-    system("rm -rf __pycache__")
+    # use values to generate a pdf
+    generate_new_tex_file_with_values(dict_values, tex_template_filepath, tex_new_filepath)
+    generate_pdf_from_tex_template(tex_new_filepath)
 
 if __name__ == "__main__":
     build_resume()
+    build_references()
