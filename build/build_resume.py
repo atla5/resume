@@ -86,5 +86,9 @@ def build_resume():
     system("rm *.aux")
     system("rm -rf __pycache__")
 
+
+def build_references():
+    pass
+
 if __name__ == "__main__":
     build_resume()
