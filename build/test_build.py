@@ -52,7 +52,7 @@ class TestBuild(unittest.TestCase):
         try:
             build_function()
         except Exception:
-            self.fail("Exception occurred while attempting to build output")
+            self.fail("Exception occurred while attempting to build {} output".format(filename_prefix))
 
         # get the 'created' timestamp of our fresh output files
         output_tex_timestamp_after = get_time_created_or_zero("{}.tex".format(filename_prefix))

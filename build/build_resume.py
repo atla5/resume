@@ -6,8 +6,10 @@
 import json, time
 from os import path, getcwd, system
 from shutil import copyfile
-from sys import stderr
+import logging
 from update_values_helpers import *
+
+logger = logging.getLogger(__name__)
 
 # set absolute paths for 'build/' and 'data/' directories
 build_dir = path.abspath(getcwd())
@@ -20,7 +22,7 @@ def get_json_from_data_file(filename):
         data_file = path.join(data_dir, filename)
         json_to_return = json.load(open(data_file))
     except FileNotFoundError:
-        stderr.write("Error loading file: {}".format(filename), exc_info=True)
+        logger.error("Error loading file: {}".format(filename), exc_info=True)
     finally:
         return json_to_return
 
@@ -30,6 +32,8 @@ def sanitize_latex_syntax(line):
 
 
 def update_shared_values(dict_values):
+    logger.debug("adding header, date data to 'dict_values'")
+
     # about me
     about = get_json_from_data_file('about.json')
     generate_about(dict_values, about)
@@ -39,7 +43,10 @@ def update_shared_values(dict_values):
         "DATE~CREATED": time.strftime("%Y-%m-%d")
     })
 
+
 def update_resume_values(dict_values):
+    logger.debug("adding resume values data to 'dict_values'")
+
     # education
     educations = get_json_from_data_file('education.json')
     generate_school_info(dict_values, educations[0])
@@ -61,12 +68,15 @@ def update_resume_values(dict_values):
 
 
 def update_references_values(dict_values):
+    logger.debug("adding references data to 'dict_values'")
     references = get_json_from_data_file('references.json')
     for i, project in enumerate(references[:3], start=1):
         generate_reference(dict_values, project, i)
 
 
 def generate_new_tex_file_with_values(values, input_template, output_filename):
+    logger.debug("generating new tex file '{}' using input template '{}'", output_filename, input_template)
+
     # copy .tex template into a new 'output_filename.tex'
     copyfile(input_template, output_filename)
 
@@ -84,6 +94,8 @@ def generate_new_tex_file_with_values(values, input_template, output_filename):
 
 
 def generate_pdf_from_tex_template(output_tex_filename):
+    logger.debug("generating pdf from tex file '{}'".format(output_tex_filename))
+
     # export filename.tex into a pdf
     system("pdflatex -interaction=nonstopmode {}".format(output_tex_filename))
 
@@ -94,6 +106,7 @@ def generate_pdf_from_tex_template(output_tex_filename):
 
 
 def build_resume():
+    logger.debug("building resume...")
 
     # create and update value dictionary from json files
     dict_values = {}
@@ -112,6 +125,7 @@ def build_resume():
 
 
 def build_references():
+    logger.debug("building references...")
 
     # create and update value dictionary from json files
     dict_values = {}
