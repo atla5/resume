@@ -28,7 +28,7 @@ As a "resume", the repository is meant to store information relevant to my work
 ### Interface ###
 
 If you're just here to view the information stored in these `.json` files, a  much more pleasant way of 
-  doing so ~is~ should be available on my website at [aidan-sawyer.com/about](https://aidan-sawyer.com/about).
+  doing so ~is~ should be available on my website at [aidan-sawyer.com/about](http://aidan-sawyer.com/about).
 
 ### How to Use ###
 
