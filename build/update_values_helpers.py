@@ -77,6 +77,20 @@ def generate_work_experience(dict_values, work, id=1):
     })
 
 
+def generate_reference(dict_values, reference, id=1):
+    prefix = "R{}~".format(id)
+
+    dict_values.update({
+        prefix + "NAME": reference['name'],
+        prefix + "CONTACT": reference['email'] + " - {}".format(reference['phone']) if reference['phone'] else "",
+        prefix + "POSITION": reference['position'],
+        prefix + "DATE~START": humanize_date(reference['date_start']),
+        prefix + "DATE~END": humanize_date(reference['date_end']) if reference['date_end'] else "Present",
+        prefix + "RELATIONSHIP": reference['relationship'],
+        prefix + "IMPORTANCE": reference['importance'],
+    })
+
+
 def generate_project(dict_values, project, id=1):
     prefix = "P{}~".format(id)
     dict_values.update({
