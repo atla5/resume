@@ -1,0 +1,35 @@
+[
+  {
+    "name":"Peter Vlahakis",
+    "email":"peter.vlahakis@ithaka.org",
+    "phone":"734.780.2510",
+    "company":"JSTOR",
+    "position":"Product Owner - Library Team",
+    "date_start":"2017-01",
+    "date_end":"2017-12",
+    "relationship":"Peter and I interact on a daily basis in the design, discovery, and planning of new projects and im- provements. He’s been a critical asset in understanding business organization and value delivery, and structuring projects towards optimal value in optimized time scales.",
+    "importance":"I include Peter as a reference to my character and work ethic, my commitment and focus on impact, and my contributions to product design. He can speak to my attention to detail, quality, and delivering value in a timely and efficient manner."
+  },
+  {
+    "name":"Pierre Clement",
+    "email":"pierre.clement@ithaka.org",
+    "phone":"",
+    "company":"JSTOR",
+    "position":"Senior Software Engineer - Library Team",
+    "date_start":"2017-01",
+    "date_end":"2017-12",
+    "relationship":"I work with Pierre often to discuss, design, implement, evaluate, and review the technical and architec- tural aspects of our work. He has become somewhat of a mentor to me in recent months, and challenges me technically and professionally to think more deeply of how things work and the motivations and benefits of differing technical approaches.",
+    "importance":"I’ve added Pierre to this list as a reference to my competence in and proclivity for architecture and design, and the approach I take towards deconstructing complex problems and systems into distinct, yet cooperating components."
+  },
+  {
+    "name":"Teresa Kellett",
+    "email":"tmkwml@rit.edu",
+    "phone":"",
+    "company":"Wallace Library",
+    "position":"Library Systems Support Analyst",
+    "date_start":"2016-02",
+    "date_end":"2016-12",
+    "relationship":"Teresa worked as my direct supervisor while I worked at the Wallace Library, helping to organize, prepare, explain, and prioritize the various projects I worked on. We talked at length about the digital and informational systems the field of librarianship depends on and how software can improve them.",
+    "importance":"I've included Teresa a testament to my passion, motivation, and curiosity for understanding and solving the structural and systematic challenges of our information infrastructure. She can also speak to my ability to think in systems and to order, connect, and automate workflows and tools to improve quality and efficiency."
+  }
+]
