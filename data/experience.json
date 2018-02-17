@@ -9,13 +9,13 @@
     "location_city":"Ann Arbor",
     "location_state":"MI",
     "time_start":"2017-01",
-    "time_end":"2017-12",
-    "position":"Software Development Intern",
+    "time_end":"2018-06",
+    "position":"Junior Web Application Developer",
     "wage_start":"$22",
     "wage_end":"$27",
     "tags": ["internship","publishing","library-portal","django"],
     "languages": ["python","html","scss","java"],
-    "technologies": ["django", "github", "AWS", "jira" ],
+    "technologies": ["django", "github", "aws", "jira" ],
     "responsibilities": [
       "Built, maintained, monitored, and improved upon a series of django applications constituting the new JSTOR 'For Librarians' portal within an agile, distributed, continuous deployment AWS environment.",
       "Took part in a distributed effort among front-end teams toward a site-wide visual redesign.",
@@ -45,7 +45,7 @@
       "Rendered, enhanced, described, and managed volumes from a physical archive and batch imported the resulting digitized items to the DSpace digital media library.",
       "Assisted with the creation of an updated protocol for the digitization process, incorporating my work with dublin-core-text-parser."
     ],
-    "summary_short":"My time working at the Wallace Center has afforded me firsthand experience of the operative practices, needs, strengths, and weaknesses of libraries, as well as where their critical importance to the process of knowledge creation and management.",
+    "summary_short":"My time working at the Wallace Center has afforded me firsthand experience of the operative practices, needs, strengths, and weaknesses of libraries, as well as their critical importance to the process of knowledge creation and management.",
     "summary_long":"My experience in the Digital Initiatives department underscored the importance of my field and the tremendous impact it could have on library science and knowledge management.</br></br>The opportunity for progress in the specific areas of standardization, deduplication, automation, tooling, APIs, and data mining is really inspiring, and the capacity to make a difference both in the immediate short-term and in the distant long term has solidly reinforced my trajectory into LIS and LAM software."
   },
   {
