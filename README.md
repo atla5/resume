@@ -3,13 +3,14 @@
 ### Description ###
 
 ##### short #####
-hold information about my education, work experience, projects, and goals.
+store and export information about my education, work experience, projects, and goals.
 
 ##### long #####
 This repository is meant to act as both:
- - a convenient reference for visitors to my page to better understand my background and
- - a central hub to store the data objects about my personal and professional
-   career in one location.
+ - a convenient reference for visitors to my page to better understand my background 
+ - a central hub to store the data objects about my personal and professional career in one location.
+ - a repeatable and automated way to generate updated PDFs (allowing me to only update the json and run a command)
+ - a simplified way to host/serve resume info and pdf download on [my site](http://aidan-sawyer.com).
 
 ### Content ###
 
