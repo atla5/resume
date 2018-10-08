@@ -1,5 +1,30 @@
 [
   {
+    "company_name":"Boston University Libraries",
+    "company_url":"http://www.bu.edu/library/",
+    "company_img":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Boston_University_wordmark.svg/800px-Boston_University_wordmark.svg.png",
+    "advisor_name":"Michael Ward",
+    "advisor_contact":"mrward@bu.edu",
+    "advisor_position":"Primo / Web Services Manager",
+    "location_city":"Boston",
+    "location_state":"MA",
+    "time_start":"2018-09",
+    "time_end":"",
+    "position":"Web Developer",
+    "wage_start":"$65K",
+    "wage_end":"",
+    "tags": ["lis","primo","angular"],
+    "languages": ["js","html","scss","python"],
+    "technologies": ["angular", "github" ],
+    "responsibilities": [
+      "Generate and track open-source customizations and enhancements to primo search interface.",
+      "Assist in the design and implementation of a site-wide rebuild towards responsiveness, simplicity, and improved UX.",
+      "Plan, execute, implement, and maintain assorted solutions and optimizations across departments."
+    ],
+    "summary_short":"",
+    "summary_long":""
+  },
+  {
     "company_name":"ITHAKA - JSTOR",
     "company_url":"ithaka.org",
     "company_img":"https://p6.zdassets.com/hc/theme_assets/1006386/200489087/JSTOR_Logo2017_370.png",
