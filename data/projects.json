@@ -16,7 +16,7 @@
     "url_src":"https://github.com/atla5/personal-site",
     "languages":["html","css","js","json","travis-ci"],
     "tags":["web","personal","personal-site"],
-    "description_short":"Single-page personal and professional site hosted by github.",
+    "description_short":"Personal and professional statically-hosted site.",
     "description_long":"My site is an exercise in web development and a place for me to coordinate and explain my projects to fellow developers and current and future employers.",
     "importance":"The site will increase the ease with which developers and employers can learn more about me and my projects, facilitating communication and career advancement",
     "involvement":"creator, designer, developer, maintainer"
@@ -43,7 +43,7 @@
     "description_short":"Growing suite of proteomics simulations made for educational purposes.",
     "description_long":"A set of protein separations simulations and associated problem sets and surveys meant to teach biochemical principles and methodologies to AP high school and early Undergraduate students who may not have access to the associated wet lab equipment.",
     "importance":"Working with JBF was one of my first experiences uniting my interests in scientific research and software development. It gave me a great look into how software is maintained and developed over time, how its design can be effectively communicated to non-developers, and how to test and improve user experience.",
-    "involvement":"former developer/maintainer, occasional contributor"
+    "involvement":"developer, maintainer"
   },
   {
     "name":"lib-name-parser",

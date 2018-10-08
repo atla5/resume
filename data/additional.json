@@ -32,8 +32,8 @@
     },
     {
       "name":"js",
-      "uses":"JSTOR front-end, coursework",
-      "proficiency":"Novice"
+      "uses":"JSTOR front-end, ionic phone app, primo custimozation",
+      "proficiency":"Intermediate"
     },
     {
       "name":"travis-ci",
@@ -60,7 +60,8 @@
     "library and information science",
     "philosophy",
     "open source software",
-    "open data/science",
+    "open scholarship",
+    "open data",
     "reading",
     "craft beer",
     "space exploration"
