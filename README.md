@@ -50,12 +50,11 @@ $ brek cask install basictex
 #### Running the Builder
 
 The main script for this repository, responsible for reading the json, 
-populating the new `.tex` file, and outputing the actual `.pdf` at the end 
-is in `src/build_resume.pdf`:
+  populating the new `.tex` file, and outputing the actual `.pdf` at the end 
+  is in `src/build_resume.pdf`:
 
 ```bash
-$ cd resume/src/
-$ python build_resume.py
+$ python src/build_resume.py
 ```
 
 #### Rolling Your Own
