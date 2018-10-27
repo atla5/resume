@@ -1,5 +1,30 @@
 [
   {
+    "company_name":"Boston University Libraries",
+    "company_url":"http://www.bu.edu/library/",
+    "company_img":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Boston_University_wordmark.svg/800px-Boston_University_wordmark.svg.png",
+    "advisor_name":"Michael Ward",
+    "advisor_contact":"mrward@bu.edu",
+    "advisor_position":"Primo / Web Services Manager",
+    "location_city":"Boston",
+    "location_state":"MA",
+    "time_start":"2018-09",
+    "time_end":"",
+    "position":"Web Developer",
+    "wage_start":"$65K",
+    "wage_end":"",
+    "tags": ["lis","primo","angular"],
+    "languages": ["js","html","scss","python"],
+    "technologies": ["angular", "github" ],
+    "responsibilities": [
+      "Generate and track open-source customizations and enhancements to primo search interface.",
+      "Assist in the design and implementation of a site-wide rebuild towards responsiveness, simplicity, and improved UX.",
+      "Plan, execute, implement, and maintain assorted solutions and optimizations across departments."
+    ],
+    "summary_short":"",
+    "summary_long":""
+  },
+  {
     "company_name":"ITHAKA - JSTOR",
     "company_url":"ithaka.org",
     "company_img":"https://p6.zdassets.com/hc/theme_assets/1006386/200489087/JSTOR_Logo2017_370.png",
@@ -19,34 +44,10 @@
     "responsibilities": [
       "Built, maintained, monitored, and improved upon a series of django applications constituting the new JSTOR 'For Librarians' portal within an agile, distributed, continuous deployment AWS environment.",
       "Took part in a distributed effort among front-end teams toward a site-wide visual redesign.",
-      "Supported, redesigned, and began to rebuild a tool for acquiring data for use in text and data mining practices."
+      "Supported, redesigned, and rebuilt a tool for acquiring data for use in text and data mining practices."
     ],
     "summary_short":"I served as one of three developers responsible for the creation, maintenance, and improvement/expansion of the JSTOR For Librarians portal",
     "summary_long":"I was an integral member of a six person team creating a new web portal in the main repository of the company's site. I worked mostly within the django web framework to create multiple applications librarians are using to investigate the products JSTOR has for sale, to understand the value the items they purchased, and to provide the resources necessary for making data-driven decisions to plan new acquisitions. I was present from the initial steps of planning and iterative development through to the traffic-segmented release and the ideation of future modules.<br /><br />The work took place in a microservices environment leveraging the traditional github workflow, boasting over 300 microservices and over 200 deployments a week.<br /><br /> I routinely submitted and reviewed multiple pull requests per day, and monitored the progression of my work independently through each stage of the pipeline. In addition to my main work creating the portal, I was responsible for leading the recovery effort and maintenance, and for designing the microservices integration of a legacy, standalone application into the greater microservices ecosystem."
-  },
-  {
-    "company_name":"Wallace Library",
-    "company_url":"library.rit.edu",
-    "company_img":"",
-    "advisor_name":"Teresa Kellett",
-    "advisor_contact":"tmkwml@rit.edu",
-    "advisor_position":"Library Systems Support Analyst",
-    "location_city":"Rochester",
-    "location_state":"NY",
-    "time_start":"2016-02",
-    "time_end":"2016-12",
-    "position":"Digital Initiatives/Metadata Services Worker",
-    "wage_start":"$9",
-    "wage_end":"$9",
-    "tags": ["wallace","digitization","cataloguing","metadata","dc-text-parser"],
-    "languages": ["java","json"],
-    "technologies": ["photoshop","acrobat","github","dspace","SAFBuilder","ScanTailor"],
-    "responsibilities": [
-      "Rendered, enhanced, described, and managed volumes from a physical archive and batch imported the resulting digitized items to the DSpace digital media library.",
-      "Assisted with the creation of an updated protocol for the digitization process, incorporating my work with dublin-core-text-parser."
-    ],
-    "summary_short":"My time working at the Wallace Center has afforded me firsthand experience of the operative practices, needs, strengths, and weaknesses of libraries, as well as their critical importance to the process of knowledge creation and management.",
-    "summary_long":"My experience in the Digital Initiatives department underscored the importance of my field and the tremendous impact it could have on library science and knowledge management.</br></br>The opportunity for progress in the specific areas of standardization, deduplication, automation, tooling, APIs, and data mining is really inspiring, and the capacity to make a difference both in the immediate short-term and in the distant long term has solidly reinforced my trajectory into LIS and LAM software."
   },
   {
     "company_name":"EagleDream Technologies",
@@ -72,6 +73,30 @@
     ],
     "summary_short":"Worked as a Software Development Intern at a nearby IT Consulting firm developing information management software (health, AD, VoIP)",
     "summary_long":"EDT was my first internship experience in the Software Engineering field. I was afforded the opportunity to work on multiple projects using the SCRUM methodology and informal code review, and to learn AWS and C#/Visual Studio on the job. It also underscored the importance of high code quality and of documentation.<br/><br/>I'm particularly proud of and thankful for the work I did on the C# project I worked on. The user 'join' and 'filter' systems I designed and developed were well-designed and extensible, and the final product my teammate and I developed was very polished."
+  },
+  {
+    "company_name":"Wallace Library",
+    "company_url":"library.rit.edu",
+    "company_img":"",
+    "advisor_name":"Teresa Kellett",
+    "advisor_contact":"tmkwml@rit.edu",
+    "advisor_position":"Library Systems Support Analyst",
+    "location_city":"Rochester",
+    "location_state":"NY",
+    "time_start":"2016-02",
+    "time_end":"2016-12",
+    "position":"Digital Initiatives/Metadata Services Worker",
+    "wage_start":"$9",
+    "wage_end":"$9",
+    "tags": ["wallace","digitization","cataloguing","metadata","dc-text-parser"],
+    "languages": ["java","json"],
+    "technologies": ["photoshop","acrobat","github","dspace","SAFBuilder","ScanTailor"],
+    "responsibilities": [
+      "Rendered, enhanced, described, and managed volumes from a physical archive and batch imported the resulting digitized items to the DSpace digital media library.",
+      "Assisted with the creation of an updated protocol for the digitization process, incorporating my work with dublin-core-text-parser."
+    ],
+    "summary_short":"My time working at the Wallace Center has afforded me firsthand experience of the operative practices, needs, strengths, and weaknesses of libraries, as well as their critical importance to the process of knowledge creation and management.",
+    "summary_long":"My experience in the Digital Initiatives department underscored the importance of my field and the tremendous impact it could have on library science and knowledge management.</br></br>The opportunity for progress in the specific areas of standardization, deduplication, automation, tooling, APIs, and data mining is really inspiring, and the capacity to make a difference both in the immediate short-term and in the distant long term has solidly reinforced my trajectory into LIS and LAM software."
   },
   {
     "company_name":"Rochester Institute of Technology - Chemistry Department",

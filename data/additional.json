@@ -32,8 +32,8 @@
     },
     {
       "name":"js",
-      "uses":"JSTOR front-end, coursework",
-      "proficiency":"Novice"
+      "uses":"JSTOR front-end, ionic phone app, primo custimozation",
+      "proficiency":"Intermediate"
     },
     {
       "name":"travis-ci",
@@ -44,6 +44,11 @@
       "name":"AWS",
       "uses":"JSTOR deployments, EDT research",
       "proficiency":"Novice"
+    },
+    {
+      "name":"Web Components",
+      "uses":"BU Libraries",
+      "proficiency":"Functional"
     }
   ],
   "skills":[
@@ -60,9 +65,9 @@
     "library and information science",
     "philosophy",
     "open source software",
-    "open data/science",
-    "reading",
-    "craft beer",
-    "space exploration"
+    "open scholarship",
+    "scholarly publishing",
+    "open data",
+    "reading"
   ]
 }
