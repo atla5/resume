@@ -4,12 +4,13 @@
 # purpose: build custom resume from LaTeX template and json
 
 import json, time
-from os import path, getcwd, system
+from os import path, getcwd, system, chdir
 from shutil import copyfile
 from update_values_helpers import *
 
 # set absolute paths for 'build/' and 'data/' directories
-build_dir = path.abspath(getcwd())
+src_dir = path.abspath(getcwd())
+build_dir = path.abspath(path.join(getcwd(), "../build"))
 data_dir = path.abspath(path.join(getcwd(), "../data"))
 
 
@@ -49,12 +50,17 @@ def update_values(dict_values):
 
 
 def build_resume():
+    # switch to src directory
+    chdir(src_dir)
 
     # create and update value dictionary from json files
     dict_values = {
         "DATE~CREATED": time.strftime("%Y-%m-%d"),
     }
     update_values(dict_values)
+
+    # switch working directory into build
+    chdir(build_dir)
 
     # manage/generate filenames and paths
     tex_template_filepath = path.join(build_dir, "resume.tex")
@@ -85,6 +91,10 @@ def build_resume():
     system("rm *.log")
     system("rm *.aux")
     system("rm -rf __pycache__")
+
+    # return to working directory
+    chdir(src_dir)
+
 
 if __name__ == "__main__":
     build_resume()
