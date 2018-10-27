@@ -44,6 +44,11 @@
       "name":"AWS",
       "uses":"JSTOR deployments, EDT research",
       "proficiency":"Novice"
+    },
+    {
+      "name":"Web Components",
+      "uses":"BU Libraries",
+      "proficiency":"Functional"
     }
   ],
   "skills":[
@@ -61,9 +66,8 @@
     "philosophy",
     "open source software",
     "open scholarship",
+    "scholarly publishing",
     "open data",
-    "reading",
-    "craft beer",
-    "space exploration"
+    "reading"
   ]
 }
