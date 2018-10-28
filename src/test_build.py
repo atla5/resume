@@ -2,7 +2,7 @@ import unittest
 import os, json, csv
 
 from update_values_helpers import humanize_date, humanize_list
-from build_resume import build_resume, build_dir, data_dir
+from build_resume import build_resume, data_dir
 
 
 def get_time_created_or_zero(filename):
@@ -27,7 +27,7 @@ class TestBuild(unittest.TestCase):
         for filename in os.listdir(data_dir):
             if filename.endswith('.json'):
                 try:
-                    with open(os.path.join(data_dir,filename), 'r') as file:
+                    with open(os.path.join(data_dir, filename), 'r') as file:
                         json.loads(file.read())
                 except ValueError:
                     self.fail("linting error found in {}".format(filename))
