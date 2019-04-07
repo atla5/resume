@@ -17,8 +17,9 @@
     "languages": ["js","html","scss","python"],
     "technologies": ["angular", "github" ],
     "responsibilities": [
+      "Architect, design, implement, document, and maintain the infrastructural components of a new technical foundation at BU Libraries before we build out our team going forward.",
+      "Assist in the design and implementation of a multi-site rebuild towards responsiveness and more consistent and feature-rich UX using web components.",
       "Generate and track open-source customizations and enhancements to primo search interface.",
-      "Assist in the design and implementation of a site-wide rebuild towards responsiveness, simplicity, and improved UX.",
       "Plan, execute, implement, and maintain assorted solutions and optimizations across departments."
     ],
     "summary_short":"",
