@@ -18,8 +18,8 @@
     "technologies": ["angular", "github" ],
     "responsibilities": [
       "Architect, design, implement, document, and maintain the infrastructural components of a new technical foundation at BU Libraries before we build out our team going forward.",
+      "Generate, manage, and maintain open-source components for our websites and customizations of our search interface on npm.",
       "Assist in the design and implementation of a multi-site rebuild towards responsiveness and more consistent and feature-rich UX using web components.",
-      "Generate and track open-source customizations and enhancements to primo search interface.",
       "Plan, execute, implement, and maintain assorted solutions and optimizations across departments."
     ],
     "summary_short":"",

@@ -36,19 +36,19 @@
       "proficiency":"Functional"
     },
     {
-      "name":"C#",
-      "uses":"EDT user data integration application, RIT schoolwork",
-      "proficiency":"Functional"
-    },
-    {
       "name":"webpack",
       "uses":"BU Libraries (bulib-wc, primo-explore-bu)",
       "proficiency":"Novice"
     },
     {
-      "name":"travis-ci",
+      "name":"circle-ci",
       "uses":"Automated testing and continuous integration",
       "proficiency":"Novice"
+    },
+    {
+      "name":"C#",
+      "uses":"EDT user data integration application, RIT schoolwork",
+      "proficiency":"Functional"
     },
     {
       "name":"C",
