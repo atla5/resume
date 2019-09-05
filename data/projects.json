@@ -2,7 +2,7 @@
   {
     "name":"bulib-wc",
     "photo":"",
-    "url_web":"https://bulib.github.io/",
+    "url_web":"https://bulib.github.io/bulib-wc",
     "url_src":"https://github.com/bulib/bulib-wc",
     "languages":["js","html","css","web-components","lit-element"],
     "tags":["web-components","bu","separation of concerns","interop"],
@@ -24,6 +24,18 @@
     "involvement":"creator, designer, developer, maintainer"
   },
   {
+    "name":"resume",
+    "photo":"",
+    "url_web":"http://aidan-sawyer.com/about",
+    "url_src":"https://github.com/atla5/Resume",
+    "languages":["json","LaTeX","python","travis-ci"],
+    "tags":["resume","personal-site","separation of concerns","coding style","design philosophy"],
+    "description_short":"Store and export information about my education, experience, and projects",
+    "description_long":"'Resume' provides a single location for storing, managing, and exporting the information most critical to my personal and professional interests in the most optimally consumable fashion, in one place. The integrations and build functionality I've added to it ensure its freshness and quality, and provides reliable and up-to-date links for download/consumption.",
+    "importance":"This repository saves me time managing my personal/professional information, ensures consistency, and provides a valuable example of my coding style, design philosophy, and commitment to my work/craft.",
+    "involvement":"creator, designer, developer, maintainer"
+  },
+  {
     "name":"personal-site",
     "photo":"",
     "url_web":"http://aidan-sawyer.com",
@@ -33,18 +45,6 @@
     "description_short":"Personal and professional statically-hosted site.",
     "description_long":"My site is an exercise in web development and a place for me to coordinate and explain my projects to fellow developers and current and future employers.",
     "importance":"The site serves as a testing ground for experimentation with new technology that simultaneously exhibits my background, projects, technical approach, and professional experience.",
-    "involvement":"creator, designer, developer, maintainer"
-  },
-  {
-    "name":"resume",
-    "photo":"",
-    "url_web":"http://aidan-sawyer.com/about",
-    "url_src":"https://github.com/atla5/Resume",
-    "languages":["json","LaTeX","python","travis-ci"],
-    "tags":["resume","personal-site","separation of concerns","coding style","design philosophy"],
-    "description_short":"Store and export information about my education, experience, and projects.",
-    "description_long":"'Resume' provides a single location for storing, managing, and exporting the information most critical to my personal and professional interests in the most optimally consumable fashion, in one place. The integrations and build functionality I've added to it ensure its freshness and quality, and provides reliable and up-to-date links for download/consumption.",
-    "importance":"This repository saves me time managing my personal/professional information, ensures consistency, and provides a valuable example of my coding style, design philosophy, and commitment to my work/craft.",
     "involvement":"creator, designer, developer, maintainer"
   },
   {
