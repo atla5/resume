@@ -14,8 +14,8 @@
     "wage_start":"$65K",
     "wage_end":"",
     "tags": ["lis","primo","angular"],
-    "languages": ["js","html","scss","python"],
-    "technologies": ["angular", "github" ],
+    "languages": ["js","html","css","scss","python"],
+    "technologies": ["github","web-components","lit-element","lit-html","circle-ci","angular"],
     "responsibilities": [
       "Architect, design, implement, document, and maintain the infrastructural components of a new technical foundation at BU Libraries before we build out our team going forward.",
       "Generate, manage, and maintain open-source components for our websites and customizations of our search interface on npm.",
