@@ -2,7 +2,7 @@
   {
     "name":"bulib-wc",
     "photo":"",
-    "url_web":"https://bulib.github.io/",
+    "url_web":"https://bulib.github.io/bulib-wc",
     "url_src":"https://github.com/bulib/bulib-wc",
     "languages":["js","html","css","web-components","lit-element"],
     "tags":["web-components","bu","separation of concerns","interop"],
