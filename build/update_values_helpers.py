@@ -71,7 +71,7 @@ def generate_work_experience(dict_values, work, id=1):
         prefix + "NAME": work['company_name'],
         prefix + "POSITION": work['position'],
         prefix + "TIME~START": humanize_date(work['time_start']),
-        prefix + "TIME~END": humanize_date(work['time_end']) if work['time_end'] else "Present",
+        prefix + "TIME~END": humanize_date(work['time_end']) if 'time_end' in work else "Present",
         prefix + "ADVISOR~NAME": work['advisor_name'],
         prefix + "ADVISOR~POSITION": work['advisor_position'],
         prefix + "ADVISOR~CONTACT": work['advisor_contact'],
@@ -84,12 +84,15 @@ def generate_reference(dict_values, reference, id=1):
     logging.debug("updating reference '{}'".format(id))
     prefix = "R{}~".format(id)
 
+    contact = reference['email']
+    if 'phone' in reference and reference['phone']:
+        contact += " - {}".format(reference['phone'])
     dict_values.update({
         prefix + "NAME": reference['name'],
-        prefix + "CONTACT": reference['email'] + " - {}".format(reference['phone']) if reference['phone'] else "",
+        prefix + "CONTACT": contact,
         prefix + "POSITION": reference['position'],
         prefix + "DATE~START": humanize_date(reference['date_start']),
-        prefix + "DATE~END": humanize_date(reference['date_end']) if reference['date_end'] else "Present",
+        prefix + "DATE~END": humanize_date(reference['date_end']) if 'date_end' in reference else "Present",
         prefix + "RELATIONSHIP": reference['relationship'],
         prefix + "IMPORTANCE": reference['importance'],
     })
