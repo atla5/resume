@@ -2,7 +2,7 @@ import unittest
 import os, json, csv
 
 from update_values_helpers import humanize_date, humanize_list
-from build_resume import build_resume, data_dir
+from build_resume import build_dir, data_dir, build_resume, build_references
 
 
 def get_time_created_or_zero(filename):
@@ -44,23 +44,33 @@ class TestBuild(unittest.TestCase):
                 except Exception:
                     self.fail("error reading csv file: {}".format(filename))
 
-    def test_build_resume(self):
-
-        output_filename_prefix = "Resume_Sawyer"  # todo: make this filename prefix generic
-
+    def build_test_helper(self, filename_prefix, build_function):
         # get the 'created' timestamp any existing output files were created, defaulting to zero
-        output_tex_timestamp_before = get_time_created_or_zero("{}.tex".format(output_filename_prefix))
-        output_pdf_timestamp_before = get_time_created_or_zero("{}.pdf".format(output_filename_prefix))
+        output_tex_timestamp_before = get_time_created_or_zero("{}.tex".format(filename_prefix))
+        output_pdf_timestamp_before = get_time_created_or_zero("{}.pdf".format(filename_prefix))
 
         try:
-            build_resume()
+            build_function()
         except Exception:
-            self.fail("Exception occurred while attempting to build output")
+            self.fail("Exception occurred while attempting to build {} output".format(filename_prefix))
 
         # get the 'created' timestamp of our fresh output files
-        output_tex_timestamp_after = get_time_created_or_zero("{}.tex".format(output_filename_prefix))
-        output_pdf_timestamp_after = get_time_created_or_zero("{}.pdf".format(output_filename_prefix))
+        output_tex_timestamp_after = get_time_created_or_zero("{}.tex".format(filename_prefix))
+        output_pdf_timestamp_after = get_time_created_or_zero("{}.pdf".format(filename_prefix))
 
-        # ensure that build_resume() effectively created both files (_note: if both default to zero, it still fails_)
-        self.assertGreater(output_tex_timestamp_after, output_tex_timestamp_before)
-        self.assertGreater(output_pdf_timestamp_after, output_pdf_timestamp_before)
+        # ensure that build_resume() effectively created both files
+        if output_tex_timestamp_after != 0:
+            self.assertGreater(output_tex_timestamp_after, output_tex_timestamp_before)
+        else:
+            self.fail("Error Creating {}.tex".format(filename_prefix))
+
+        if output_pdf_timestamp_after != 0:
+            self.assertGreater(output_pdf_timestamp_after, output_pdf_timestamp_before)
+        else:
+            self.fail("Error creating {}.pdf".format(filename_prefix))
+
+    def test_build_resume(self):
+        self.build_test_helper("Resume_Sawyer", build_resume)  # todo: make this filename prefix generic
+
+    def test_build_references(self):
+        self.build_test_helper("References_Sawyer", build_references)  # todo: make this filename prefix generic

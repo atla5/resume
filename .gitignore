@@ -1,3 +1,7 @@
+.DS_Store
 .idea/
 *.pyc
-.DS_Store
+
+*.gz
+*.fdb_latexmk
+*.fls

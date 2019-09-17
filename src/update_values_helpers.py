@@ -3,9 +3,35 @@
 # license: MIT
 # purpose: customize dict_values according to passed values
 
-import sys
+import logging
+logger = logging.getLogger(__name__)
 
 months = ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"]
+
+
+def humanize_date(yyyy_mm):
+    output = yyyy_mm
+
+    try:
+        tokens = yyyy_mm.split('-')
+        year = tokens[0]
+        month = int(tokens[1])
+
+        if 0 < month <= 12:
+            output = "{} {}".format(months[month-1], year)
+        else:
+            logger.warning("Invalid month: {}\n".format(yyyy_mm))
+
+    except IndexError:
+        logger.warning("Improperly formatted date: {}\n".format(yyyy_mm))
+        return ""
+
+    finally:
+        return output
+
+
+def humanize_list(ls):
+    return ", ".join(str(s) for s in ls)
 
 
 def generate_about(dict_values, about):
@@ -21,31 +47,8 @@ def generate_about(dict_values, about):
     })
 
 
-def humanize_date(yyyy_mm):
-    output = yyyy_mm
-
-    try:
-        tokens = yyyy_mm.split('-')
-        year = tokens[0]
-        month = int(tokens[1])
-
-        if 0 < month <= 12:
-            output = "{} {}".format(months[month-1], year)
-        else:
-            sys.stdout.write("Invalid month: {}\n".format(yyyy_mm))
-
-    except IndexError:
-        sys.stdout.write("Improperly formatted date: {}\n".format(yyyy_mm))
-
-    finally:
-        return output
-
-
-def humanize_list(ls):
-    return ", ".join(str(s) for s in ls).rstrip(", ")
-
-
 def generate_school_info(dict_values, school, id=None):
+    logging.debug("updating school values...")
     prefix = "SCHOOL~" + (str(id) if id else "")
     school_notes = school['notes']
 
@@ -60,6 +63,7 @@ def generate_school_info(dict_values, school, id=None):
 
 
 def generate_work_experience(dict_values, work, id=1):
+    logging.debug("updating work experience values for work '{}'".format(id))
     prefix = "W{}~".format(id)
     responsibilities = work['responsibilities']
     num_responsibilities = len(responsibilities)
@@ -68,7 +72,7 @@ def generate_work_experience(dict_values, work, id=1):
         prefix + "NAME": work['company_name'],
         prefix + "POSITION": work['position'],
         prefix + "TIME~START": humanize_date(work['time_start']),
-        prefix + "TIME~END": humanize_date(work['time_end']) if work['time_end'] else "Present",
+        prefix + "TIME~END": humanize_date(work['time_end']) if 'time_end' in work else "Present",
         prefix + "ADVISOR~NAME": work['advisor_name'],
         prefix + "ADVISOR~POSITION": work['advisor_position'],
         prefix + "ADVISOR~CONTACT": work['advisor_contact'],
@@ -77,7 +81,26 @@ def generate_work_experience(dict_values, work, id=1):
     })
 
 
+def generate_reference(dict_values, reference, id=1):
+    logging.debug("updating reference '{}'".format(id))
+    prefix = "R{}~".format(id)
+
+    contact = reference['email']
+    if 'phone' in reference and reference['phone']:
+        contact += " - {}".format(reference['phone'])
+    dict_values.update({
+        prefix + "NAME": reference['name'],
+        prefix + "CONTACT": contact,
+        prefix + "POSITION": reference['position'],
+        prefix + "DATE~START": humanize_date(reference['date_start']),
+        prefix + "DATE~END": humanize_date(reference['date_end']) if 'date_end' in reference else "Present",
+        prefix + "RELATIONSHIP": reference['relationship'],
+        prefix + "IMPORTANCE": reference['importance'],
+    })
+
+
 def generate_project(dict_values, project, id=1):
+    logging.debug("updating project info for project '{}'".format(id))
     prefix = "P{}~".format(id)
     dict_values.update({
         prefix+"NAME": project['name'],
@@ -86,6 +109,7 @@ def generate_project(dict_values, project, id=1):
 
 
 def generate_language_entry(dict_values, level, languages, id=1):
+    logging.debug("updating language entry for level '{}'".format(level))
     suffix = "~{}".format(id)
     dict_values.update({
         "LEVEL" + suffix: level if languages else "",
