@@ -24,6 +24,7 @@ def humanize_date(yyyy_mm):
 
     except IndexError:
         logger.warning("Improperly formatted date: {}\n".format(yyyy_mm))
+        return ""
 
     finally:
         return output
