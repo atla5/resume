@@ -27,7 +27,7 @@ class TestBuild(unittest.TestCase):
         for filename in os.listdir(data_dir):
             if filename.endswith('.json'):
                 try:
-                    with open(os.path.join(data_dir,filename), 'r') as file:
+                    with open(os.path.join(data_dir, filename), 'r') as file:
                         json.loads(file.read())
                 except ValueError:
                     self.fail("linting error found in {}".format(filename))

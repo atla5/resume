@@ -1,8 +1,13 @@
 {
   "languages":[
     {
-      "name":"java",
-      "uses":"personal and lib-re projects, backend services, MR software with EDT, coursework, proteomics research",
+      "name":"js",
+      "uses":"JSTOR front-end, ionic phone app, primo custimozation, web components",
+      "proficiency":"Intermediate"
+    },
+    {
+      "name":"html",
+      "uses":"JSTOR front-end, personal site, coursework, BU Libraries",
       "proficiency":"Intermediate"
     },
     {
@@ -11,9 +16,19 @@
       "proficiency":"Intermediate"
     },
     {
-      "name":"html",
-      "uses":"JSTOR front-end, personal site, coursework",
+      "name":"java",
+      "uses":"personal and lib-re projects, backend services, MR software with EDT, coursework, proteomics research",
       "proficiency":"Intermediate"
+    },
+    {
+      "name":"web components",
+      "uses":"BU Libraries (bulib-wc)",
+      "proficiency":"Functional"
+    },
+    {
+      "name":"aws",
+      "uses":"JSTOR deployments, EDT research, BU Libraries",
+      "proficiency":"Functional"
     },
     {
       "name":"scss",
@@ -21,28 +36,23 @@
       "proficiency":"Functional"
     },
     {
+      "name":"webpack",
+      "uses":"BU Libraries (bulib-wc, primo-explore-bu)",
+      "proficiency":"Novice"
+    },
+    {
+      "name":"circle-ci",
+      "uses":"Automated testing and continuous integration",
+      "proficiency":"Novice"
+    },
+    {
       "name":"C#",
-      "uses":"EDT user data integration application",
+      "uses":"EDT user data integration application, RIT schoolwork",
       "proficiency":"Functional"
     },
     {
       "name":"C",
       "uses":"coursework (SWEN-220, CMPE-240)",
-      "proficiency":"Functional"
-    },
-    {
-      "name":"js",
-      "uses":"JSTOR front-end, coursework",
-      "proficiency":"Novice"
-    },
-    {
-      "name":"travis-ci",
-      "uses":"Automated testing and continuous integration",
-      "proficiency":"Novice"
-    },
-    {
-      "name":"AWS",
-      "uses":"JSTOR deployments, EDT research",
       "proficiency":"Novice"
     }
   ],
@@ -60,9 +70,9 @@
     "library and information science",
     "philosophy",
     "open source software",
-    "open data/science",
-    "reading",
-    "craft beer",
-    "space exploration"
+    "open scholarship",
+    "scholarly publishing",
+    "open data",
+    "reading"
   ]
 }

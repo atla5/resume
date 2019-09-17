@@ -14,8 +14,8 @@
     ],
     "awards":["Presidential Scholarship"],
     "notes":[
-      "Minor in Philosophy, Application Domain in 'Library and Information Science'",
-      "Worked on over a dozen 2-6 person teams, in as many languages/technologies, and completed 20+ courses, towards the completion of a competitive degree, punctuated by meaningful work experience."
+      "Application Domain in 'Library and Information Science', Minor in Philosophy",
+      "Worked on over a dozen 2-6 person teams, in as many languages/technologies, and completed 20+ SE courses, towards the completion of a competitive degree, punctuated by meaningful work experience."
     ],
     "courses": [
       {
@@ -33,6 +33,12 @@
         "code":"CSCI-242",
         "name":"Intro to Computer Science Theory",
         "description":"Theoretical foundations of automata, NP completeness, and complexity."
+      },
+      {
+        "code":"CSCI-320",
+        "name":"Principles of Data Management",
+        "description":"Systematic review of relational database design, construction, and maintenence using SQL.",
+        "languages":["java","sql"]
       },
       {
         "code":"CSCI-440",
@@ -94,8 +100,13 @@
       {
         "code":"SWEN-262",
         "name":"Engineering Software Subsystems",
-        "description":"An invaluable course delving deep into the theroy, practice, and vital importance of software architecture and design, heavy on patterns and philosophies.",
+        "description":"An invaluable course studying the theory, practice, and vital importance of software architecture and design, heavy on patterns and philosophies.",
         "languages":["java"]
+      },
+      {
+        "code":"SWEN-331",
+        "name":"Engineering Secure Software",
+        "description":"A primer on identifying valuable assets, understanding and investing in security as quality to protect against common vulnerabilities, and learning from famous exploits."
       },
       {
         "code":"SWEN-344",
@@ -109,20 +120,27 @@
         "description":"Training using a variety of testing strategies, modes, methods, and tools."
       },
       {
+        "code":"SWEN-440",
+        "name":"Software Requirements and Architecture",
+        "description":"",
+        "languages":["javascript","html","css"]
+      },
+      {
         "code":"SWEN-444",
         "name":"Human Centered Requirements and Design",
         "description":"Project-based class on eliciting, negotiating, managing, translating, and fulfilling requirements."
       },
       {
-        "code":"SWEN-331",
-        "name":"Engineering Secure Software",
-        "description":"A primer on identifying valuable assets, understanding and investing in security as quality to protect against common vulnerabilities, and learning from famous exploits."
+        "code":"SWEN-561",
+        "name":"Senior Project",
+        "description":"Design and construct a cross-platform phone application to expedite job search and application.",
+        "languages":["angular","javascript","html","css","java"]
       },
       {
-        "code":"SWEN-440",
-        "name":"Software Requirements and Architecture",
-        "description":"",
-        "languages":["javascript","html","css"]
+        "code":"SWEN-789",
+        "name":"Data Processing in Software Engineering",
+        "description":"Graduate-level course covering the application of data mining on software products and production.",
+        "languages":["python"]
       }
     ]
   },

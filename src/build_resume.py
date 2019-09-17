@@ -4,9 +4,10 @@
 # purpose: build custom resume from LaTeX template and json
 
 import json, time, logging
-from os import path, getcwd, system
+from os import path, getcwd, system, chdir
 from sys import stdout
 from shutil import copyfile
+
 from subprocess import check_call, STDOUT, DEVNULL
 from update_values_helpers import *
 
@@ -14,8 +15,9 @@ logging.basicConfig(stream=stdout, level=logging.INFO)
 logger = logging.getLogger("build_resume")
 
 # set absolute paths for 'build/' and 'data/' directories
-build_dir = path.abspath(getcwd())
-data_dir = path.abspath(path.join(getcwd(), "../data"))
+src_dir = path.abspath(path.dirname(__file__))
+build_dir = path.abspath(path.join(src_dir, "../build"))
+data_dir = path.abspath(path.join(src_dir, "../data"))
 
 
 def get_json_from_data_file(filename):
@@ -77,7 +79,7 @@ def update_references_values(dict_values):
 
 
 def generate_new_tex_file_with_values(values, input_template, output_filename):
-    logger.debug("generating new tex file '{}' using input template '{}'", output_filename, input_template)
+    logger.debug("generating new tex file '{}' using input template '{}'".format(output_filename, input_template))
 
     # copy .tex template into a new 'output_filename.tex'
     copyfile(input_template, output_filename)
@@ -98,12 +100,16 @@ def generate_new_tex_file_with_values(values, input_template, output_filename):
 def generate_pdf_from_tex_template(output_tex_filename):
     logger.debug("generating pdf from tex file '{}'".format(output_tex_filename))
 
+    chdir(build_dir)
+
     # export filename.tex into a pdf
     check_call(['pdflatex', '-interaction=nonstopmode', output_tex_filename], stdout=DEVNULL, stderr=STDOUT)
     logger.info("pdf created at {}".format(output_tex_filename.replace('.tex','.pdf')))
 
     # delete temporary filename.tex file
     system("rm *.log")
+    system("rm *.aux")
+    system("rm *.fls")
     system("rm *.aux")
 
 
@@ -143,6 +149,7 @@ def build_references():
     # use values to generate a pdf
     generate_new_tex_file_with_values(dict_values, tex_template_filepath, tex_new_filepath)
     generate_pdf_from_tex_template(tex_new_filepath)
+
 
 if __name__ == "__main__":
     build_resume()
