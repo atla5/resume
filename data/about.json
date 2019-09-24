@@ -1,6 +1,11 @@
 {
   "name":"Aidan Sawyer",
   "url":"http://aidan-sawyer.com",
+  "overview":[
+    "3+ years of full stack web development experience with a variety of technologies and frameworks",
+    "Interested in information systems, metadata, interoperability, web standards, and research support",
+    "BS in Software Engineering from Rochester Institute of Technology (RIT)"
+  ],
   "objective":"I'm looking for meaningful work involved with the organization, preservation, and expansion of knowledge, with particular regard to library resources and academic research. By improving the engines which power human understanding, I seek to expedite human progress long-term.",
   "contact": {
     "phone":"207.200.6026",

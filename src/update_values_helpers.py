@@ -37,13 +37,16 @@ def humanize_list(ls):
 def generate_about(dict_values, about):
     contact = about['contact']
     accounts = about['accounts']
+    highlights = about['overview']
     dict_values.update({
         "FULL~NAME": about['name'],
         "OBJECTIVE": about['objective'],
         "EMAIL": contact['email'] if contact['email'] else "",
         "PHONE": contact['phone'] if contact['phone'] else "",
         "GITHUB": "{} - {}".format(accounts['github'], accounts['github-org']),
-        "WEBSITE": about['url'].replace('http://', '')
+        "WEBSITE": about['url'].replace('http://', ''),
+        "HIGHLIGHT~1": highlights[0],
+        "HIGHLIGHT~2": highlights[1]
     })
 
 
