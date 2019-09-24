@@ -13,9 +13,12 @@ def humanize_date(yyyy_mm):
     output = yyyy_mm
 
     try:
-        tokens = yyyy_mm.split('-')
-        year = tokens[0]
-        month = int(tokens[1])
+        if '-' not in yyyy_mm:
+            return yyyy_mm
+        else:
+            tokens = yyyy_mm.split('-')
+            year = tokens[0]
+            month = int(tokens[1])
 
         if 0 < month <= 12:
             output = "{} {}".format(months[month-1], year)
@@ -24,7 +27,6 @@ def humanize_date(yyyy_mm):
 
     except IndexError:
         logger.warning("Improperly formatted date: {}\n".format(yyyy_mm))
-        return ""
 
     finally:
         return output
