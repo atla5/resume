@@ -16,14 +16,19 @@
       "proficiency":"Intermediate"
     },
     {
-      "name":"java",
-      "uses":"personal and lib-re projects, backend services, MR software with EDT, coursework, proteomics research",
-      "proficiency":"Intermediate"
-    },
-    {
       "name":"web components",
       "uses":"BU Libraries (bulib-wc)",
       "proficiency":"Functional"
+    },
+    {
+      "name":"java",
+      "uses":"personal and lib-re projects, backend services, MR software with EDT, coursework, proteomics research",
+      "proficiency":"Functional"
+    },
+    {
+      "name":"angularjs",
+      "uses":"coursework, BU Libraries (primo-explore-bu)",
+      "proficiency":"Novice"
     },
     {
       "name":"aws",
@@ -33,12 +38,7 @@
     {
       "name":"s/css",
       "uses":"JSTOR front-end, bulib-wc",
-      "proficiency":"Functional"
-    },
-    {
-      "name":"angularjs",
-      "uses":"coursework, BU Libraries (primo-explore-bu)",
-      "proficiency":"Novice"
+      "proficiency":"Intermediate"
     },
     {
       "name":"C#",

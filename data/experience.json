@@ -17,8 +17,8 @@
     "languages": ["js","html","css","scss","python"],
     "technologies": ["github","web-components","lit-element","lit-html","circle-ci","angular"],
     "responsibilities": [
-      "Architect, design, implement, and document a new technical foundation and workflow at BU Libraries built on web standards, open source collaboration, traceability, and modular reusability.",
-      "Create and expand a suite of custom web components, enabling a more consistent, feature-rich, and data-driven user experience across a variety of websites and platforms.",
+      "Architect, implement, document, and maintain a new front-end strategy built on portability, maintainability, open source collaboration, and modular reuse.",
+      "Create and expand a suite of custom web components (UI elements), enabling a more consistent, feature-rich, and data-driven UX and branding across a variety of sites.",
       "Plan, execute, implement, and maintain assorted solutions and optimizations across departments."
     ],
     "summary_short":"",
@@ -43,9 +43,9 @@
     "technologies": ["django", "github", "aws", "jira" ],
     "responsibilities": [
       "Contributed over 250 pull requests into a dozen frontend and backend repositories in six languages.",
+      "Contributed in a distributed effort across front-end teams toward a site-wide visual redesign.",
       "Regularly participated in code review (over 550 pull requests) and acceptance test-driven development, often deploying to production multiple times a week as part of an agile, cross-functional team.",
       "Built, maintained, monitored, and continuously improved upon a series of django applications constituting the new JSTOR 'For Librarians' portal.",
-      "Contributed in a distributed effort across front-end teams toward a site-wide visual redesign.",
       "Supported, redesigned, and rebuilt a tool for acquiring data for use in text and data mining practices."
     ],
     "summary_short":"I served as one of three developers responsible for the creation, maintenance, and improvement/expansion of the JSTOR For Librarians portal",
@@ -69,7 +69,7 @@
     "languages": ["java","C#","aws"],
     "technologies": ["hibernate","spring","AD","VoIP","jira","git"],
     "responsibilities": [
-      "Designed and developed a C#/.Net application integrating batch user data between dispirate systems.",
+      "Designed and developed a desktop application integrating batch user data between disparate systems.",
       "Improved and maintained a java application for managing, storing, and displaying electronic medical records in compliance with rigid governmental standards.",
       "Web Services Transition: responsible for planning, documenting, and beginning a migration from local hosting over a dozen wordpress sites onto the cloud."
     ],
