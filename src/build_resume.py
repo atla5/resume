@@ -118,7 +118,7 @@ def build_resume():
     # manage/generate filenames and paths
     tex_template_filepath = path.join(build_dir, "resume.tex")
     last_name = dict_values['FULL~NAME'].split()[-1]
-    filename = "Resume{}".format("_"+last_name if last_name else "")
+    filename = "{}Resume".format(last_name+"_" if last_name else "")
     tex_new_filepath = path.join(build_dir, filename + ".tex")
 
     # use values to generate a pdf
@@ -137,7 +137,7 @@ def build_references():
     # manage/generate filenames and paths
     tex_template_filepath = path.join(build_dir, "references.tex")
     last_name = dict_values['FULL~NAME'].split()[-1]
-    filename = "References{}".format("_" + last_name if last_name else "")
+    filename = "{}References".format(last_name+"_" if last_name else "")
     tex_new_filepath = path.join(build_dir, filename + ".tex")
 
     # use values to generate a pdf
@@ -162,7 +162,7 @@ def build_cover_letter():
     # manage/generate filenames and paths
     tex_template_filepath = path.join(build_dir, "coverletter.tex")
     last_name = dict_values['FULL~NAME'].split()[-1]
-    filename = "CoverLetter{}".format("_" + last_name if last_name else "")
+    filename = "{}CoverLetter".format(last_name+"_" if last_name else "")
     tex_new_filepath = path.join(build_dir, filename + ".tex")
 
     # use values to generate a pdf
