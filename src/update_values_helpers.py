@@ -7,9 +7,10 @@ import logging
 logger = logging.getLogger(__name__)
 
 months = ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"]
+months_full = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
 
-def humanize_date(yyyy_mm):
+def humanize_date(yyyy_mm, formalize=False):
     output = yyyy_mm
 
     try:
@@ -21,7 +22,8 @@ def humanize_date(yyyy_mm):
             month = int(tokens[1])
 
         if 0 < month <= 12:
-            output = "{} {}".format(months[month-1], year)
+            str_month = months_full[month-1] if formalize else months[month-1]
+            output = "{} {}".format(str_month, year)
         else:
             logger.warning("Invalid month: {}\n".format(yyyy_mm))
 
