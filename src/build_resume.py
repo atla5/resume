@@ -19,9 +19,6 @@ src_dir = path.abspath(path.dirname(__file__))
 build_dir = path.abspath(path.join(src_dir, "../build"))
 data_dir = path.abspath(path.join(src_dir, "../data"))
 
-# variables used in the 
-LAST_NAME = "Sawyer"
-
 def get_json_from_data_file(filename):
     json_to_return = {}
     try:
