@@ -44,7 +44,7 @@ $ git clone https://github.com/atla5/resume.git
 This project runs on python 2.6 - 3.5 and requires `pdflatex`, included in the `basictex` 
   [brew cask](https://brew.sh/).  
 ``` 
-$ brek cask install basictex
+$ brew cask install basictex
 ```
 
 #### Running the Builder

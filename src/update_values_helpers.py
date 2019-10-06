@@ -13,9 +13,12 @@ def humanize_date(yyyy_mm):
     output = yyyy_mm
 
     try:
-        tokens = yyyy_mm.split('-')
-        year = tokens[0]
-        month = int(tokens[1])
+        if '-' not in yyyy_mm:
+            return yyyy_mm
+        else:
+            tokens = yyyy_mm.split('-')
+            year = tokens[0]
+            month = int(tokens[1])
 
         if 0 < month <= 12:
             output = "{} {}".format(months[month-1], year)
@@ -24,7 +27,6 @@ def humanize_date(yyyy_mm):
 
     except IndexError:
         logger.warning("Improperly formatted date: {}\n".format(yyyy_mm))
-        return ""
 
     finally:
         return output
@@ -37,13 +39,16 @@ def humanize_list(ls):
 def generate_about(dict_values, about):
     contact = about['contact']
     accounts = about['accounts']
+    highlights = about['overview']
     dict_values.update({
         "FULL~NAME": about['name'],
         "OBJECTIVE": about['objective'],
         "EMAIL": contact['email'] if contact['email'] else "",
         "PHONE": contact['phone'] if contact['phone'] else "",
         "GITHUB": "{} - {}".format(accounts['github'], accounts['github-org']),
-        "WEBSITE": about['url'].replace('http://', '')
+        "WEBSITE": about['url'].replace('http://', ''),
+        "HIGHLIGHT~1": highlights[0],
+        "HIGHLIGHT~2": highlights[1]
     })
 
 
