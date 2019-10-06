@@ -19,6 +19,8 @@ src_dir = path.abspath(path.dirname(__file__))
 build_dir = path.abspath(path.join(src_dir, "../build"))
 data_dir = path.abspath(path.join(src_dir, "../data"))
 
+# variables used in the 
+LAST_NAME = "Sawyer"
 
 def get_json_from_data_file(filename):
     json_to_return = {}
@@ -117,7 +119,7 @@ def build_resume():
 
     # manage/generate filenames and paths
     tex_template_filepath = path.join(build_dir, "resume.tex")
-    last_name = dict_values['FULL~NAME'].split()[-1]
+    last_name = get_last_name(dict_values)
     filename = "{}Resume".format(last_name+"_" if last_name else "")
     tex_new_filepath = path.join(build_dir, filename + ".tex")
 
@@ -136,7 +138,7 @@ def build_references():
 
     # manage/generate filenames and paths
     tex_template_filepath = path.join(build_dir, "references.tex")
-    last_name = dict_values['FULL~NAME'].split()[-1]
+    last_name = get_last_name(dict_values)
     filename = "{}References".format(last_name+"_" if last_name else "")
     tex_new_filepath = path.join(build_dir, filename + ".tex")
 
@@ -145,7 +147,7 @@ def build_references():
     generate_pdf_from_tex_template(tex_new_filepath)
 
 
-def build_cover_letter():
+def build_coverletter():
     logger.info("\n\nbuilding cover letter...")
     dict_values = {}
     update_shared_values(dict_values)
@@ -161,7 +163,7 @@ def build_cover_letter():
 
     # manage/generate filenames and paths
     tex_template_filepath = path.join(build_dir, "coverletter.tex")
-    last_name = dict_values['FULL~NAME'].split()[-1]
+    last_name = get_last_name(dict_values)
     filename = "{}CoverLetter".format(last_name+"_" if last_name else "")
     tex_new_filepath = path.join(build_dir, filename + ".tex")
 
@@ -180,5 +182,5 @@ def clean_up():
 if __name__ == "__main__":
     build_resume()
     build_references()
-    build_cover_letter()
+    build_coverletter()
     clean_up()

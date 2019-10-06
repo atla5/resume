@@ -2,7 +2,7 @@ import unittest
 import os, json, csv
 
 from update_values_helpers import humanize_date, humanize_list
-from build_resume import build_dir, data_dir, build_resume, build_references
+from build_resume import build_dir, data_dir, build_resume, build_references, build_coverletter, LAST_NAME
 
 
 def get_time_created_or_zero(filename):
@@ -62,15 +62,23 @@ class TestBuild(unittest.TestCase):
         if output_tex_timestamp_after != 0:
             self.assertGreater(output_tex_timestamp_after, output_tex_timestamp_before)
         else:
-            self.fail("Error Creating {}.tex".format(filename_prefix))
+            msg = "before:{} -> after:{}".format(output_tex_timestamp_before, output_tex_timestamp_after)
+            self.fail("Error creating {}.tex\n\n{}".format(filename_prefix, msg))
 
         if output_pdf_timestamp_after != 0:
             self.assertGreater(output_pdf_timestamp_after, output_pdf_timestamp_before)
         else:
-            self.fail("Error creating {}.pdf".format(filename_prefix))
+            msg = "before:{} -> after:{}".format(output_pdf_timestamp_before, output_pdf_timestamp_after)
+            self.fail("Error creating {}.pdf\n\n{}".format(filename_prefix, msg))
 
     def test_build_resume(self):
-        self.build_test_helper("Resume_Sawyer", build_resume)  # todo: make this filename prefix generic
+        self.build_test_helper(LAST_NAME+"_Resume", build_resume)  # todo: make this filename prefix generic
 
     def test_build_references(self):
-        self.build_test_helper("References_Sawyer", build_references)  # todo: make this filename prefix generic
+        self.build_test_helper(LAST_NAME+"_References", build_references)  # todo: make this filename prefix generic
+
+    def test_build_coverletter(self):
+        self.build_test_helper(LAST_NAME+"_CoverLetter", build_coverletter)  # todo: make this filename prefix generic
+
+if __name__ == '__main__':
+    unittest.main()
