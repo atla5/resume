@@ -151,7 +151,7 @@ def build_coverletter():
     logger.info("\n\nbuilding cover letter...")
     dict_values = {}
     update_shared_values(dict_values)
-    with open(path.join(data_dir, "cover_letter.txt"),'r') as cover_letter_text:
+    with open(path.join(data_dir, "coverletter.txt"),'r') as cover_letter_text:
         cl_text = ""
         for line in cover_letter_text:
             cl_text += line
