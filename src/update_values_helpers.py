@@ -9,6 +9,7 @@ logger = logging.getLogger(__name__)
 months = ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"]
 months_full = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
+LAST_NAME = "Sawyer"
 
 def humanize_date(yyyy_mm, formalize=False):
     output = yyyy_mm
@@ -36,6 +37,11 @@ def humanize_date(yyyy_mm, formalize=False):
 
 def humanize_list(ls):
     return ", ".join(str(s) for s in ls)
+
+
+def get_last_name(dict_values):
+    last_name = dict_values['FULL~NAME'].split()[-1]
+    return last_name if last_name else LAST_NAME
 
 
 def generate_about(dict_values, about):

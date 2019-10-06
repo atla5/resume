@@ -19,7 +19,6 @@ src_dir = path.abspath(path.dirname(__file__))
 build_dir = path.abspath(path.join(src_dir, "../build"))
 data_dir = path.abspath(path.join(src_dir, "../data"))
 
-
 def get_json_from_data_file(filename):
     json_to_return = {}
     try:
@@ -117,8 +116,8 @@ def build_resume():
 
     # manage/generate filenames and paths
     tex_template_filepath = path.join(build_dir, "resume.tex")
-    last_name = dict_values['FULL~NAME'].split()[-1]
-    filename = "Resume{}".format("_"+last_name if last_name else "")
+    last_name = get_last_name(dict_values)
+    filename = "{}Resume".format(last_name+"_" if last_name else "")
     tex_new_filepath = path.join(build_dir, filename + ".tex")
 
     # use values to generate a pdf
@@ -136,8 +135,8 @@ def build_references():
 
     # manage/generate filenames and paths
     tex_template_filepath = path.join(build_dir, "references.tex")
-    last_name = dict_values['FULL~NAME'].split()[-1]
-    filename = "References{}".format("_" + last_name if last_name else "")
+    last_name = get_last_name(dict_values)
+    filename = "{}References".format(last_name+"_" if last_name else "")
     tex_new_filepath = path.join(build_dir, filename + ".tex")
 
     # use values to generate a pdf
@@ -145,7 +144,7 @@ def build_references():
     generate_pdf_from_tex_template(tex_new_filepath)
 
 
-def build_cover_letter():
+def build_coverletter():
     logger.info("\n\nbuilding cover letter...")
     dict_values = {}
     update_shared_values(dict_values)
@@ -161,8 +160,8 @@ def build_cover_letter():
 
     # manage/generate filenames and paths
     tex_template_filepath = path.join(build_dir, "coverletter.tex")
-    last_name = dict_values['FULL~NAME'].split()[-1]
-    filename = "CoverLetter{}".format("_" + last_name if last_name else "")
+    last_name = get_last_name(dict_values)
+    filename = "{}CoverLetter".format(last_name+"_" if last_name else "")
     tex_new_filepath = path.join(build_dir, filename + ".tex")
 
     # use values to generate a pdf
@@ -171,14 +170,13 @@ def build_cover_letter():
 
 
 def clean_up():
-    system("rm *.aux")
     system("rm *.fls")
-    system("rm *.aux")
     system("rm *.gz")
     system("rm *latexmk")
+    system("rm *.aux")
 
 if __name__ == "__main__":
     build_resume()
     build_references()
-    build_cover_letter()
+    build_coverletter()
     clean_up()
