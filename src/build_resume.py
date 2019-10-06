@@ -171,7 +171,6 @@ def build_cover_letter():
 
 
 def clean_up():
-    system("rm *.log")
     system("rm *.aux")
     system("rm *.fls")
     system("rm *.aux")
