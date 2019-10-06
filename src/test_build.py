@@ -62,14 +62,12 @@ class TestBuild(unittest.TestCase):
         if output_tex_timestamp_after != 0:
             self.assertGreater(output_tex_timestamp_after, output_tex_timestamp_before)
         else:
-            msg = "before:{} -> after:{}".format(output_tex_timestamp_before, output_tex_timestamp_after)
-            self.fail("Error creating {}.tex\n\n{}".format(filename_prefix, msg))
+            self.fail("Error creating {}.tex".format(filename_prefix))
 
         if output_pdf_timestamp_after != 0:
             self.assertGreater(output_pdf_timestamp_after, output_pdf_timestamp_before)
         else:
-            msg = "before:{} -> after:{}".format(output_pdf_timestamp_before, output_pdf_timestamp_after)
-            self.fail("Error creating {}.pdf\n\n{}".format(filename_prefix, msg))
+            self.fail("Error creating {}.pdf".format(filename_prefix))
 
     def test_build_resume(self):
         self.build_test_helper(LAST_NAME+"_Resume", build_resume)  # todo: make this filename prefix generic
