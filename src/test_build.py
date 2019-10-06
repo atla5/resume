@@ -2,7 +2,7 @@ import unittest
 import os, json, csv
 
 from update_values_helpers import humanize_date, humanize_list
-from build_resume import build_dir, data_dir, build_resume, build_references, build_coverletter, LAST_NAME
+from build_resume import build_dir, data_dir, build_resume, build_references, build_coverletter, LAST_NAME, clean_up
 
 
 def get_time_created_or_zero(filename):
@@ -68,6 +68,8 @@ class TestBuild(unittest.TestCase):
             self.assertGreater(output_pdf_timestamp_after, output_pdf_timestamp_before)
         else:
             self.fail("Error creating {}.pdf".format(filename_prefix))
+
+        clean_up()
 
     def test_build_resume(self):
         self.build_test_helper(LAST_NAME+"_Resume", build_resume)  # todo: make this filename prefix generic

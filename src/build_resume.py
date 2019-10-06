@@ -173,11 +173,10 @@ def build_coverletter():
 
 
 def clean_up():
-    system("rm *.aux")
     system("rm *.fls")
-    system("rm *.aux")
     system("rm *.gz")
     system("rm *latexmk")
+    system("rm *.aux")
 
 if __name__ == "__main__":
     build_resume()
