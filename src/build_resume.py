@@ -114,7 +114,7 @@ def generate_pdf_from_tex_template(output_tex_filename):
 
 
 def build_resume():
-    logger.info("building resume...")
+    logger.info("\n\nbuilding resume...")
 
     # create and update value dictionary from json files
     dict_values = {}
@@ -133,7 +133,7 @@ def build_resume():
 
 
 def build_references():
-    logger.info("building references...")
+    logger.info("\n\nbuilding references...")
 
     # create and update value dictionary from json files
     dict_values = {}
@@ -151,6 +151,32 @@ def build_references():
     generate_pdf_from_tex_template(tex_new_filepath)
 
 
+def build_cover_letter():
+    logger.info("\n\nbuilding cover letter...")
+    dict_values = {}
+    update_shared_values(dict_values)
+    with open(path.join(data_dir, "cover_letter.txt"),'r') as cover_letter_text:
+        cl_text = ""
+        for line in cover_letter_text:
+            cl_text += line
+
+        dict_values.update({ 
+            "CL~TEXT": cl_text,
+            "FORMAL~DATE": humanize_date(dict_values["DATE~CREATED"], formalize=True)
+        })
+
+    # manage/generate filenames and paths
+    tex_template_filepath = path.join(build_dir, "coverletter.tex")
+    last_name = dict_values['FULL~NAME'].split()[-1]
+    filename = "CoverLetter{}".format("_" + last_name if last_name else "")
+    tex_new_filepath = path.join(build_dir, filename + ".tex")
+
+    # use values to generate a pdf
+    generate_new_tex_file_with_values(dict_values, tex_template_filepath, tex_new_filepath)
+    generate_pdf_from_tex_template(tex_new_filepath)
+
+
 if __name__ == "__main__":
     build_resume()
     build_references()
+    build_cover_letter()
