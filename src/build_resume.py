@@ -106,12 +106,6 @@ def generate_pdf_from_tex_template(output_tex_filename):
     check_call(['pdflatex', '-interaction=nonstopmode', output_tex_filename], stdout=DEVNULL, stderr=STDOUT)
     logger.info("pdf created at {}".format(output_tex_filename.replace('.tex','.pdf')))
 
-    # delete temporary filename.tex file
-    system("rm *.log")
-    system("rm *.aux")
-    system("rm *.fls")
-    system("rm *.aux")
-
 
 def build_resume():
     logger.info("\n\nbuilding resume...")
@@ -176,7 +170,16 @@ def build_cover_letter():
     generate_pdf_from_tex_template(tex_new_filepath)
 
 
+def clean_up():
+    system("rm *.log")
+    system("rm *.aux")
+    system("rm *.fls")
+    system("rm *.aux")
+    system("rm *.gz")
+    system("rm *latexmk")
+
 if __name__ == "__main__":
     build_resume()
     build_references()
     build_cover_letter()
+    clean_up()
