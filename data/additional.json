@@ -16,39 +16,34 @@
       "proficiency":"Intermediate"
     },
     {
-      "name":"java",
-      "uses":"personal and lib-re projects, backend services, MR software with EDT, coursework, proteomics research",
-      "proficiency":"Intermediate"
-    },
-    {
       "name":"web components",
       "uses":"BU Libraries (bulib-wc)",
       "proficiency":"Functional"
     },
     {
+      "name":"java",
+      "uses":"personal and lib-re projects, backend services, MR software with EDT, coursework, proteomics research",
+      "proficiency":"Functional"
+    },
+    {
+      "name":"angularjs",
+      "uses":"coursework, BU Libraries (primo-explore-bu)",
+      "proficiency":"Novice"
+    },
+    {
       "name":"aws",
       "uses":"JSTOR deployments, EDT research, BU Libraries",
-      "proficiency":"Functional"
-    },
-    {
-      "name":"scss",
-      "uses":"JSTOR front-end",
-      "proficiency":"Functional"
-    },
-    {
-      "name":"webpack",
-      "uses":"BU Libraries (bulib-wc, primo-explore-bu)",
       "proficiency":"Novice"
     },
     {
-      "name":"circle-ci",
-      "uses":"Automated testing and continuous integration",
-      "proficiency":"Novice"
+      "name":"s/css",
+      "uses":"JSTOR front-end, bulib-wc",
+      "proficiency":"Intermediate"
     },
     {
       "name":"C#",
-      "uses":"EDT user data integration application, RIT schoolwork",
-      "proficiency":"Functional"
+      "uses":"EDT user data integration application, RIT coursework",
+      "proficiency":"Novice"
     },
     {
       "name":"C",

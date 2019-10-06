@@ -5,11 +5,11 @@
     "company_img":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Boston_University_wordmark.svg/800px-Boston_University_wordmark.svg.png",
     "advisor_name":"Michael Ward",
     "advisor_contact":"mrward@bu.edu",
-    "advisor_position":"Primo / Web Services Manager",
+    "advisor_position":"Web Services Manager",
     "location_city":"Boston",
     "location_state":"MA",
     "time_start":"2018-09",
-    "time_end":"",
+    "time_end":"present",
     "position":"Web Developer",
     "wage_start":"$65K",
     "wage_end":"",
@@ -17,9 +17,8 @@
     "languages": ["js","html","css","scss","python"],
     "technologies": ["github","web-components","lit-element","lit-html","circle-ci","angular"],
     "responsibilities": [
-      "Architect, design, implement, document, and maintain the infrastructural components of a new technical foundation at BU Libraries before we build out our team going forward.",
-      "Generate, manage, and maintain open-source components for our websites and customizations of our search interface on npm.",
-      "Assist in the design and implementation of a multi-site rebuild towards responsiveness and more consistent and feature-rich UX using web components.",
+      "Architect, implement, document, and maintain a new front-end strategy built on portability, maintainability, open source collaboration, and modular reuse.",
+      "Create and expand a suite of custom web components (UI elements), enabling a more consistent, feature-rich, and data-driven UX and branding across a variety of sites.",
       "Plan, execute, implement, and maintain assorted solutions and optimizations across departments."
     ],
     "summary_short":"",
@@ -43,8 +42,10 @@
     "languages": ["python","html","scss","java"],
     "technologies": ["django", "github", "aws", "jira" ],
     "responsibilities": [
-      "Built, maintained, monitored, and improved upon a series of django applications constituting the new JSTOR 'For Librarians' portal within an agile, distributed, continuous deployment AWS environment.",
-      "Took part in a distributed effort among front-end teams toward a site-wide visual redesign.",
+      "Contributed over 250 pull requests into a dozen frontend and backend repositories in six languages.",
+      "Contributed in a distributed effort across front-end teams toward a site-wide visual redesign.",
+      "Regularly participated in code review (over 550 pull requests) and acceptance test-driven development, often deploying to production multiple times a week as part of an agile, cross-functional team.",
+      "Built, maintained, monitored, and continuously improved upon a series of django applications constituting the new JSTOR 'For Librarians' portal.",
       "Supported, redesigned, and rebuilt a tool for acquiring data for use in text and data mining practices."
     ],
     "summary_short":"I served as one of three developers responsible for the creation, maintenance, and improvement/expansion of the JSTOR For Librarians portal",
@@ -68,8 +69,8 @@
     "languages": ["java","C#","aws"],
     "technologies": ["hibernate","spring","AD","VoIP","jira","git"],
     "responsibilities": [
-      "Designed and developed a C#/.Net application integrating batch user data from a VoIP provider with Microsoft’s AD via web clients and native libraries. Particularly responsible for the design and implementation of the Filter, Search, and Match subsystems.",
-      "Improved and maintained a java application for managing, storing, and displaying electronic medical records. Responsible for designing and developing the systems with intense fidelity to external governmental standards.",
+      "Designed and developed a desktop application integrating batch user data between disparate systems.",
+      "Improved and maintained a java application for managing, storing, and displaying electronic medical records in compliance with rigid governmental standards.",
       "Web Services Transition: responsible for planning, documenting, and beginning a migration from local hosting over a dozen wordpress sites onto the cloud."
     ],
     "summary_short":"Worked as a Software Development Intern at a nearby IT Consulting firm developing information management software (health, AD, VoIP)",
