@@ -152,7 +152,7 @@ def build_cover_letter():
     with open(path.join(data_dir, "coverletter.txt"),'r') as cover_letter_text:
         cl_text = ""
         for line in cover_letter_text:
-            cl_text += line
+            cl_text += line.replace("’", "'").replace("‘","'")
 
         dict_values.update({ 
             "CL~TEXT": cl_text,

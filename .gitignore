@@ -1,8 +1,16 @@
 .DS_Store
 .idea/
-*.pyc
+**.pyc
 
 *.gz
 *.fdb_latexmk
 *.fls
 *.log
+
+data/coverletter.txt
+build/*over*etter*.*
+
+build/resume.pdf
+build/references.pdf 
+
+build/*_Sawyer.tex
