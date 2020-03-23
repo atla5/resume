@@ -1,0 +1,57 @@
+[
+  {
+    "title":"Code4Lib-4-Scholarship?",
+    "subtitle":"Librarianship’s (Shrinking?) Role in the Researcher Workflow/Publishing Cycle",
+    "description":"The way that reseacrh is being conducted is changing in very positive, yet very disruptive ways that Libraries aren't really keeping up with. Numerous open-source tools, alternatives, platforms, and even publishers are rising to fill the gap. What happens to the scholarly record if libraries lose their role in the researcher workflow and publishing lifecycle? Would it actually be better for everyone if it did?",
+    "conference_name":"Code4Lib 2020",
+    "conference_url":"https://2020.code4lib.org/",
+    "date":"2020-03-10",
+    "length":"5",
+    "type":"lightning",
+    "slides_id":"1jF5Dhmxq9-KJ6e56_GL0RUY63aOnV5__tD9ug4_SV5I"
+  },
+  {
+    "title":"Multi-Site Man(i)agament",
+    "subtitle":"A Modular Strategy for Creating (and Maintaining) Consistency Across Platforms",
+    "description":"This workshop covers the systematic approach we've taken at BU Librires to build out a custom pattern library for all of our sites with Web Standards. In so doing, it covers my core design/development philosophy, the centrality of the Principle of Least Power, and the benefits of using the Web Platform, while walking you through the steps of building one yourself.",
+    "conference_name":"Code4Lib 2020",
+    "conference_url":"https://2020.code4lib.org/",
+    "date":"2020-03-08",
+    "length":"180",
+    "type":"workshop",
+    "slides_id":"1QdJCEn9K-4C6_Ewux0L3iOpSS_LA1iGz2TEg5SC-Hio"
+  },
+  {
+    "title":"Web Components for Multi-Site Branding/Management",
+    "subtitle":"The Pattern/Component Library at the Small Scale (without the app)",
+    "description":"The usecase for web components is well defined for large companies providing their own full-on applications, but here I argue that they might be even more useful at the small scale for creating libraries of individual parts in order to manage multiple sites with a small team. Here I present how we've used them at BU Libraries at the small scale.",
+    "conference_name":"HAX Camp Unconference 2019",
+    "conference_url":"https://hax.camp/hax-camp",
+    "date":"2019-10-08",
+    "length":"15",
+    "type":"talk",
+    "slides_id":"1MRYlBHXTO9gyufvxkpaD7v_2M0vf1gFRYi-b3vNlYUM"
+  },
+  {
+    "title":"Why Your Academic Library Should Consider Web Components",
+    "subtitle":"Web Components at BU Libraries and Why You Should Consider Using Them at Your's",
+    "description":"Libraries face many circumstances - and are guided by many principles - that Web Components are uniquely well-situated to support. In this talk, I describe why we decided to used them at BU Libraries and how they've been helping our small team to create a more featureful, maintainable, future-resistant, and consistent UX between our many sites.",
+    "conference_name":"Code4Lib New England 2019",
+    "conference_url":"https://wiki.code4lib.org/NECode4lib_Spring_2019",
+    "date":"2019-02-26",
+    "length":"20",
+    "type":"talk",
+    "slides_id":"1FNDkGd5lKi9ovDXAB7EesnZRlmY7j4WXMDMAG7DfqgU"
+  },
+  {
+    "title":"Collaboration, Automation, and Process Improvement",
+    "subtitle":"Involving Student Workers (and the general public) in Library Software Projects",
+    "description":"Libraries should be more active and open with our projects, processes, and especially code. Inviting more visibility and collaboration into our programming work affords us with new opportunities to invest in the field, improve our code, optimize our workflows, avoid redundant work, and get more things done.",
+    "conference_name":"Code4Lib MidWest 2018",
+    "conference_url":"https://wiki.code4lib.org/2018_Code4Lib_Midwest_Meeting",
+    "date":"2018-06-07",
+    "length":"5",
+    "type":"lightning",
+    "slides_id":"1MQlfkHT7D_ttLkHnTVdamylIN1C2cNQznpCNKPk-Q3Q"
+  }
+]
