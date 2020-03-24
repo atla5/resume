@@ -18,7 +18,7 @@
     "technologies": ["github","web-components","lit-element","lit-html","circle-ci","angular"],
     "responsibilities": [
       "Architect, implement, document, and maintain a new front-end strategy built on portability, maintainability, open source collaboration, and modular reuse.",
-      "Create and expand a suite of custom web components (UI elements), enabling a more consistent, feature-rich, and data-driven UX and branding across a variety of sites.",
+      "Create and expand a custom, open-source web component library of UI elements, powering a more consistent, feature-rich, and data-driven UX/branding across a variety of sites.",
       "Plan, execute, implement, and maintain assorted solutions and optimizations across departments."
     ],
     "summary_short":"",
