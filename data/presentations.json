@@ -2,13 +2,14 @@
   {
     "title":"Code4Lib-4-Scholarship?",
     "subtitle":"Librarianship’s (Shrinking?) Role in the Researcher Workflow/Publishing Cycle",
-    "description":"The way that reseacrh is being conducted is changing in very positive, yet very disruptive ways that Libraries aren't really keeping up with. Numerous open-source tools, alternatives, platforms, and even publishers are rising to fill the gap. What happens to the scholarly record if libraries lose their role in the researcher workflow and publishing lifecycle? Would it actually be better for everyone if it did?",
+    "description":"The way that research is conducted is changing in very positive, yet very disruptive ways that Libraries aren't really keeping up with. Numerous open-source tools, alternatives, platforms, and even publishers are rising to fill the gap. What happens to the scholarly record if libraries lose their role in the researcher workflow and publishing lifecycle? Would it actually be better for everyone if it did?",
     "conference_name":"Code4Lib 2020",
     "conference_url":"https://2020.code4lib.org/",
     "date":"2020-03-10",
     "length":"5",
     "type":"lightning",
-    "slides_id":"1jF5Dhmxq9-KJ6e56_GL0RUY63aOnV5__tD9ug4_SV5I"
+    "slides_id":"1jF5Dhmxq9-KJ6e56_GL0RUY63aOnV5__tD9ug4_SV5I",
+    "slides_embed":"https://docs.google.com/presentation/d/e/2PACX-1vTWWgLMkKWDkMjOrdnXU7hVS2H1NpCe4T3vKI1Wbuye8VrHXxd2edS3TDiUJJVQo__WdWmE-BDX-X7i/embed"
   },
   {
     "title":"Multi-Site Man(i)agament",
@@ -19,7 +20,8 @@
     "date":"2020-03-08",
     "length":"180",
     "type":"workshop",
-    "slides_id":"1QdJCEn9K-4C6_Ewux0L3iOpSS_LA1iGz2TEg5SC-Hio"
+    "slides_id":"1QdJCEn9K-4C6_Ewux0L3iOpSS_LA1iGz2TEg5SC-Hio",
+    "slides_embed":"https://docs.google.com/presentation/d/e/2PACX-1vTuxZkLZK0cvts61mEPDDdg4Q9HSadsL7b-rXP51h8pjGSC6fmsjDhiladokPezDKbbsnoq48WdtHgh/embed"
   },
   {
     "title":"Web Components for Multi-Site Branding/Management",
@@ -30,7 +32,8 @@
     "date":"2019-10-08",
     "length":"15",
     "type":"talk",
-    "slides_id":"1MRYlBHXTO9gyufvxkpaD7v_2M0vf1gFRYi-b3vNlYUM"
+    "slides_id":"1MRYlBHXTO9gyufvxkpaD7v_2M0vf1gFRYi-b3vNlYUM",
+    "slides_embed":"https://docs.google.com/presentation/d/e/2PACX-1vT2lQBpnXP3EdKfYlm5Ec-OI5G4tx3QX9MUZwtecdBEobVrgjKNl4V-Yb9KoeKml2CKP04BC6It_pHe/embed"
   },
   {
     "title":"Why Your Academic Library Should Consider Web Components",
@@ -41,7 +44,8 @@
     "date":"2019-02-26",
     "length":"20",
     "type":"talk",
-    "slides_id":"1FNDkGd5lKi9ovDXAB7EesnZRlmY7j4WXMDMAG7DfqgU"
+    "slides_id":"1FNDkGd5lKi9ovDXAB7EesnZRlmY7j4WXMDMAG7DfqgU",
+    "slides_embed":"https://docs.google.com/presentation/d/e/2PACX-1vQM4XHplXpzxijdufjFykfoDYYGBNkvAWwdcFh7sgKm21Gaawr9nFD6QhfN-jegbbdVajJ7UMai33qq/embed"
   },
   {
     "title":"Collaboration, Automation, and Process Improvement",
@@ -52,6 +56,7 @@
     "date":"2018-06-07",
     "length":"5",
     "type":"lightning",
-    "slides_id":"1MQlfkHT7D_ttLkHnTVdamylIN1C2cNQznpCNKPk-Q3Q"
+    "slides_id":"1MQlfkHT7D_ttLkHnTVdamylIN1C2cNQznpCNKPk-Q3Q",
+    "slides_embed":"https://docs.google.com/presentation/d/e/2PACX-1vTudk3j_cf_P70AoQEIBGMionCv0dpP714hhFQbiFGDMd5ySE4f_xt9shghJ9iEpVlC2HYbPVERPc73/embed"
   }
 ]
