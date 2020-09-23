@@ -22,17 +22,17 @@
     },
     {
       "name":"java",
-      "uses":"personal and lib-re projects, backend services, MR software with EDT, coursework, proteomics research",
+      "uses":"personal and lib-re projects, backend services at JSTOR, EMR software with EDT, coursework, proteomics research",
       "proficiency":"Functional"
     },
     {
-      "name":"angularjs",
-      "uses":"coursework, BU Libraries (primo-explore-bu)",
-      "proficiency":"Novice"
+      "name":"angular",
+      "uses":"coursework, JSTOR (Bolt-UI), BU Libraries (primo-explore-bu)",
+      "proficiency":"Functional"
     },
     {
       "name":"aws",
-      "uses":"JSTOR deployments, EDT research, BU Libraries",
+      "uses":"JSTOR deployments, EDT research",
       "proficiency":"Novice"
     },
     {

@@ -38,9 +38,9 @@
     "languages": ["python","html","scss","java"],
     "technologies": ["django", "github", "aws", "jira" ],
     "responsibilities": [
-      "Contributed over 250 pull requests into a dozen frontend and backend repositories in six languages.",
+      "Contributed over 250 pull requests (and reviewed over 500) into a dozen repositories in six languages.",
+      "Worked as one of three developers on an agile, cross-functional product team, utilizing test-driven development (TDD), and often deploying to production multiple times a week.",
       "Contributed in a distributed effort across front-end teams toward a site-wide visual redesign.",
-      "Regularly participated in code review (over 550 pull requests) and acceptance test-driven development, often deploying to production multiple times a week as part of an agile, cross-functional team.",
       "Built, maintained, monitored, and continuously improved upon a series of django applications constituting the new JSTOR 'For Librarians' portal.",
       "Supported, redesigned, and rebuilt a tool for acquiring data for use in text and data mining practices."
     ],
@@ -52,7 +52,7 @@
     "company_url":"eagledream.com",
     "company_img":"http://eagledream.com/wp-content/uploads/2015/02/edt_logo_sticky_color_2.png?868103",
     "advisor_name":"Scott Telle",
-    "advisor_contact":"Scott.Telle@EagleDream.com",
+    "advisor_contact":"scott.telle@eagledream.com",
     "advisor_position":"Senior Software Developer",
     "location_city":"Rochester",
     "location_state":"NY",
@@ -67,8 +67,8 @@
       "Improved and maintained a java application for managing, storing, and displaying electronic medical records in compliance with rigid governmental standards.",
       "Web Services Transition: responsible for planning, documenting, and beginning a migration from local hosting over a dozen wordpress sites onto the cloud."
     ],
-    "summary_short":"Worked as a Software Development Intern at a nearby IT Consulting firm developing information management software (health, AD, VoIP)",
-    "summary_long":"EDT was my first internship experience in the Software Engineering field. I was afforded the opportunity to work on multiple projects using the SCRUM methodology and informal code review, and to learn AWS and C#/Visual Studio on the job. It also underscored the importance of high code quality and of documentation.<br/><br/>I'm particularly proud of and thankful for the work I did on the C# project I worked on. The user 'join' and 'filter' systems I designed and developed were well-designed and extensible, and the final product my teammate and I developed was very polished."
+    "summary_short":"Worked on a number of projects developing information management software applications for external companies with concrete requirements and compressed timelines.",
+    "summary_long":"EDT was my first internship experience in the Software Engineering field. I was afforded the opportunity to work on multiple projects using the SCRUM methodology and informal code review, and to learn AWS and C#/Visual Studio on the job. The experience underscored the importance of balancing code quality/documentation with timely delivery and polish."
   },
   {
     "company_name":"Wallace Library",
