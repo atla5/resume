@@ -1,5 +1,6 @@
 .DS_Store
 .idea/
+.vscode/
 **.pyc
 
 *.gz
@@ -9,8 +10,7 @@
 
 data/coverletter.txt
 build/*over*etter*.*
-
+build/*.aux
 build/resume.pdf
 build/references.pdf 
-
 build/*_Sawyer.tex

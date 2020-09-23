@@ -1,8 +1,18 @@
 [
   {
+    "name":"Michael Ward",
+    "email":"mrward@bu.edu",
+    "phone":"617.353.3716",
+    "company":"Boston University Libraries",
+    "position":"Web Services Manager",
+    "date_start":"2018-09",
+    "date_end":"2020-09",
+    "relationship":"Mike and I worked together very closely in the design, planning, and testing of our work. We would regularly collaborate in determining, validating, and improving our designs with real users and successfully coordinated a rebranding effort across five platforms.",
+    "importance":"I include Mike to emphasize my ability to balance and sustain investments in both the short-term and the long. He can speak to my strengths in building out our infrastructure, my commitment to open source contributions and best practices, and to the quality of my documentation."
+  },
+  {
     "name":"Peter Vlahakis",
     "email":"peter.vlahakis@ithaka.org",
-    "phone":"734.780.2510",
     "company":"JSTOR",
     "position":"Product Owner - Library Team",
     "date_start":"2017-01",
