@@ -9,18 +9,18 @@
     "location_city":"Boston",
     "location_state":"MA",
     "time_start":"2018-09",
-    "time_end":"present",
+    "time_end":"2020-09",
     "position":"Web Developer",
     "tags": ["lis","primo","angular"],
     "languages": ["js","html","css","scss","python"],
     "technologies": ["github","web-components","lit-element","lit-html","circle-ci","angular"],
     "responsibilities": [
-      "Architect, implement, document, and maintain a new front-end strategy built on portability, maintainability, open source collaboration, and modular reuse.",
-      "Create and expand a custom, open-source web component library of UI elements, powering a more consistent, feature-rich, and data-driven UX/branding across a variety of sites.",
-      "Plan, execute, implement, and maintain assorted solutions and optimizations across departments."
+      "Architected, implemented, documented, and maintained a new front-end strategy built on portability, maintainability, open source collaboration, and modular reuse.",
+      "Created and expanded upon a custom library of web components, powering a more consistent, feature-rich, and data-driven user experience and branding across a variety of sites.",
+      "Maintained and contributed to a collection of open source 'npm' packages used by libraries across the world to add functionality to the ExLibris Primo search interface."
     ],
-    "summary_short":"",
-    "summary_long":""
+    "summary_short":"As the sole developer on a small Web Services Team, I was able to build out an infrastructure and long-term strategy while creating immediate value redesigning multiple sites, creating open-source customizations, and standardizing cross-site branding/UX.",
+    "summary_long":"My time at BU Libraries afforded me the unique opportunity to architect simple solutions to complex problems in an open-source environment. I was able to investigate, develop, maintain, and even present about new and developing technologies that I wasn’t able to use elsewhere and solve a problem with multi-site management that frustrated many in the industry. While at BU, every commit I made was publicly available and I could create and contribute to packages that are used around the world."
   },
   {
     "company_name":"ITHAKA - JSTOR",
