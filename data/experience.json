@@ -1,5 +1,26 @@
 [
   {
+    "company_name":"University of Rochester Libraries",
+    "company_url":"https://www.library.rochester.edu/",
+    "company_img":"https://rochester.edu/assets/images/ur-logo.svg",
+    "advisor_name":"Lauren DiMonte",
+    "advisor_contact":"lauren.dimonte@rochester.edu",
+    "advisor_position":"Associate Dean of RCL",
+    "location_city":"Rochester",
+    "location_state":"NY",
+    "time_start":"2020-11",
+    "time_end":"present",
+    "position":"Application Developer",
+    "tags": ["lis","",""],
+    "languages": [],
+    "technologies": [],
+    "responsibilities": [
+      ""
+    ],
+    "summary_short":"Work on a number of software projects across the various departments of the River Campus Libraries pursuant of extending access, ensuring preservation, and accelerating research",
+    "summary_long":""
+  },
+  {
     "company_name":"Boston University Libraries",
     "company_url":"http://www.bu.edu/library/",
     "company_img":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Boston_University_wordmark.svg/800px-Boston_University_wordmark.svg.png",
@@ -15,9 +36,11 @@
     "languages": ["js","html","css","scss","python"],
     "technologies": ["github","web-components","lit-element","lit-html","circle-ci","angular"],
     "responsibilities": [
+      "Maintained and contributed to a collection of open source packages used by libraries across the world to add functionality to the ExLibris Primo search interface.",
+      "Helped to manage, customize, brand, and improve the usability of the BU Libraries' web presence across a number of hosted vendor platforms.",
+      "Periodically assisted members of the library in acquiring information about works published by BU researchers and managing metadata from our collections.",
       "Architected, implemented, documented, and maintained a new front-end strategy built on portability, maintainability, open source collaboration, and modular reuse.",
-      "Created and expanded upon a custom library of web components, powering a more consistent, feature-rich, and data-driven user experience and branding across a variety of sites.",
-      "Maintained and contributed to a collection of open source 'npm' packages used by libraries across the world to add functionality to the ExLibris Primo search interface."
+      "Created and expanded upon a custom library of web components, powering a more consistent, feature-rich, and data-driven user experience and branding across a variety of sites."
     ],
     "summary_short":"As the sole developer on a small Web Services Team, I was able to build out an infrastructure and long-term strategy while creating immediate value redesigning multiple sites, creating open-source customizations, and standardizing cross-site branding/UX.",
     "summary_long":"My time at BU Libraries afforded me the unique opportunity to architect simple solutions to complex problems in an open-source environment. I was able to investigate, develop, maintain, and even present about new and developing technologies that I wasn’t able to use elsewhere and solve a problem with multi-site management that frustrated many in the industry. While at BU, every commit I made was publicly available and I could create and contribute to packages that are used around the world."
@@ -41,7 +64,9 @@
       "Contributed over 250 pull requests (and reviewed over 500) into a dozen repositories in six languages.",
       "Worked as one of three developers on an agile, cross-functional product team, utilizing test-driven development (TDD), and often deploying to production multiple times a week.",
       "Contributed in a distributed effort across front-end teams toward a site-wide visual redesign.",
-      "Built, maintained, monitored, and continuously improved upon a series of django applications constituting the new JSTOR 'For Librarians' portal.",
+      "Built and improved upon the JSTOR 'For Librarians' portal (jstor.org/librarians) to help libraries better understand our collections of ebooks, ejournals, and primary sources.",
+      "Assisted in the design and architecture of a tool to provide insights on the usage of those collections via COUNTER usage statistic reporting.",
+      "Built and improved upon the new JSTOR 'For Librarians' portal to assist librarians in better understanding our collections of ebooks, ejournals, and primary sources.",
       "Supported, redesigned, and rebuilt a tool for acquiring data for use in text and data mining practices."
     ],
     "summary_short":"I served as one of three developers responsible for the creation, maintenance, and improvement/expansion of the JSTOR For Librarians portal",
@@ -87,7 +112,7 @@
     "technologies": ["photoshop","acrobat","github","dspace","SAFBuilder","ScanTailor"],
     "responsibilities": [
       "Rendered, enhanced, described, and managed volumes from a physical archive and batch imported the resulting digitized items to the DSpace digital media library.",
-      "Assisted with the creation of an updated protocol for the digitization process, incorporating my work with dublin-core-text-parser."
+      "Assisted with the creation of an updated protocol for the digitization process, incorporating my work with 'dublin-core-text-parser' - a tool to increase the richness and production rate of our metadata."
     ],
     "summary_short":"My time working at the Wallace Center has afforded me firsthand experience of the operative practices, needs, strengths, and weaknesses of libraries, as well as their critical importance to the process of knowledge creation and management.",
     "summary_long":"My experience in the Digital Initiatives department underscored the importance of my field and the tremendous impact it could have on library science and knowledge management.</br></br>The opportunity for progress in the specific areas of standardization, deduplication, automation, tooling, APIs, and data mining is really inspiring, and the capacity to make a difference both in the immediate short-term and in the distant long term has solidly reinforced my trajectory into LIS and LAM software."
