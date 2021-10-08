@@ -54,19 +54,24 @@ def generate_about(dict_values, about):
     })
 
 
-def generate_school_info(dict_values, school, id=None):
+def generate_school_info(dict_values, school, id=1):
     logging.debug("updating school values...")
-    prefix = "SCHOOL~" + (str(id) if id else "")
+    prefix = "S{}~".format(id)
     school_notes = school['notes']
 
     dict_values.update({
         prefix + "NAME": school['school_name'],
-        prefix + "DEGREE": "{} in {}".format(school['degree'], school['major']),
         prefix + "TIME~START": humanize_date(school['time_start']),
         prefix + "TIME~END": humanize_date(school['time_end']),
         prefix + "NOTE~1": school_notes[0] if school_notes else "Minor in {}".format(school['minor']),
         prefix + "NOTE~2": school_notes[1] if len(school_notes) >= 2 else ""
     })
+
+    if "degree" in school:
+        dict_values.update({
+            prefix + "DEGREE": "{} in {}".format(school['degree'], school['major'])
+        })
+
 
 
 def generate_work_experience(dict_values, work, id=1):
@@ -114,6 +119,15 @@ def generate_project(dict_values, project, id=1):
     dict_values.update({
         prefix+"NAME": project['name'],
         prefix+"DESCRIPTION": project['description_short']
+    })
+
+
+def generate_certificate(dict_values, certificate, id=1):
+    logging.debug("updating project info for project '{}'".format(id))
+    prefix = "C{}~".format(id)
+    dict_values.update({
+        prefix+"CODE": certificate['code'],
+        prefix+"DESCRIPTION": certificate['description']
     })
 
 

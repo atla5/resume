@@ -53,7 +53,10 @@ def update_resume_values(dict_values):
 
     # education
     educations = get_json_from_data_file('education.json')
-    generate_school_info(dict_values, educations[0])
+    generate_school_info(dict_values, educations[0], 1)
+    if educations[1]:
+        generate_school_info(dict_values, educations[1], 2)
+
 
     # work experience
     experiences = get_json_from_data_file('experience.json')
@@ -69,6 +72,11 @@ def update_resume_values(dict_values):
     additional = get_json_from_data_file('additional.json')
     languages = additional['languages']
     generate_languages(dict_values, languages)
+
+    # certificates
+    certificates = additional['certifications']
+    for i, certificate in enumerate(certificates[:3], start=1):
+        generate_certificate(dict_values, certificate, i)
 
 
 def update_references_values(dict_values):

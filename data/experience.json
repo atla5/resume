@@ -1,24 +1,22 @@
 [
   {
-    "company_name":"University of Rochester Libraries",
-    "company_url":"https://www.library.rochester.edu/",
-    "company_img":"https://rochester.edu/assets/images/ur-logo.svg",
-    "advisor_name":"Lauren DiMonte",
-    "advisor_contact":"lauren.dimonte@rochester.edu",
-    "advisor_position":"Associate Dean of RCL",
-    "location_city":"Rochester",
-    "location_state":"NY",
-    "time_start":"2020-11",
+    "company_name":"Cooperstown Fire Department",
+    "company_url":"https://cooperstownfd.org",
+    "advisor_name":"James Tallman",
+    "advisor_contact":"",
+    "advisor_position":"Chief",
+    "location_city":"Cooperstown",
+    "location_state":"NT",
+    "time_start":"2018-09",
     "time_end":"present",
-    "position":"Application Developer",
-    "tags": ["lis","",""],
-    "languages": [],
-    "technologies": [],
+    "position":"Firefighter/EMT",
+    "tags": ["ems","fire"],
     "responsibilities": [
-      ""
+      "Respond to fire, vehicle, and medical emergencies as a volunteer firefighter and/or EMT",
+      "Attend regular meetings and drills",
+      "Conduct periodic inventories on our ambulances"
     ],
-    "summary_short":"Work on a number of software projects across the various departments of the River Campus Libraries pursuant of extending access, ensuring preservation, and accelerating research",
-    "summary_long":""
+    "summary_short":"Volunteer for on-call response to life-threatening situations in the surrounding county involving fires, motor-vehicle accidents, rescue, and medical emergencies."  
   },
   {
     "company_name":"Boston University Libraries",
