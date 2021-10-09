@@ -75,9 +75,8 @@ def update_resume_values(dict_values):
 
     # certificates
     certificates = additional['certifications']
-    for i, certificate in enumerate(certificates[:3], start=1):
+    for i, certificate in enumerate(certificates[:4], start=1):
         generate_certificate(dict_values, certificate, i)
-
 
 def update_references_values(dict_values):
     logger.debug("adding references data to 'dict_values'")

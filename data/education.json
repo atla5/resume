@@ -5,10 +5,11 @@
     "school_state":"NY",
     "time_start": "2021-08",
     "time_end": "2021-10",
-    "major":"Recruit Firefighter Training",
-    "minor":"",
+    "degree":"Recruit Firefighter Training",
+    "summary":"Intensive 11-week program for newly-hired firefighters, resulting in nationally-recognized certifications",
     "notes":[
-      "Intensive 11-week program resulting in national certifications in Firefighter I/II and basic HAZMAT, pursuant of volunteer, part-time, and potentially seasonal work in fire suppression and emergency response."
+      "Collection of various training courses from the NYS Academy of Fire Science taken concurrently over 11 weeks",
+      "Used by paid departments across the state of a NY as a way to prepare new recruits for the fire service."
     ],
     "courses": [
       {
@@ -60,11 +61,9 @@
     "school_name":"Rochester Institute of Technology",
     "school_city":"Rochester",
     "school_state":"NY",
-    "degree":"BS",
+    "degree":"BS in Software Engineering",
     "time_start": "2012-08",
     "time_end": "2018-08",
-    "major":"Software Engineering",
-    "minor":"Philosophy",
     "activities":[
       "Rochester Objectivist Society",
       "RIT Philosophy Club"
