@@ -51,6 +51,50 @@
       "proficiency":"Novice"
     }
   ],
+  "certifications":[
+    {
+      "code":"Fire Fighter I",
+      "name":"Fire Fighter I",
+      "description":"National certification for interior and exterior fire operations",
+      "organization":"ProBoard",
+      "date_issued":"2021-10"
+    },
+    {
+      "code":"NY-EMT-B",
+      "name":"NYS EMT Basic",
+      "description":"NY State certification for BLS-level pre-hospital care",
+      "organization":"Otsego County",
+      "date_issued":"2021-05"
+    },
+    {
+      "code":"FEMA-ICS",
+      "name":"FEMA ICS and NIMS",
+      "description":"Course completion certificates for Incident Command (100,120,200,700,800)",
+      "organization":"FEMA",
+      "date_issued":"2020-11"
+    },
+    {
+      "code":"HAZMAT-T",
+      "name":"HAZMAT Technicican",
+      "description":"Technician-level training for hazardous materials identification/response",
+      "organization":"ProBoard",
+      "date_issued":"2021-10"
+    },
+    {
+      "code":"NY-BEFO",
+      "name":"NYS Basic Exterior Fire Operations",
+      "description":"NY State certification for operating in turnout gear on a fire scene",
+      "organization":"Otsego County",
+      "date_issued":"2021-06"
+    },
+    {
+      "code":"GOL-1",
+      "name":"Game of Logging - Lvl 1",
+      "description":"Chainsaw safety, maintenance, and open tree felling",
+      "organization":"Bassett NYCAMH/Occupational Health",
+      "date_issued":"2021-06"
+    }
+  ],
   "skills":[
     "object-oriented design",
     "standardization",

@@ -47,26 +47,28 @@ def generate_about(dict_values, about):
         "OBJECTIVE": about['objective'],
         "EMAIL": contact['email'] if contact['email'] else "",
         "PHONE": contact['phone'] if contact['phone'] else "",
-        "GITHUB": "{} - {}".format(accounts['github'], accounts['github-org']),
+        "GITHUB": accounts['github'],
         "WEBSITE": about['url'].replace('http://', ''),
         "HIGHLIGHT~1": highlights[0],
         "HIGHLIGHT~2": highlights[1]
     })
 
 
-def generate_school_info(dict_values, school, id=None):
+def generate_school_info(dict_values, school, id=1):
     logging.debug("updating school values...")
-    prefix = "SCHOOL~" + (str(id) if id else "")
+    prefix = "S{}~".format(id)
     school_notes = school['notes']
 
     dict_values.update({
         prefix + "NAME": school['school_name'],
-        prefix + "DEGREE": "{} in {}".format(school['degree'], school['major']),
+        prefix + "DEGREE": school['degree'],
         prefix + "TIME~START": humanize_date(school['time_start']),
         prefix + "TIME~END": humanize_date(school['time_end']),
-        prefix + "NOTE~1": school_notes[0] if school_notes else "Minor in {}".format(school['minor']),
+        prefix + "SUMMARY": school['summary'] if 'summary' in school else school_notes[0],
+        prefix + "NOTE~1": school_notes[0],
         prefix + "NOTE~2": school_notes[1] if len(school_notes) >= 2 else ""
     })
+
 
 
 def generate_work_experience(dict_values, work, id=1):
@@ -114,6 +116,15 @@ def generate_project(dict_values, project, id=1):
     dict_values.update({
         prefix+"NAME": project['name'],
         prefix+"DESCRIPTION": project['description_short']
+    })
+
+
+def generate_certificate(dict_values, certificate, id=1):
+    logging.debug("updating project info for certificate '{}'".format(id))
+    prefix = "C{}~".format(str(id))
+    dict_values.update({
+        prefix+"CODE": certificate['name'],
+        prefix+"DESCRIPTION": certificate['description']
     })
 
 

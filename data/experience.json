@@ -1,24 +1,22 @@
 [
   {
-    "company_name":"University of Rochester Libraries",
-    "company_url":"https://www.library.rochester.edu/",
-    "company_img":"https://rochester.edu/assets/images/ur-logo.svg",
-    "advisor_name":"Lauren DiMonte",
-    "advisor_contact":"lauren.dimonte@rochester.edu",
-    "advisor_position":"Associate Dean of RCL",
-    "location_city":"Rochester",
+    "company_name":"Cooperstown Fire Department",
+    "company_url":"https://cooperstownfd.org",
+    "advisor_name":"James Tallman",
+    "advisor_contact":"jimt912@yahoo.com",
+    "advisor_position":"Chief",
+    "location_city":"Cooperstown",
     "location_state":"NY",
-    "time_start":"2020-11",
+    "time_start":"2018-09",
     "time_end":"present",
-    "position":"Application Developer",
-    "tags": ["lis","",""],
-    "languages": [],
-    "technologies": [],
+    "position":"Volunteer Firefighter/EMT",
+    "tags": ["ems","fire"],
     "responsibilities": [
-      ""
+      "Respond to fire, vehicle, and medical emergencies as a volunteer firefighter and/or EMT",
+      "Attend regular meetings and drills",
+      "Conduct periodic inventories on our ambulances"
     ],
-    "summary_short":"Work on a number of software projects across the various departments of the River Campus Libraries pursuant of extending access, ensuring preservation, and accelerating research",
-    "summary_long":""
+    "summary_short":"On-call response to life-threatening incidents in the surrounding county involving fires, motor-vehicle accidents, rescue, and medical emergencies."  
   },
   {
     "company_name":"Boston University Libraries",
@@ -36,10 +34,10 @@
     "languages": ["js","html","css","scss","python"],
     "technologies": ["github","web-components","lit-element","lit-html","circle-ci","angular"],
     "responsibilities": [
+      "Architected, implemented, documented, and maintained a new front-end strategy built on portability, maintainability, open source collaboration, and modular reuse.",
       "Maintained and contributed to a collection of open source packages used by libraries across the world to add functionality to the ExLibris Primo search interface.",
       "Helped to manage, customize, brand, and improve the usability of the BU Libraries' web presence across a number of hosted vendor platforms.",
       "Periodically assisted members of the library in acquiring information about works published by BU researchers and managing metadata from our collections.",
-      "Architected, implemented, documented, and maintained a new front-end strategy built on portability, maintainability, open source collaboration, and modular reuse.",
       "Created and expanded upon a custom library of web components, powering a more consistent, feature-rich, and data-driven user experience and branding across a variety of sites."
     ],
     "summary_short":"As the sole developer on a small Web Services Team, I was able to build out an infrastructure and long-term strategy while creating immediate value redesigning multiple sites, creating open-source customizations, and standardizing cross-site branding/UX.",

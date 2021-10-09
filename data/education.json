@@ -1,13 +1,69 @@
 [
   {
+    "school_name":"NYS Fire Academy",
+    "school_city":"Montour Falls",
+    "school_state":"NY",
+    "time_start": "2021-08",
+    "time_end": "2021-10",
+    "degree":"Recruit Firefighter Training",
+    "summary":"Intensive 11-week program for newly-hired firefighters, resulting in nationally-recognized certifications",
+    "notes":[
+      "Collection of various training courses from the NYS Academy of Fire Science taken concurrently over 11 weeks",
+      "Used by paid departments across the state of a NY as a way to prepare new recruits for the fire service."
+    ],
+    "courses": [
+      {
+        "name":"Firefighter Essentials",
+        "description":"Introduction to fire behavor and suppression."
+      },
+      {
+        "code":"VROL",
+        "name":"Vehicle Rescue - Operations Level",
+        "description":"Responding to Motor Vehicle Accidents and car fires, including stabilization and extrication. "
+      },
+      {
+        "code":"RTB",
+        "name":"Technical Rescue Basic",
+        "description":"Introduction to technical rescue, including rope systems and rapelling."
+      },
+      {
+        "code":"EVOC",
+        "name":"Emergency Vehicle Operations Course",
+        "description":"The safe and effective operation of Fire Apparatus in transport and at the emergency scene."
+      },
+      {
+        "name":"SCBA Confidence",
+        "description":"Firefighter rescue and rapid intervention, confined space awareness, and self-extrication."
+      },
+      {
+        "name":"Engine Operations",
+        "description":"Introduction to pump operations and water supply."
+      },
+      {
+        "name":"Truck Operations",
+        "description":"Orientation to truck operations including ladders, search, and ventilation."
+      },
+      {
+        "code":"HAZMAT",
+        "name":"Hazardous Materials",
+        "description":"Identification and management of incidents involving Hazardous Materials and acts of terror."
+      },
+      {
+        "name":"Flamable Gases",
+        "description":"Practical and theoretical basis of working with and handling flamable gas emergencies, storage, and transport as well as utilities."
+      },
+      {
+        "name":"Firefighter II",
+        "description":"Advanced topics in pre-planning, incident management, tactics, and response."      }
+    ]
+  },
+  {
     "school_name":"Rochester Institute of Technology",
     "school_city":"Rochester",
     "school_state":"NY",
-    "degree":"BS",
+    "degree":"BS in Software Engineering",
     "time_start": "2012-08",
     "time_end": "2018-08",
-    "major":"Software Engineering",
-    "minor":"Philosophy",
     "activities":[
       "Rochester Objectivist Society",
       "RIT Philosophy Club"
