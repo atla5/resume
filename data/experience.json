@@ -2,10 +2,10 @@
   {
     "company_name":"Back Barn Brewery",
     "company_url":"https://untappd.com/BackBarnBrew",
-    "advisor_name":"Klaus",
-    "advisor_contact":"",
-    "advisor_position":"",
-    "location_city":"Delanson",
+    "advisor_name":"Klaus Kuhland",
+    "advisor_contact":"619.955.8228",
+    "advisor_position":"Head Brewer",
+    "location_city":"",
     "location_state":"NY",
     "time_start":"2022-04",
     "time_end":"present",
@@ -19,9 +19,9 @@
   {
     "company_name":"[Local] Distillery",
     "company_url":"",
-    "advisor_name":"",
-    "advisor_contact":"",
-    "advisor_position":"",
+    "advisor_name":"Daran Bottger",
+    "advisor_contact":"607.282.4246",
+    "advisor_position":"Head Distiller",
     "location_city":"",
     "location_state":"NY",
     "time_start":"2021-10",
@@ -38,19 +38,18 @@
   {
     "company_name":"[Local] Volunteer Fire Department",
     "company_url":"",
-    "advisor_name":"",
-    "advisor_contact":"",
+    "advisor_name":"James Tallman",
+    "advisor_contact":"jimt912@yahoo.com",
     "advisor_position":"Chief",
     "location_city":"",
     "location_state":"NY",
     "time_start":"2020-07",
     "time_end":"present",
-    "position":"Volunteer Firefighter/EMT",
+    "position":"Interiar Firefighter/EMT-Basic",
     "tags": ["ems","fire"],
     "responsibilities": [
       "Respond to fire, vehicle, and medical emergencies as a volunteer firefighter and/or EMT",
-      "Attend regular meetings and drills",
-      "Conduct periodic inventories on our ambulances"
+      "Attend regular meetings and drills"
     ],
     "summary_short":"On-call response to life-threatening incidents in the surrounding county involving fires, motor-vehicle accidents, rescue, and medical emergencies."  
   },
