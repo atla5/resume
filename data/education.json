@@ -1,11 +1,48 @@
 [
   {
+    "school_name":"eCornell",
+    "school_city":"Ithaca",
+    "school_state":"NY",
+    "time_start": "2022-05",
+    "time_end": "present",
+    "degree":"Craft Brewing Certificate",
+    "summary":"Five online courses pursuant of certification in brewing beer that target each main ingredient in recipe production and beer packaging.",
+    "tags":["craft"],
+    "notes":[
+      "Online coursework covering each main ingredient of beer and how it's packaged and served",
+      "Includes focus on recipe creation, ingredient selection, process improvement, and targeting particular styles."
+    ],
+    "courses": [
+      {
+        "name":"Malt Evaluation",
+        "description":"An in-depth look at the malting and mashing processes, and the targeted use of specialty/alternative grains when constructing a grain bill"
+      },
+      {
+        "name":"Water Profiles",
+        "description":"Examining the chemical properties of supply and production water and how it can be adjusted towards particular styles"
+      },
+      {
+        "name":"Hops Flavor Chemistry",
+        "description":"A detailed investigation into the use of aroma and bittering hops to achieve desired flavor, aroma, and bitterness using myriad varieties."
+      },
+      {
+        "name":"Yeast and Fermentation",
+        "description":"A deep dive into the role of yeast in alcohol production and flavor with particular focus on troubleshooting and pitching."
+      },
+      {
+        "name":"Beer Production and Refinement",
+        "description":"A summative synthesis of how each ingredient interacts and can be finessed and adjusted into a consistent and perfected product."
+      }
+    ]
+  },
+  {
     "school_name":"NYS Fire Academy",
     "school_city":"Montour Falls",
     "school_state":"NY",
     "time_start": "2021-08",
     "time_end": "2021-10",
     "degree":"Recruit Firefighter Training",
+    "tags":["fire"],
     "summary":"Intensive 11-week program for newly-hired firefighters, resulting in nationally-recognized certifications",
     "notes":[
       "Collection of various training courses from the NYS Academy of Fire Science taken concurrently over 11 weeks",
@@ -62,6 +99,7 @@
     "school_city":"Rochester",
     "school_state":"NY",
     "degree":"BS in Software Engineering",
+    "tags": "software",
     "time_start": "2012-08",
     "time_end": "2018-08",
     "activities":[

@@ -1,11 +1,47 @@
 [
   {
-    "company_name":"Cooperstown Fire Department",
-    "company_url":"https://cooperstownfd.org",
-    "advisor_name":"James Tallman",
-    "advisor_contact":"jimt912@yahoo.com",
+    "company_name":"Back Barn Brewery",
+    "company_url":"https://untappd.com/BackBarnBrew",
+    "advisor_name":"Klaus",
+    "advisor_contact":"",
+    "advisor_position":"",
+    "location_city":"Delanson",
+    "location_state":"NY",
+    "time_start":"2022-04",
+    "time_end":"present",
+    "position":"Assistant Brewer",
+    "tags": ["craft"],
+    "responsibilities": [
+      "Assist the head brewer in brewing a variety of beer styles from milling, through runoff, and fermentation"
+    ],
+    "summary_short":"Assist the head brewer in brewing a variety of beer styles from milling, through runoff, and fermentation"
+  },
+  {
+    "company_name":"[Local] Distillery",
+    "company_url":"",
+    "advisor_name":"",
+    "advisor_contact":"",
+    "advisor_position":"",
+    "location_city":"",
+    "location_state":"NY",
+    "time_start":"2021-10",
+    "time_end":"present",
+    "position":"Apprentice Distiller, Rickhouse Manager",
+    "tags": ["craft"],
+    "responsibilities": [
+      "Production of various spirits including numerous whiskeys, gin, and vodka",
+      "Milling, mashing, fermenting, stripping, distilling, barreling, storing, and harvesting whiskey",
+      "The organization and management of millions of dollars of barreled product"
+    ],
+    "summary_short":"Involved with each process in the production of a variety of distilled spirits and their storage in a two-story, on-site rickhouse."  
+  },
+  {
+    "company_name":"[Local] Volunteer Fire Department",
+    "company_url":"",
+    "advisor_name":"",
+    "advisor_contact":"",
     "advisor_position":"Chief",
-    "location_city":"Cooperstown",
+    "location_city":"",
     "location_state":"NY",
     "time_start":"2020-07",
     "time_end":"present",
@@ -30,7 +66,7 @@
     "time_start":"2018-09",
     "time_end":"2020-09",
     "position":"Web Developer",
-    "tags": ["lis","primo","angular"],
+    "tags": ["library","software"],
     "languages": ["js","html","css","scss","python"],
     "technologies": ["github","web-components","lit-element","lit-html","circle-ci","angular"],
     "responsibilities": [
@@ -55,7 +91,7 @@
     "time_start":"2017-01",
     "time_end":"2018-06",
     "position":"Junior Web Application Developer",
-    "tags": ["internship","publishing","library-portal","django"],
+    "tags": ["software", "publishing", "library", "research"],
     "languages": ["python","html","scss","java"],
     "technologies": ["django", "github", "aws", "jira" ],
     "responsibilities": [
@@ -82,7 +118,7 @@
     "time_start":"2015-06",
     "time_end":"2015-12",
     "position":"Software Development Intern",
-    "tags": ["scrum","internship","java","edt"],
+    "tags": ["software"],
     "languages": ["java","C#","aws"],
     "technologies": ["hibernate","spring","AD","VoIP","jira","git"],
     "responsibilities": [
@@ -105,7 +141,7 @@
     "time_start":"2016-02",
     "time_end":"2016-12",
     "position":"Digital Initiatives/Metadata Services Worker",
-    "tags": ["wallace","digitization","cataloguing","metadata","dc-text-parser"],
+    "tags": ["software","library"],
     "languages": ["java","json"],
     "technologies": ["photoshop","acrobat","github","dspace","SAFBuilder","ScanTailor"],
     "responsibilities": [
@@ -127,9 +163,8 @@
     "time_start":"2012-08",
     "time_end":"2014-12",
     "position":"Developer/Maintainer",
-    "tags": ["java","research","simulations"],
-    "languages": ["Java"],
-    "technologies": ["sourceforge","surveymonkey"],
+    "tags": ["software","research"],
+    "languages": ["java"],
     "responsibilities": [
       "Developed, maintained, and refactored a series of proteomics simulations for the education of AP high school and beginning undergraduate Biochemistry/Biotechnology students.",
       "Assisted in creating questionnaires, walkthroughs, and help information to test user experience and comprehension of the software",
