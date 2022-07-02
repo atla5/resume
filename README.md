@@ -45,7 +45,7 @@ This project runs on python 2.6 - 3.5 and requires `pdflatex`, included in the `
   [brew cask](https://brew.sh/).  
   
 ``` 
-$ $ brew install basictex --cask
+$ brew install basictex --cask
 ```
 
 #### Running the Builder
