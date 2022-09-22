@@ -10,14 +10,14 @@
     "time_start":"2022-04",
     "time_end":"present",
     "position":"Assistant Brewer",
-    "tags": ["craft"],
+    "tags": ["craft","brew"],
     "responsibilities": [
       "Assist the head brewer in brewing a variety of beer styles from milling, through runoff, and fermentation"
     ],
     "summary_short":"Assist the head brewer in brewing a variety of beer styles from milling, through runoff, and fermentation"
   },
   {
-    "company_name":"[Local] Distillery",
+    "company_name":"Cooperstown Distillery",
     "company_url":"",
     "advisor_name":"Daran Bottger",
     "advisor_contact":"607.282.4246",
@@ -26,8 +26,8 @@
     "location_state":"NY",
     "time_start":"2021-10",
     "time_end":"present",
-    "position":"Apprentice Distiller, Rickhouse Manager",
-    "tags": ["craft"],
+    "position":"Production Distiller, Rickhouse Manager",
+    "tags": ["craft","brew","distill"],
     "responsibilities": [
       "Production of various spirits including numerous whiskeys, gin, and vodka",
       "Milling, mashing, fermenting, stripping, distilling, barreling, storing, and harvesting whiskey",
@@ -36,7 +36,7 @@
     "summary_short":"Involved with each process in the production of a variety of distilled spirits and their storage in a two-story, on-site rickhouse."  
   },
   {
-    "company_name":"[Local] Volunteer Fire Department",
+    "company_name":"Cooperstown Volunteer Fire Department",
     "company_url":"",
     "advisor_name":"James Tallman",
     "advisor_contact":"jimt912@yahoo.com",
@@ -45,7 +45,7 @@
     "location_state":"NY",
     "time_start":"2020-07",
     "time_end":"present",
-    "position":"Interiar Firefighter/EMT-Basic",
+    "position":"Interior Firefighter/EMT-Basic",
     "tags": ["ems","fire"],
     "responsibilities": [
       "Respond to fire, vehicle, and medical emergencies as a volunteer firefighter and/or EMT",

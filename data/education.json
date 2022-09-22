@@ -99,7 +99,7 @@
     "school_city":"Rochester",
     "school_state":"NY",
     "degree":"BS in Software Engineering",
-    "tags": "software",
+    "tags": ["software","library","philosophy"],
     "time_start": "2012-08",
     "time_end": "2018-08",
     "activities":[
@@ -253,6 +253,7 @@
       "Game Band"
     ],
     "awards":["Honors 17"],
+    "tags":["general"],
     "notes":[
       "Completed every Honors/Advanced/AP Course Offered at PIHS (17).",
       "Was actively involved as class Vice President, and in NHS, Debate, and band, etc."
