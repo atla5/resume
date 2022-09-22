@@ -71,9 +71,9 @@ def generate_school_info(dict_values, school, id=1):
 
 
 
-def generate_work_experience(dict_values, work, id=1):
+def generate_work_experience(dict_values, work, pre="WA", id=1):
     logging.debug("updating work experience values for work '{}'".format(id))
-    prefix = "W{}~".format(id)
+    prefix = "{}{}~".format(pre,id)
     responsibilities = work['responsibilities']
     num_responsibilities = len(responsibilities)
 

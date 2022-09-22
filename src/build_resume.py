@@ -53,15 +53,21 @@ def update_resume_values(dict_values):
 
     # education
     educations = get_json_from_data_file('education.json')
-    generate_school_info(dict_values, educations[0], 1)
+    filtered = [ed for ed in educations if "craft" in ed['tags'] or "software" in ed['tags']]
+    generate_school_info(dict_values, filtered[0], 1)
     if educations[1]:
-        generate_school_info(dict_values, educations[1], 2)
+        generate_school_info(dict_values, filtered[1], 2)
 
-
-    # work experience
+    # work experiences A (e.g. "craft")
     experiences = get_json_from_data_file('experience.json')
-    for i, work_experience in enumerate(experiences[:3], start=1):
-        generate_work_experience(dict_values, work_experience, i)
+    work_xp = [xp for xp in experiences if "craft" in xp['tags']]
+    for i, work_experience in enumerate(work_xp[:2], start=1):
+        generate_work_experience(dict_values, work_experience, pre="WA", id=i)
+
+    # work experiences B (e.g. "software")
+    pro_xp = [xp for xp in experiences if "software" in xp['tags']]
+    for i, work_experience in enumerate(pro_xp[:3], start=1):
+        generate_work_experience(dict_values, work_experience, "WB", i)
 
     # projects
     projects = get_json_from_data_file('projects.json')
