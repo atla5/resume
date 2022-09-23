@@ -1,13 +1,13 @@
 [
   {
-    "school_name":"eCornell",
-    "school_city":"Ithaca",
+    "school_name":"Cornell University",
+    "school_city":"[ONLINE]",
     "school_state":"NY",
     "time_start": "2022-05",
-    "time_end": "present",
+    "time_end": "2022-09",
     "degree":"Craft Brewing Certificate",
-    "summary":"Five online courses pursuant of certification in brewing beer that target each main ingredient in recipe production and beer packaging.",
-    "tags":["craft"],
+    "summary":"Five online courses on the essentials of brewing, recipe production, beer refinement, and packaging.",
+    "tags":["craft","brew"],
     "notes":[
       "Online coursework covering each main ingredient of beer and how it's packaged and served",
       "Includes focus on recipe creation, ingredient selection, process improvement, and targeting particular styles."
@@ -108,8 +108,8 @@
     ],
     "awards":["Presidential Scholarship"],
     "notes":[
-      "Application Domain in 'Library and Information Science', Minor in Philosophy",
-      "Worked on over a dozen 2-6 person teams, in as many languages/technologies, and completed 20+ SE courses, towards the completion of a competitive degree, punctuated by meaningful work experience."
+      "Worked on over a dozen 2-6 person teams, in as many languages/technologies, and completed 20+ SE courses, towards the completion of a competitive degree, punctuated by meaningful work experience.",
+      "Application Domain in 'Library and Information Science', Minor in Philosophy"
     ],
     "courses": [
       {
