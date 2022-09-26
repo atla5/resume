@@ -16,6 +16,16 @@
       "proficiency":"Intermediate"
     },
     {
+      "name":"s/css",
+      "uses":"JSTOR front-end, bulib-wc",
+      "proficiency":"Intermediate"
+    },
+    {
+      "name":"UX Design",
+      "uses":"coursework, BU Libraries, RCL",
+      "proficiency":"Functional"
+    },
+    {
       "name":"web components",
       "uses":"BU Libraries (bulib-wc)",
       "proficiency":"Functional"
@@ -26,35 +36,27 @@
       "proficiency":"Functional"
     },
     {
-      "name":"UX Design",
-      "uses":"coursework, BU Libraries, RCL",
-      "proficiency":"Functional"
-    },
-    {
-      "name":"aws",
-      "uses":"JSTOR deployments, EDT research",
+      "name":"storybook",
+      "uses":"BULibraries",
       "proficiency":"Novice"
     },
     {
-      "name":"s/css",
-      "uses":"JSTOR front-end, bulib-wc",
-      "proficiency":"Intermediate"
-    },
-    {
-      "name":"C#",
-      "uses":"EDT user data integration application, RIT coursework",
-      "proficiency":"Novice"
-    },
-    {
-      "name":"C",
-      "uses":"coursework (SWEN-220, CMPE-240)",
+      "name":"angular",
+      "uses":"professional and project work at RIT and JSTOR",
       "proficiency":"Novice"
     }
   ],
   "certifications":[
     {
-      "code":"Fire Fighter I",
-      "name":"Fire Fighter I",
+      "code":"scuba-aow",
+      "name":"Advanced Open Water SCUBA Diver",
+      "description":"Recreational SCUBA diving certification permitting diving to depths of 130ft",
+      "organization":"PADI",
+      "date_issued":"2022-09"
+    },
+    {
+      "code":"Fire Fighter I/II",
+      "name":"Fire Fighter I/II",
       "description":"National certification for interior and exterior fire operations",
       "organization":"ProBoard",
       "date_issued":"2021-10"
@@ -96,20 +98,22 @@
     }
   ],
   "skills":[
-    "object-oriented design",
+    "systems thinking",
+    "user experience design",
+    "communicating systems of information",
     "standardization",
     "documentation",
-    "refactoring",
-    "systems thinking",
     "requirements management",
-    "communicating systems of information",
     "separation of concerns"
   ],
   "interests":[
-    "library and information science",
+    "craft beverage production",
+    "emergency response",
+    "mountaineering",
     "philosophy",
     "open source software",
     "open scholarship",
+    "library and information science",
     "scholarly publishing",
     "open data",
     "reading"

@@ -7,9 +7,8 @@ store and export information about my education, work experience, projects, and 
 
 ##### long #####
 This repository is meant to act as both:
- - a convenient reference for visitors to my page to better understand my background 
  - a central hub to store the data objects about my personal and professional career in one location.
- - a repeatable and automated way to generate updated PDFs (allowing me to only update the json and run a command)
+ - a repeatable and simple way to generate PDF resumes without dealing with formatting hassles (allowing me to only update the json and run a command)
  - a simplified way to host/serve resume info and pdf download on [my site](http://aidan-sawyer.com).
 
 ### Content ###
@@ -20,16 +19,11 @@ As a "resume", the repository is meant to store information relevant to my work
 
 |file|description|
 |:---|:---------------|
-|ROADMAP.md|textual description of stated goals, plans, and objectives over time.|
-|experience.json|data describing some of my professional experience and what i've learned from it|
-|education.json|data describing my formal schooling|
-|projects.json|data describing my [personal](https://github.com/atla5)/[organizational](https://github.com/lib-re) projects|
+|experience.json|jobs i've had in a number of fields|
+|education.json|formal schooling i've completed|
+|projects.json|software projects i've worked on over the years|
 |additional.json|listing of languages, skills, interests, and links that didn't fit elsewhere|
 
-### Interface ###
-
-If you're just here to view the information stored in these `.json` files, a  much more pleasant way of 
-  doing so is available on my website at [aidan-sawyer.com/about](http://aidan-sawyer.com/about).
 
 ### How to Use ###
 
@@ -41,10 +35,20 @@ $ cd ~/your/projects/folder
 $ git clone https://github.com/atla5/resume.git
 ```
 
-This project runs on python 2.6 - 3.5 and requires `pdflatex`, included in the `basictex` 
-  [brew cask](https://brew.sh/).  
+This project runs on `python` 2.6 - 3.5 and requires `pdflatex` as a helper library.
+
+I use/prefer macs, so the commands are in/for that. I'm sure you could get it running
+  on PC or linux, and if you do, please send in a ticket or Pull Request explaining 
+  how you did.
+
+For mac, make sure you have homebrew package manager installed:
+```bash
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+And use it to install the `basictex` [brew cask](https://brew.sh/).  
   
-``` 
+```bash
 $ brew install basictex --cask
 ```
 
@@ -57,6 +61,11 @@ The main script for this repository, responsible for reading the json,
 ```bash
 $ python src/build_resume.py
 ```
+
+Once you run it, look in the `./build` folder to find the following main outputs:
+  -  `Resume_NAME.pdf` 
+  -  `CoverLetter_NAME` 
+  -  `References_NAME.pdf`
 
 #### Rolling Your Own
 
