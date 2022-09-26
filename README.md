@@ -19,16 +19,11 @@ As a "resume", the repository is meant to store information relevant to my work
 
 |file|description|
 |:---|:---------------|
-|experience.json|various jobs i've had over my career in a number of fields|
-|education.json|formal schooling and certifications i've recieved|
-|projects.json|various softare projects i've worked on over the years|
+|experience.json|jobs i've had in a number of fields|
+|education.json|formal schooling i've completed|
+|projects.json|software projects i've worked on over the years|
 |additional.json|listing of languages, skills, interests, and links that didn't fit elsewhere|
 
-### Interface ###
-
-If you're just here to view the information stored in these `.json` files, a much more 
-  pleasant way of doing so is available on my website at 
-  [aidan-sawyer.com/](http://aidan-sawyer.com/).
 
 ### How to Use ###
 
